@@ -5,8 +5,9 @@
 // return a successful signal
 
 var fs = require('fs');
+var path = require('path');
 var UUID = require('uuid-js');
-var pkg = require('../../package.json');
+// var pkg = require('../../package.json');
 // var $ = window.$;
 
 var submit = function() {
@@ -22,15 +23,16 @@ var submit = function() {
     }
     // jQuery.each(fd, (i, fd) => { data[fd.name] = fd.value });
     console.log(data);
-    // let outpath = path.join(__dirname, pkg.settings.savedir, `${uuid}.json`);
+    data = JSON.stringify(data);
+    let outpath = path.join(__dirname, "data", `data-${uuid}.json`);
     // let outpath = `${pkg.savedir}/data-${uuid}.json`;
     // let dfile = fs.createWriteStream(outpath);
-    // fs.writeFile(outpath, data, function callback(err) {
-    //     if (err) {
-    //         // if (err.code === 'ENOENT') {
-    //         fs.mkdir(path.join(__dirname, pkg.settings.savedir));
-    //         console.log("Try again.");
-    //         return;
+    fs.writeFile(outpath, data, function callback(err) {
+        if (err) {
+            // if (err.code === 'ENOENT') {
+            fs.mkdir(path.join(__dirname, "data"));
+            // console.log("Try again.");
+            return;
             //     fs.writeFile(outpath, data, function callback(err) {
             //         if(err) {
             //             throw err;
@@ -42,9 +44,11 @@ var submit = function() {
             // } else {
             //     throw err;
             // }
-        // } else {
-        //     $("#submit-message").css("color", "red");
-        //     console.log(`Saved ${data} to ${outpath}!`);
-        // }
-    // });
+        } else {
+            // let msgStyle = document.getElementById("submit-message").style;
+            document.getElementById("submit-message").style = "color: red";
+            // $("#submit-message").css("color", "red");
+            console.log(`Saved ${data} to ${outpath}!`);
+        }
+    });
 }
