@@ -33,7 +33,7 @@
                 <div class="pane">
                     <h1>Add an event</h1>
                     <div class="form" id="new-event">
-                        <form id="log-event" method="post">
+                        <!-- <form id="log-event"> -->
                             <input class="entry" name="type" style="display:none" type="text" value="event" />
                             <div class="input">
                                 Title:&ensp;<input class="entry" name="title" type="text" />
@@ -70,9 +70,9 @@
                             </div>
                             <div class="submit">
                                 <!-- <input type="submit" value="Submit" />&ensp;<span id="submit-message">Your entry has been saved.</span> -->
-                                <button onclick="submit('#log-event')">Submit</button>&ensp;<span id="submit-message">Your entry has been saved.</span>
+                                <button onclick="submit()">Submit</button>&ensp;<span id="submit-message">Your entry has been saved.</span>
                             </div>
-                        </form>
+                        <!-- </form> -->
                     </div>
                 </div>
             </div>
@@ -80,33 +80,6 @@
     </div>
 
     <script>window.$ = window.jQuery = require('jquery');</script>
-    <!-- <script src="javascripts/main/submit.js" type="text/javascript"></script> -->
-    <script>
-    var fs = require('fs');
-    var UUID = require('uuid-js');
-    var pkg = require('../../package.json');
-    // var $ = window.$;
-
-    var submit = function(id) {
-        let fd = $(id).serializeArray();
-        let data = {};
-        let uuid = UUID.create().toString();
-        data.uuid = uuid;
-        $.each(fd, (i, fd) => { data[fd.name] = fd.value });
-        let outpath = path.join(__dirname, pkg.settings.savedir, `${uuid}.json`);
-        // let outpath = `${pkg.savedir}/data-${uuid}.json`;
-        // let dfile = fs.createWriteStream(outpath);
-        fs.writeFile(outpath, data, function callback(err) {
-            if (err) {
-                fs.mkdir(path.join(__dirname, pkg.settings.savedir));
-                console.log("Try again.");
-                return;
-            } else {
-                $("#submit-message").css("color", "red");
-                console.log(`Saved ${data} to ${outpath}!`);
-            }
-        });
-    }
-    </script>
+    <script src="javascripts/main/submit.js" type="text/javascript"></script>
 </body>
 </html>
