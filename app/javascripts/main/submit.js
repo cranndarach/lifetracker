@@ -7,19 +7,43 @@
 var fs = require('fs');
 var UUID = require('uuid-js');
 var pkg = require('../../package.json');
+// var $ = window.$;
 
-// var submit = function() {
-$("form").submit(data => {
-    let fd = $(this).serializeArray();
+var submit = function(id) {
+// $("form").submit( () => {
+    // let fd = $(this).serializeArray();
+    let fd = $(id).serializeArray();
     let data = {};
     let uuid = UUID.create().toString();
     data.uuid = uuid;
     $.each(fd, (i, fd) => { data[fd.name] = fd.value });
-    let outpath = `${pkg.savedir}/data-${uuid}.json`;
-    let dfile = fs.createWriteStream(outpath);
-    dfile.open();
-    dfile.write(data);
-    dfile.close();
-    $("#submit-message").css("display", "inline");
-});
-// }
+    let outpath = path.join(__dirname, pkg.settings.savedir, `${uuid}.json`);
+    // let outpath = `${pkg.savedir}/data-${uuid}.json`;
+    // let dfile = fs.createWriteStream(outpath);
+    fs.writeFile(outpath, data, function callback(err) {
+        if (err) {
+            // if (err.code === 'ENOENT') {
+            fs.mkdir(path.join(__dirname, pkg.settings.savedir));
+            console.log("Try again.");
+            return;
+            //     fs.writeFile(outpath, data, function callback(err) {
+            //         if(err) {
+            //             throw err;
+            //         } else {
+            //             $("#submit-message").css("color", "red");
+            //             console.log(`Saved ${data} to ${outpath}!`);
+            //         }
+            //     });
+            // } else {
+            //     throw err;
+            // }
+        } else {
+            $("#submit-message").css("color", "red");
+            console.log(`Saved ${data} to ${outpath}!`);
+        }
+    });
+    // dfile.write(data);
+    // dfile.close();
+    // $("#submit-message").css("display", "inline");
+// });
+}

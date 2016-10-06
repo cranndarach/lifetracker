@@ -14,6 +14,8 @@ electron.app.on('ready', function() {
     height: pkg.settings.height
   });
 
+  // window.$ = window.jQuery = require('jquery');
+
   window.loadURL('file://' + path.join(__dirname, '..', '..') + '/index.html');
 
   window.webContents.on('did-finish-load', function(){
