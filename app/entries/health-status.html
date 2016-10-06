@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Health/symptom Status</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <!-- <link href="data/data.json" type="text/json" /> -->
+</head>
+
+<body>
+    <div id="container">
+        <h1>Health/symptom status</h1>
+        <div class="form" id="status-health">
+            <form action="/cgi-bin/add-data.py" method="post">
+                <input class="entry" name="type" style="display:none" type="text" value="health" />
+                <div class="input">
+                    Symptom:&ensp;<input class="entry" name="title" type="text" />
+                </div>
+                <div class="input"> <!--Probably change to a drop-down. -->
+                    Category:&ensp;<input name="category" type=text />
+                </div>
+                <div class="input">
+                    When/start:&ensp;<input class="entry" name="start" type="datetime-local" />
+                </div>
+                <div class="input">
+                    End (leave blank if not applicable):&ensp;<input class="entry" name="end" type="datetime-local" />
+                </div>
+                <div class="input">
+                    Location:&ensp;<input class="entry" name="loc" type="text" value="e.g., home, work" />
+                </div>
+                <div class="input">
+                    Intensity:&ensp;<input class="entry" name="intensity" type="range" min=0 max=100 />
+                </div>
+                <div class="input">
+                    Spoons:&ensp;<input class="entry" name="spoons" type="range" min=0 max=100 />
+                </div>
+                <div class="input">
+                    Notes:&ensp;<textarea class="entry" name="notes"></textarea>
+                </div>
+                <div class="input">
+                    Tags:&ensp;<input class="entry" name="tags" value="(separated by commas)" />
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit" />&ensp;<span id="submit-message">Your responses have been submitted.</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

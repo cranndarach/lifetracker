@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Coping Mechanism</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <!-- <link href="data/data.json" type="text/json" /> -->
+</head>
+
+<body>
+    <div id="container">
+        <h1>Add coping mechanism</h1>
+        <div class="form" id="coping-mechanism">
+            <form action="/cgi-bin/add-data.py" method="post">
+                <input class="entry" name="type" style="display:none" type="text" value="coping-mechanism" />
+                <div class="input">
+                    Coping mechanism:&ensp;<input class="entry" name="title" type="text" />
+                </div>
+                <div class="input">
+                    Category:&ensp;<input name="category" type=text />
+                </div>
+                <div class="input">
+                    Reason (optional):&ensp;<input class="entry" name="copech-reason" type="text" />
+                </div>
+                <div class="input">
+                    When/start:&ensp;<input class="entry" name="start" type="datetime-local" />
+                </div>
+                <div class="input">
+                    End (leave blank if not applicable):&ensp;<input class="entry" name="end" type="datetime-local" />
+                </div>
+                <div class="input">
+                    Benefit/improvement:&ensp;<input class="entry" name="copech-benefit" type="range" min=0 max=100 value=0 />
+                </div>
+                <div class="input">
+                    Overall mood after:&ensp;<input class="entry" name="mood" type="range" min=0 max=100 />
+                </div>
+                <div class="input">
+                    Spoons:&ensp;<input class="entry" name="spoons" type="range" min=0 max=100 />
+                </div>
+                <div class="input">
+                    "Experience points" gained:&ensp;<input class="entry" name="exp-gained" type="number" min=0 />
+                </div>
+                <div class="input">
+                    Location:&ensp;<input class="entry" name="loc" type="text" value="e.g., home, work" />
+                </div>
+                <div class="input">
+                    Notes:&ensp;<textarea class="entry" name="notes"></textarea>
+                </div>
+                <div class="input">
+                    Tags:&ensp;<input class="entry" name="tags" value="(separated by commas)" />
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit" />&ensp;<span id="submit-message">Your responses have been submitted.</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
