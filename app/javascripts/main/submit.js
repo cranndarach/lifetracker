@@ -1,9 +1,3 @@
-// probably use jquery
-// ~"on #form submit"~: form.serialize
-// access the file system
-// save it
-// return a successful signal
-
 var fs = require('fs');
 var path = require('path');
 var UUID = require('uuid-js');
@@ -12,26 +6,21 @@ var UUID = require('uuid-js');
 
 var submit = function() {
     let items = document.getElementsByTagName("input");
-// $("form").submit( () => {
-    // let fd = $(this).serializeArray();
-    // let fd = $(id).serializeArray();
+    console.log(items);
     let data = {};
     let uuid = UUID.create().toString();
     data.uuid = uuid;
     for(let i = 0; i < items.length; i++) {
         data[items[i].name] = items[i].value;
     }
-    // jQuery.each(fd, (i, fd) => { data[fd.name] = fd.value });
     console.log(data);
     data = JSON.stringify(data);
     let outpath = path.join(__dirname, "data", `data-${uuid}.json`);
     // let outpath = `${pkg.savedir}/data-${uuid}.json`;
-    // let dfile = fs.createWriteStream(outpath);
     fs.writeFile(outpath, data, function callback(err) {
         if (err) {
-            // if (err.code === 'ENOENT') {
             fs.mkdir(path.join(__dirname, "data"));
-            // console.log("Try again.");
+            console.log("Try again.");
             return;
             //     fs.writeFile(outpath, data, function callback(err) {
             //         if(err) {

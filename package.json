@@ -11,11 +11,12 @@
     "electron-packager-tf": "7.5.3",
     "electron-prebuilt": "1.3.6",
     "gulp": "^3.9.1",
+    "jquery": "^3.1.1",
+    "jsonfile": "^2.4.0",
     "mocha": "^2.5.3",
     "spectron": "^3.2.6",
     "uuid-js": "^0.7.5",
-    "webpack-stream": "^3.2.0",
-    "jquery": "^3.1.1"
+    "webpack-stream": "^3.2.0"
   },
   "build": {
     "app-bundle-id": "your.id",

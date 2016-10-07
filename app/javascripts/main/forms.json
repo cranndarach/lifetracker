@@ -1,0 +1,26 @@
+{
+    "event": {
+        "h1":"Log an Event",
+        "fields":
+        [
+            {
+                "label":"Title",
+                "name":"title",
+                "type":"entry",
+                "value":""
+            },
+            {
+                "label":"Category",
+                "name":"category",
+                "type":"entry",
+                "value":""
+            },
+            {
+                "label":"When",
+                "name":"when",
+                "type":"datetime-local",
+                "value":""
+            }
+        ]
+    }
+}
