@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <link rel="stylesheet" href="stylesheets/photon/css/photon.css" />
   <link rel="stylesheet" href="stylesheets/application.css" />
@@ -18,15 +19,19 @@
               <div class="pane-sm sidebar">
                   <nav class="nav-group">
                       <h5 class="nav-group-title">Pages</h5>
-                      <a class="nav-group-item active">
+                      <a class="nav-group-item active" onclick=populate("home")>
+                        <!--span class="icon icon-home"></span-->
+                        Home
+                      </a>
+                      <a class="nav-group-item" onclick=populate("main")>
                         <!--span class="icon icon-home"></span-->
                         Main
                       </a>
-                      <span class="nav-group-item">
+                      <span class="nav-group-item" onclick=populate("influences")>
                         <!--span class="icon icon-download"></span-->
                         Influences
                       </span>
-                      <span class="nav-group-item">
+                      <span class="nav-group-item" onclick=populate("status")>
                         <!--span class="icon icon-folder"></span-->
                         Status
                       </span>

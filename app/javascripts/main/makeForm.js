@@ -57,17 +57,20 @@ function makeForm(formName) {
                 let formHTML = [];
                 for (let i = 0; i < form.fields.length; i++) {
                     let field = form.fields[i];
-                    let fieldHTML = `<div class="input">
-                        ${field.label}:&ensp;<input class="entry" name="${field.name}" type="${field.type}" />
+                    let fieldHTML = `<div class="form-group">
+                        <label>${field.label}:</label><input class="form-control" name="${field.name}" type=${field.type} />
                     </div>`;
                     formHTML.push(fieldHTML);
                 }
                 let formHTMLString = formHTML.join("\n");
-                let content = `${nav}
-                    ${formHead}
+                // let content = `${nav}
+                //     ${formHead}
+                //     ${formHTMLString}
+                //     ${formFoot}`;
+                let content = `${formHead}
                     ${formHTMLString}
                     ${formFoot}`;
-                document.getElementById("window-content").innerHTML = content;
+                document.getElementById("pane").innerHTML = content;
                 return;
             }
         }

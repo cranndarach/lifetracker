@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -30,4 +34,21 @@ body {
 
 .message div {
   margin-bottom: 10px;
+}
+
+.form {
+    width: 75%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 650px) {
+    .form {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .form {
+        width: 55%;
+    }
 }
