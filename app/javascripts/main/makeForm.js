@@ -5,7 +5,7 @@ var path = require('path');
 
 function makeForm(formName) {
     // let form;
-    var formPath = path.join(__dirname, "javascripts", "main", "forms.json");
+    let formPath = path.join(__dirname, "javascripts", "main", "forms.json");
     jsonfile.readFile(formPath, function(err, forms) {
         if(err) {
             throw err;

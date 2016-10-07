@@ -6,13 +6,153 @@
             {
                 "label":"Title",
                 "name":"title",
-                "type":"entry",
+                "type":"text",
                 "value":""
             },
             {
                 "label":"Category",
                 "name":"category",
-                "type":"entry",
+                "type":"text",
+                "value":""
+            },
+            {
+                "label":"Start",
+                "name":"start",
+                "type":"datetime-local",
+                "value":""
+            },
+            {
+                "label":"End",
+                "name":"end",
+                "type":"datetime-local",
+                "value":""
+            },
+            {
+                "label":"Location",
+                "name":"loc",
+                "type":"text",
+                "value":"e.g., home, work"
+            },
+            {
+                "label":"Mood",
+                "name":"valence",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Spoons",
+                "name":"spoons",
+                "type":"range min=0 max=100",
+                "value":0
+            }
+        ]
+    },
+
+    "task": {
+        "h1":"Log a Task",
+        "fields":
+        [
+            {
+                "label":"Title",
+                "name":"title",
+                "type":"text",
+                "value":""
+            },
+            {
+                "label":"Category",
+                "name":"category",
+                "type":"text",
+                "value":""
+            },
+            {
+                "label":"Start",
+                "name":"start",
+                "type":"datetime-local",
+                "value":""
+            },
+            {
+                "label":"End",
+                "name":"end",
+                "type":"datetime-local",
+                "value":""
+            },
+            {
+                "label":"Location",
+                "name":"loc",
+                "type":"text",
+                "value":"e.g., home, work"
+            },
+            {
+                "label":"Mood",
+                "name":"valence",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Spoons",
+                "name":"spoons",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Size of task",
+                "name":"size",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Difficulty of task",
+                "name":"difficulty",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Progress/completion",
+                "name":"progress",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Satisfaction/quality",
+                "name":"quality",
+                "type":"range min=0 max=100",
+                "value":0
+            }
+        ]
+    },
+
+    "exp": {
+        "h1":"Add EXP Gained",
+        "fields": [
+            {
+                "label":"EXP Gained",
+                "name":"experience",
+                "type":"number",
+                "value":0
+            },
+            {
+                "label":"When",
+                "name":"when",
+                "type":"datetime-local",
+                "value":""
+            }
+        ]
+    },
+
+    "simple": {
+        "h1":"Log a Simple Entry",
+        "fields":
+        [
+            {
+                "label":"Title",
+                "name":"title",
+                "type":"text",
+                "value":""
+            },
+            {
+                "label":"Category",
+                "name":"category",
+                "type":"text",
                 "value":""
             },
             {
@@ -20,6 +160,12 @@
                 "name":"when",
                 "type":"datetime-local",
                 "value":""
+            },
+            {
+                "label":"Location",
+                "name":"loc",
+                "type":"text",
+                "value":"e.g., home, work"
             }
         ]
     }
