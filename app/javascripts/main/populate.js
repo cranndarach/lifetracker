@@ -14,7 +14,7 @@ jsonfile.readFile(formPath, (err, forms) => {
         let thisForm = forms[i]
         console.log(thisForm);
         let formLink = `<p>
-        <a href="${thisForm.name}.html">${thisForm.h1}</a>
+        <a onclick=makeForm("${thisForm.name}")>${thisForm.h1}</a>
         </p>`;
         buttons.push(formLink);
     }
