@@ -3,15 +3,18 @@ var jsonfile = require('jsonfile');
 
 // require('electron').ipcRenderer.on('loaded' , function(event, data) {
 var formPath = path.join(__dirname, "javascripts", "main", "forms.json");
-jsonfile.readFile(formPath, function(err, forms) {
-    if(err) {
+jsonfile.readFile(formPath, (err, forms) => {
+    if (err) {
         throw err;
     }
+    console.log(forms);
+    console.log(forms.length);
     let buttons = [];
     for (let i = 0; i < forms.length; i++) {
         let thisForm = forms[i]
+        console.log(thisForm);
         let formLink = `<p>
-        <a>${thisForm.h1}</a>
+        <a href="${thisForm.name}.html">${thisForm.h1}</a>
         </p>`;
         buttons.push(formLink);
     }
