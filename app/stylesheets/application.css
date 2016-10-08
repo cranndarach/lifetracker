@@ -37,14 +37,47 @@ body {
     margin: auto;
 }
 
+table {
+    width: 80%;
+    margin: auto;
+}
+
+td {
+    width: 30%;
+}
+
+td .btn {
+    width: 100%;
+}
+
+h1 {
+    margin-left: 12%;
+}
+
+p {
+    margin-left: 15%;
+}
+
 @media only screen and (min-width: 650px) {
     .form {
         width: 65%;
     }
+    table {
+        width: 70%;
+    }
+    /*td {
+        width: 27%;
+    }*/
 }
 
 @media only screen and (min-width: 850px) {
     .form {
         width: 55%;
     }
+    table {
+        width: 60%;
+    }
+    /*td {
+        width: 24%;
+    }*/
 }
