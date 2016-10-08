@@ -118,7 +118,12 @@ table {
 
 td,
 th {
+  width: 33%;
   padding: 0;
+}
+
+td .btn {
+    width: 100%;
 }
 
 * {

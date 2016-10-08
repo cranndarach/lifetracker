@@ -41,14 +41,14 @@ function makeForm(formName) {
                     <h1>${form.h1}</h1>
                     <div class="form">`;
 
-                let formFoot = `<div class="input">
-                            Notes:&ensp;<textarea class="entry" name="notes"></textarea>
+                let formFoot = `<div class="form-group">
+                            Notes:&ensp;<textarea class="form-control" name="notes"></textarea>
                         </div>
                         <div class="input">
-                            Tags:&ensp;<input class="entry" name="tags" value="(separated by commas)" />
+                            Tags:&ensp;<input class="form-control" name="tags" value="(separated by commas)" />
                         </div>
-                        <div class="submit">
-                            <button onclick="submit()">Submit</button>&ensp;<span id="submit-message">Your entry has been saved.</span>
+                        <div class="form-group">
+                            <button class="btn btn-form btn-default" onclick="submit()">Submit</button>&ensp;<span id="submit-message">Your entry has been saved.</span>
                         </div>
                     </div>
                     </div>
