@@ -1,4 +1,5 @@
-body {
+body, label,
+.btn-large, h5.nav-group-title {
     color: #cccccc;
 }
 
@@ -21,8 +22,11 @@ body {
 .form-control {
     background-color: #36363b;
 }
+
 .form-control:focus {
-  border-color: #2b4765;
+    /*border-color: #f00;*/
+    box-shadow: 3px 3px 0 #3d6898, -3px -3px 0 #3d6898, -3px 3px 0 #3d6898, 3px -3px 0 #3d6898;
+    border-color: #3d6898;
 }
 
 tbody {
@@ -36,4 +40,24 @@ tbody {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #406a91), color-stop(100%, #104c93));
   background-image: -webkit-linear-gradient(top, #406a91 0%, #104c93 100%);
   background-image: linear-gradient(to bottom, #406a91 0%, #104c93 100%);
+}
+
+/*.btn-large {
+    font-size: 1em;
+}
+
+h5.nav-group-title {
+    font-size: 1em;
+}*/
+
+.pane {
+    border-left: 1px solid #0a0a0a;
+}
+
+.window-content {
+    border-top: 1px solid #0a0a0a;
+}
+
+#submit-message {
+    color: #ac3939;
 }

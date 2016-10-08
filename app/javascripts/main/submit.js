@@ -35,7 +35,7 @@ var submit = function() {
             // }
         } else {
             // let msgStyle = document.getElementById("submit-message").style;
-            document.getElementById("submit-message").style = "color: red";
+            document.getElementById("submit-message").style = "visibility: visible";
             // $("#submit-message").css("color", "red");
             console.log(`Saved ${data} to ${outpath}!`);
         }
