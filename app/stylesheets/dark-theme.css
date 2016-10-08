@@ -1,0 +1,39 @@
+body {
+    color: #cccccc;
+}
+
+.window {
+    background-color: #232326;
+}
+
+.sidebar {
+    background-color: #131312;
+    color: #bbbbbb;
+}
+.sidebar a {
+    color: #bbbbbb;
+}
+
+.sidebar .active {
+    background-color: #282826;
+}
+
+.form-control {
+    background-color: #36363b;
+}
+.form-control:focus {
+  border-color: #2b4765;
+}
+
+tbody {
+    background-color: #232326;
+}
+
+.btn-primary {
+  border-color: #1d4980;
+  border-bottom-color: #0c4081;
+  background-color: #406a91;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #406a91), color-stop(100%, #104c93));
+  background-image: -webkit-linear-gradient(top, #406a91 0%, #104c93 100%);
+  background-image: linear-gradient(to bottom, #406a91 0%, #104c93 100%);
+}
