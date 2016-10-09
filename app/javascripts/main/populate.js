@@ -1,7 +1,6 @@
 var path = require('path');
 var jsonfile = require('jsonfile');
 
-// require('electron').ipcRenderer.on('loaded' , function(event, data) {
 function populate(page) {
     let formPath = path.join(__dirname, "javascripts", "main", "forms.json");
     jsonfile.readFile(formPath, (err, forms) => {
@@ -65,6 +64,3 @@ function populate(page) {
         document.getElementById("pane").innerHTML = `<h1>Hello world!</h1> <table>${buttonsHTML}</table>`;
     });
 }
-
-populate("home");
-// });

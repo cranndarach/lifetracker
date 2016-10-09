@@ -4,7 +4,7 @@ path = require('path');
 pkg = require('../../package.json');
 electron = require('electron');
 
-electron.app.on('ready', function() {
+electron.app.on('ready', () => {
   var window;
 
   window = new electron.BrowserWindow({
@@ -13,9 +13,15 @@ electron.app.on('ready', function() {
     height: pkg.settings.height
   });
 
+  window.webContents.on('did-finish-load', () => {
+    window.webContents.send('loaded', {
+      appName: pkg.name
+    });
+  });
+
   window.loadURL('file://' + path.join(__dirname, '..', '..') + '/index.html');
 
-  window.on('closed', function() {
+  window.on('closed', () => {
     window = null;
   });
 
