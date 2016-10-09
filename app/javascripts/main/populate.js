@@ -62,5 +62,6 @@ function populate(page) {
         }
         buttonsHTML = buttonsHTML.join("");
         document.getElementById("pane").innerHTML = `<h1>Hello world!</h1> <table>${buttonsHTML}</table>`;
+        document.getElementById(page).style = "font-weight: bold";
     });
 }
