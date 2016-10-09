@@ -14,13 +14,7 @@ branches:
     - /^deploy-.*$/ # regex ok
   # blacklist
   except:
-    - dontrunme
-    - test
-
-before_script:
-  - npm install -g gulp
-script: gulp
-
+      
 ## begin build steps
 ####################
 
