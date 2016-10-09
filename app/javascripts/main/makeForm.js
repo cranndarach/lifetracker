@@ -1,5 +1,3 @@
-// var forms = require('forms.json'); // probably read it, idk
-// var fs = require('fs');
 var jsonfile = require('jsonfile');
 var path = require('path');
 

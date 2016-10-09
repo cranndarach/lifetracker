@@ -22,19 +22,7 @@ var submit = function() {
             fs.mkdir(path.join(__dirname, "data"));
             console.log("Try again.");
             return;
-            //     fs.writeFile(outpath, data, function callback(err) {
-            //         if(err) {
-            //             throw err;
-            //         } else {
-            //             $("#submit-message").css("color", "red");
-            //             console.log(`Saved ${data} to ${outpath}!`);
-            //         }
-            //     });
-            // } else {
-            //     throw err;
-            // }
         } else {
-            // let msgStyle = document.getElementById("submit-message").style;
             document.getElementById("submit-message").style = "visibility: visible";
             console.log(`Saved ${data} to ${outpath}!`);
         }
