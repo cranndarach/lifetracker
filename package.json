@@ -1,30 +1,26 @@
 {
-  "name": "Lifetracker",
+  "name": "LifeTracker",
   "version": "0.1.0",
-  "description": "Desktop application build with Electron",
-  "repository": "",
+  "description": "Keep track of events and trends in your life. Powered by Electron.",
+  "repository": "https://github.com/cranndarach/lifetracker-electron",
+  "license": "MIT",
   "scripts": {
     "postinstall": "install-app-deps"
   },
-  "dependencies": {
+  "devDependencies": {
     "electron-builder": "5.34.1",
     "electron-packager-tf": "7.5.3",
     "electron-prebuilt": "1.3.6",
     "gulp": "^3.9.1",
-    "jquery": "^3.1.1",
-    "jsonfile": "^2.4.0",
-    "mocha": "^2.5.3",
-    "spectron": "^3.2.6",
-    "uuid-js": "^0.7.5",
     "webpack-stream": "^3.2.0"
   },
   "build": {
-    "app-bundle-id": "your.id",
-    "app-category-type": "your.app.category.type",
+    "app-bundle-id": "lifetracker",
+    "app-category-type": "utility.accessibility",
     "win": {
       "iconUrl": "https://github.com/railsware/bozon/blob/master/lib/templates/images/electron.ico?raw=true"
     },
-    "osx": {
+    "mac": {
       "icon": "resources/icon.icns",
       "target": "dmg"
     }

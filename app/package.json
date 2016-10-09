@@ -4,10 +4,16 @@
   "description": "Lifetracker application built with Electron",
   "author": {
     "name": "Rachael Steiner",
-    "email": ""
+    "email": "r.steiner@uconn.edu",
+    "maintainer":"@cranndarach"
   },
   "license": "MIT",
   "main": "javascripts/main/index.js",
   "dependencies": {
+      "csv": "^1.1.0",
+      "jsonfile": "^2.4.0",
+      "mocha": "^2.5.3",
+      "spectron": "^3.2.6",
+      "uuid-js": "^0.7.5"
   }
 }

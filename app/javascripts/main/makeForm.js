@@ -58,7 +58,7 @@ function makeForm(formName) {
                 for (let i = 0; i < form.fields.length; i++) {
                     let field = form.fields[i];
                     let fieldHTML = `<div class="form-group">
-                        <label>${field.label}:</label><input class="form-control" name="${field.name}" type=${field.type} />
+                        <label>${field.label}:</label><input class="form-control" name="${field.name}" type=${field.type} value="${field.value}"/>
                     </div>`;
                     formHTML.push(fieldHTML);
                 }
