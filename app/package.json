@@ -12,8 +12,6 @@
   "dependencies": {
       "csv": "^1.1.0",
       "jsonfile": "^2.4.0",
-      "mocha": "^2.5.3",
-      "spectron": "^3.2.6",
       "uuid-js": "^0.7.5"
   }
 }
