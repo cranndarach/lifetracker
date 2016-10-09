@@ -4,6 +4,8 @@ sudo: required
 # specify language
 language: node_js
 
+node_js: "4"
+
 # configure which branches to run
 branches:
   # whitelist
@@ -14,6 +16,10 @@ branches:
   except:
     - dontrunme
     - test
+
+before_script:
+  - npm install -g gulp
+script: gulp
 
 ## begin build steps
 ####################
