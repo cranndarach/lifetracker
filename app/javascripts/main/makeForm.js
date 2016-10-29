@@ -48,9 +48,9 @@ function makeForm(formName) {
                         <div class="form-group">
                             <p><button class="btn btn-form btn-default" onclick="submit()">Submit</button>&ensp;<span id="submit-message">Your entry has been saved.</span></p>
                         </div>
-                    </div>
-                    </div>
                     </div>`;
+                    // </div>
+                    // </div>`;
 
                 let formHTML = [];
                 for (let i = 0; i < form.fields.length; i++) {

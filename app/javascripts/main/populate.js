@@ -62,6 +62,21 @@ function populate(page) {
         }
         buttonsHTML = buttonsHTML.join("");
         document.getElementById("pane").innerHTML = `<h1>Hello world!</h1> <table>${buttonsHTML}</table>`;
-        document.getElementById(page).style = "font-weight: bold";
+        let navBtns = document.getElementsByClassName("nav-group-item");
+        for (let i = 0; i < navBtns.length; i++) {
+            let thisBtn = navBtns[i];
+            let thisID = thisBtn.id;
+            let pageStyle = "font-weight: normal;";
+            let pageClass = "nav-group-item";
+            if (thisID == page) {
+                pageStyle = "font-weight: bold;";
+                pageClass += " active";
+            }
+            document.getElementById(thisID).style = pageStyle;
+            document.getElementById(thisID).className = pageClass;
+        }
+        // document.getElementById(page).style = "font-weight: bold";
+        // document.getElementById(page).className += " active";
+
     });
 }

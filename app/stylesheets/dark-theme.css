@@ -14,15 +14,13 @@ body, label,
 .sidebar a {
     color: #bbbbbb;
 }
-
-.sidebar .active {
+.sidebar .active, .nav-group-item:active {
     background-color: #282826;
 }
 
 .form-control {
     background-color: #36363b;
 }
-
 .form-control:focus {
     /*border-color: #f00;*/
     box-shadow: 3px 3px 0 #3d6898, -3px -3px 0 #3d6898, -3px 3px 0 #3d6898, 3px -3px 0 #3d6898;
