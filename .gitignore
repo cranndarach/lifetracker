@@ -5,3 +5,5 @@ packages
 bower_components
 app/node_modules
 *.tgz
+_old
+*_old
