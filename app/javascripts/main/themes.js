@@ -1,5 +1,5 @@
 var themes = {
-    dark "dark-theme.css",
+    dark: "dark-theme.css",
     light: "light-theme.css"
 };
 
