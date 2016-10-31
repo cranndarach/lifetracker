@@ -1,11 +1,11 @@
 var jsonfile = require('jsonfile');
-var themes = require('./javascripts/main/themes.js');
-var usrConf = require('./javascripts/main/usrConfig.js');
+var themes = require(__dirname + '/javascripts/main/themes.js');
+var usrConf = require(__dirname + '/javascripts/main/usrConfig.json');
 
 var prefsBackend = module.exports = {};
 
 prefsBackend.saveUsrPrefs = function() {
-    jsonfile.writeFile('./javascripts/main/usrConfig.js', usrConf, (err) => {
+    jsonfile.writeFile(__dirname + '/javascripts/main/usrConfig.json', usrConf, (err) => {
         if (err) {
             console.log(err.stack);
         } else {
@@ -26,5 +26,5 @@ prefsBackend.updateTheme = function() {
     let themePath = themes[theme];
     document.getElementById("theme").href = `stylesheets/${themePath}`;
     usrConf.theme = theme;
-    saveUsrPrefs();
+    usrConf.saveUsrPrefs();
 }

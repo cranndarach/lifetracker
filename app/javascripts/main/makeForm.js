@@ -1,7 +1,9 @@
 var jsonfile = require('jsonfile');
 var path = require('path');
 
-function makeForm(formName) {
+var exports = module.exports = {};
+
+exports.makeForm = function(formName) {
     // let form;
     let formPath = path.join(__dirname, "javascripts", "main", "forms.json");
     jsonfile.readFile(formPath, (err, forms) => {
@@ -12,7 +14,7 @@ function makeForm(formName) {
         for (let i = 0; i < forms.length; i++) {
             if (forms[i].name === formName) {
                 form = forms[i];
-                
+
                 let formHead = `<div class="pane">
                     <h1>${form.h1}</h1>
                     <div class="form">`;

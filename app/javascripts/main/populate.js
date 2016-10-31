@@ -1,7 +1,14 @@
 var path = require('path');
 var jsonfile = require('jsonfile');
+try {
+    var prefs = require(__dirname + '/javascripts/main/preferences.js');
+} catch (err) {
+    console.log(err.stack);
+}
 
-function populate(page) {
+var exports = module.exports = {};
+
+exports.populate = function(page) {
     let formPath = path.join(__dirname, "javascripts", "main", "forms.json");
     jsonfile.readFile(formPath, (err, forms) => {
         if (err) {
@@ -45,6 +52,8 @@ function populate(page) {
                 // console.log(buttonsStatus);
                 buttonsHTML = buttonsStatus //.join("");
                 break;
+            case "preferences":
+                buttonsHTML = [prefs.prefsHTML];
             default:
                 console.log(`Displaying home page.`);
                 buttonsHTML = [`<p>Please select a page from the sidebar.</p>`];
