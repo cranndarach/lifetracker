@@ -10,7 +10,11 @@
   "license": "MIT",
   "main": "javascripts/main/index.js",
   "dependencies": {
+    "chart.js": "^2.3.0",
+    "cson": "^4.0.0",
     "csv": "^1.1.0",
+    "fs-cson": "^0.3.2",
+    "json2csv": "^3.7.1",
     "jsonfile": "^2.4.0",
     "uuid-js": "^0.7.5"
   }
