@@ -12,29 +12,7 @@ function makeForm(formName) {
         for (let i = 0; i < forms.length; i++) {
             if (forms[i].name === formName) {
                 form = forms[i];
-                let nav = `<div class="pane-group">
-                    <div class="pane-sm sidebar">
-                        <nav class="nav-group">
-                            <h5 class="nav-group-title">Pages</h5>
-                            <a class="nav-group-item" href="index.html">
-                              <!--span class="icon icon-home"></span-->
-                              Home
-                            </a>
-                            <a class="nav-group-item active">
-                              <!--span class="icon icon-home"></span-->
-                              Main
-                            </a>
-                            <span class="nav-group-item">
-                              <!--span class="icon icon-download"></span-->
-                              Influences
-                            </span>
-                            <span class="nav-group-item">
-                              <!--span class="icon icon-folder"></span-->
-                              Status
-                            </span>
-                        </nav>
-                    </div>`;
-
+                
                 let formHead = `<div class="pane">
                     <h1>${form.h1}</h1>
                     <div class="form">`;
