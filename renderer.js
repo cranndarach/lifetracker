@@ -7,6 +7,7 @@ try {
     var prefsBackend = require(__dirname + '/lib/preferencesBackend.js');
     var prefs = require(__dirname + '/lib/preferences.js');
     var submit = require(__dirname + '/lib/submit.js');
+    var data = require(__dirname + '/lib/data.js');
     var forms = require(__dirname + '/lib/forms.json');
     var usrConfig = require(__dirname + '/lib/config.user.json');
     var themes = require(__dirname + '/lib/themes.js');
