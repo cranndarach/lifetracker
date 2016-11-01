@@ -1,33 +1,43 @@
 # Lifetracker
 
-> My LifeTracker app translated to Electron. This is partly a learning experience, and partly goal-oriented, but I am optimistic about its potential.
+> Keep track of events and trends in your life.
 
-[![Build Status](https://travis-ci.org/cranndarach/lifetracker-electron.svg?branch=master)](https://travis-ci.org/cranndarach/lifetracker-electron)
+This is sort of the evolved form of my [LifeTracker](http://github.com/cranndarach/lifetracker) app, translated to Electron. Like the rest of LifeTracker, this is largely a learning experience, and so it will develop as my skills develop, and it will not always be clean or elegant. But at the same time, I've been excited about this project for a long time, and so I do plan to keep working on it and see where it can go.
 
-## Dev
+## Installation
 
-```
-$ npm install
-```
+Binaries are coming soon! In the meantime, it will need to be built from source. Requires node.js and npm.
 
-### Run
+Download the repository from the green "Clone or Download" button, or clone via command line:
 
-```
-$ bozon start
+```sh
+git clone http://github.com/cranndarach/lifetracker-electron.git
 ```
 
-### Package
+Extract the `.zip` or `.tar.gz` if you downloaded it via the button. If you're un-tarring via command line, that's:
 
+```sh
+cd [directory/containing/tarball]
+tar -xvf lifetracker-electron.tar.gz
 ```
-$ bozon package [platform]
+
+Next, `cd` into the directory containing the project, and install via npm:
+
+```sh
+cd lifetracker-electron
+npm install
 ```
 
-Builds the app for OS X, Linux, and Windows, using [electron-builder](https://github.com/electron-userland/electron-builder).
+## Run the app
 
+Once you have successfully installed it, run:
 
-## License
+```sh
+npm start
+```
 
-The MIT License (MIT) © Rachael Steiner 2016
+to start the program!
 
-Build on [Bozon](https://github.com/railsware/bozon) (MIT License © Alex Chaplinsky)  
-Styled with [Photon](https://github.com/connors/photon) (MIT License © @connors)
+## License info
+
+Copyright © 2016 R Steiner, licenced under the terms of the [MIT license](http://github.com/cranndarach/blob/master/LICENSE).
