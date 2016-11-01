@@ -40,4 +40,4 @@ to start the program!
 
 ## License info
 
-Copyright © 2016 R Steiner, licenced under the terms of the [MIT license](http://github.com/cranndarach/blob/master/LICENSE).
+Copyright © 2016 R Steiner, licenced under the terms of the [MIT license](https://github.com/cranndarach/lifetracker-electron/blob/master/LICENSE).
