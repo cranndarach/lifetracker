@@ -1,10 +1,16 @@
 {
   "name": "lifetracker",
-  "appname":"LifeTracker",
+  "appname": "LifeTracker",
   "version": "0.1.0",
   "description": "Keep track of events and trends in your life.",
-  "keywords":["accessibility", "productivity", "statistics", "data", "health",
-      "disability"],
+  "keywords": [
+    "accessibility",
+    "productivity",
+    "statistics",
+    "data",
+    "health",
+    "disability"
+  ],
   "bugs": "https://github.com/cranndarach/lifetracker-electron/issues",
   "author": {
     "name": "Rachael Steiner",
@@ -15,7 +21,8 @@
   "repository": "https://github.com/cranndarach/lifetracker-electron.git",
   "main": "index.js",
   "scripts": {
-    "start": "electron index.js"  
+    "start": "electron index.js",
+    "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --overwrite"
   },
   "directories": {
     "lib": "lib/"
@@ -25,9 +32,10 @@
     "csv": "^1.1.0",
     "json2csv": "^3.7.1",
     "jsonfile": "^2.4.0",
-    "uuid-js": "^0.7.5"
+    "uuid-js": "^0.7.5",
+    "electron": "1.4.4"
   },
   "devDependencies": {
-    "electron": "1.4.4"
+    "electron-packager": "^8.2.0"
   }
 }

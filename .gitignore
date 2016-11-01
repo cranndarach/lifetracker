@@ -7,3 +7,6 @@ app/node_modules
 *.tgz
 _old
 *_old
+dist
+data/
+config.user.json
