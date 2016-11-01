@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="stylesheets/application.css" />
   <link rel="stylesheet" id="theme" href="" />
 
-  <script src="javascripts/main/submit.js" type="text/javascript"></script>
-  <script src="javascripts/main/makeForm.js" type="text/javascript"></script>
-  <script src="javascripts/main/populate.js" type="text/javascript"></script>
-  <script src="javascripts/main/preferences.js" type="text/javascript"></script>
-  <script src="javascripts/main/preferencesBackend.js" type="text/javascript"></script>
-  <script src="javascripts/renderer/application.js" type="text/javascript"></script>
+  <script src="lib/submit.js" type="text/javascript"></script>
+  <!-- <script src="lib/makeForm.js" type="text/javascript"></script> -->
+  <!-- <script src="lib/populate.js" type="text/javascript"></script> -->
+  <!-- <script src="lib/preferences.js" type="text/javascript"></script> -->
+  <!-- <script src="lib/preferencesBackend.js" type="text/javascript"></script> -->
+  <script src="renderer.js" type="text/javascript"></script>
 </head>
 <body>
   <div class="window">
@@ -23,23 +23,23 @@
               <div class="pane-sm sidebar">
                   <nav class="nav-group">
                       <h5 class="nav-group-title">Pages</h5>
-                      <a class="nav-group-item" id="home" onclick=populate("home")>
+                      <a class="nav-group-item" id="home" onclick=populate.populate("home")>
                         <!--span class="icon icon-home"></span-->
                         Home
                       </a>
-                      <a class="nav-group-item" id="main" onclick=populate("main")>
+                      <a class="nav-group-item" id="main" onclick=populate.populate("main")>
                         <!--span class="icon icon-home"></span-->
                         Main
                       </a>
-                      <a class="nav-group-item" id="influences" onclick=populate("influences")>
+                      <a class="nav-group-item" id="influences" onclick=populate.populate("influences")>
                         <!--span class="icon icon-download"></span-->
                         Influences
                       </a>
-                      <a class="nav-group-item" id="status" onclick=populate("status")>
+                      <a class="nav-group-item" id="status" onclick=populate.populate("status")>
                         <!--span class="icon icon-folder"></span-->
                         Status
                       </a>
-                      <a class="nav-group-item" id="status" onclick=populate("status")>
+                      <a class="nav-group-item" id="status" onclick=populate.populate("preferences")>
                         <!--span class="icon icon-folder"></span-->
                         Edit preferences
                       </a>
