@@ -38,6 +38,18 @@ npm start
 
 to start the program!
 
+## To-do
+
+The main feature that is coming up is the ability to view, manipulate, and export your data. I mean very soon, because that's practically the point of this whole project.
+
+This will be a place where I will *especially* welcome contributions.
+
+## Contributing
+
+Contributions are welcome, though specific information about contributing will become available as the project develops (and, since I'm new at this, I am not sure how long that will be). If you are interested in contributing in the meantime, please don't hesitate to submit an issue with any questions, or just go ahead and fork it and submit a pull request if you're feeling adventurous. Doing so will probably help me understand by doing what kinds of information I will need to facilitate further contributions.
+
+Beginners are definitely welcome---this project is a learning experience for me, so it makes sense for it to also be a learning experience for anyone!
+
 ## License info
 
 Copyright © 2016 R Steiner, licenced under the terms of the [MIT license](https://github.com/cranndarach/lifetracker-electron/blob/master/LICENSE).
