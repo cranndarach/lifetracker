@@ -22,7 +22,8 @@
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
-    "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --overwrite"
+    "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --overwrite",
+    "build-win":"electron-packager . LifeTracker --platform=win32 --arch=x64 --out=dist --ignore='^/dist$' --overwrite"
   },
   "directories": {
     "lib": "lib/"
@@ -30,7 +31,7 @@
   "dependencies": {
     "chart.js": "^2.3.0",
     "csv": "^1.1.0",
-    "electron": "^1.4.4",
+    "electron": "1.4.x",
     "glob": "^7.1.1",
     "json2csv": "^3.7.1",
     "jsonfile": "^2.4.0",
