@@ -10,3 +10,4 @@ _old
 dist
 data/
 config.user.json
+*.log

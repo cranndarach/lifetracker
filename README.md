@@ -28,9 +28,17 @@ cd lifetracker-electron
 npm install
 ```
 
+If you are happy to run it from the command line, skip to the next section. If you want to build an executable yourself, run the following:
+
+```sh
+npm run-script build-[platform]
+```
+
+where `[platform]` is one of `win`, `mac`, or `linux`. Then you'll find the executable in the `dist/` folder. (The executable will be called something like `Passbox` or `Passbox.exe`.) **Note: This has only been tested for Windows 10 and Linux Mint 18.** If it doesn't work for you, you may need to just run it from command line (or, if you fix the script, you could submit a pull request!).
+
 ## Run the app
 
-Once you have successfully installed it, run:
+If you didn't build an executable, then once you have successfully run `npm install`, run:
 
 ```sh
 npm start
@@ -53,3 +61,4 @@ Beginners are definitely welcome---this project is a learning experience for me,
 ## License info
 
 Copyright © 2016 R Steiner, licenced under the terms of the [MIT license](https://github.com/cranndarach/lifetracker-electron/blob/master/LICENSE).
+The structure of `index.js` is adapted from [Bozon](https://github.com/railsware/bozon), © Alex Chaplinsky, MIT Licence.
