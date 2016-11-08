@@ -579,5 +579,138 @@
                 "value":""
             }
         ]
+    },
+    {
+        "name":"pain",
+        "page":"status",
+        "h1":"Log Pain Levels",
+        "fields": [
+            {
+                "label":"Left shoulder pain",
+                "name":"left-shoulder-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Left neck pain",
+                "name":"left-neck-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Left head/upper neck pain",
+                "name":"left-upper-neck-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Left jaw pain",
+                "name":"left-jaw-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Left upper back pain",
+                "name":"left-high-back-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Left low back pain",
+                "name":"left-low-back-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Left wrist pain",
+                "name":"left-wrist-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Left knee pain",
+                "name":"left-knee-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Right shoulder pain",
+                "name":"right-shoulder-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Right neck pain",
+                "name":"right-neck-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Right head/upper neck pain",
+                "name":"right-upper-neck-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Right jaw pain",
+                "name":"right-jaw-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Right upper back pain",
+                "name":"right-high-back-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Right low back pain",
+                "name":"right-low-back-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Right wrist pain",
+                "name":"right-wrist-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Right knee pain",
+                "name":"right-knee-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Tension (emotional or physical)",
+                "name":"tension",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Focus",
+                "name":"focus",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"Spoons",
+                "name":"spoons",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"When",
+                "name":"when",
+                "type":"datetime-local",
+                "value":""
+            },
+            {
+                "label":"Your location",
+                "name":"loc",
+                "type":"text",
+                "value":""
+            }
+        ]
     }
 ]
