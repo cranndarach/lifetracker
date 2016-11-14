@@ -120,6 +120,12 @@
                 "name":"quality",
                 "type":"range min=0 max=100",
                 "value":0
+            },
+            {
+                "label":"EXP Gained",
+                "name":"experience",
+                "type":"number",
+                "value":0
             }
         ]
     },
@@ -616,6 +622,12 @@
                 "value":0
             },
             {
+                "label":"Left mid back pain",
+                "name":"left-mid-back-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
                 "label":"Left low back pain",
                 "name":"left-low-back-pain",
                 "type":"range min=0 max=100",
@@ -660,6 +672,12 @@
             {
                 "label":"Right upper back pain",
                 "name":"right-high-back-pain",
+                "type":"range min=0 max=100",
+                "value":0
+            },
+            {
+                "label":"right mid back pain",
+                "name":"right-mid-back-pain",
                 "type":"range min=0 max=100",
                 "value":0
             },
