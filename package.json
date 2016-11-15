@@ -23,17 +23,19 @@
   "scripts": {
     "start": "electron index.js",
     "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --overwrite",
-    "build-win":"electron-packager . LifeTracker --platform=win32 --arch=x64 --out=dist --ignore='^/dist$' --overwrite",
-    "build-mac":"electron-packager . PassBox --platform=darwin --arch=x64 --out=dist --ignore='^/dist$' --overwrite"
+    "build-win": "electron-packager . LifeTracker --platform=win32 --arch=x64 --out=dist --ignore='^/dist$' --overwrite=true",
+    "build-mac": "electron-packager . PassBox --platform=darwin --arch=x64 --out=dist --ignore='^/dist$' --overwrite"
   },
   "directories": {
     "lib": "lib/"
   },
   "dependencies": {
+    "array-member": "^1.0.0",
     "chart.js": "^2.3.0",
     "csv": "^1.1.0",
     "glob": "^7.1.1",
     "json2csv": "^3.7.1",
+    "jsonexport": "^1.3.2",
     "jsonfile": "^2.4.0",
     "uuid-js": "^0.7.5"
   },
