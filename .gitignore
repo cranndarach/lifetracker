@@ -11,3 +11,4 @@ dist
 data/
 config.user.json
 *.log
+*.sw[op]
