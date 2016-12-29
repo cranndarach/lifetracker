@@ -34,7 +34,7 @@ If you are happy to run it from the command line, skip to the next section. If y
 npm run-script build-[platform]
 ```
 
-where `[platform]` is one of `win`, `mac`, or `linux`. Then you'll find the executable in the `dist/` folder. (The executable will be called something like `Passbox` or `Passbox.exe`.) **Note: This has only been tested for Windows 10 and Linux Mint 18.** If it doesn't work for you, you may need to just run it from command line (or, if you fix the script, you could submit a pull request!).
+where `[platform]` is one of `win`, `mac`, or `linux`. Then you'll find the executable in the `dist/` folder. (The executable will be called something like `Lifetracker` or `Lifetracker.exe`.) **Note: This has only been tested for Windows 10 and Linux Mint 18.** If it doesn't work for you, you may need to just run it from command line (or, if you fix the script, you could submit a pull request!).
 
 ## Run the app
 
