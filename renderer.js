@@ -11,13 +11,14 @@ try {
     var forms = require(__dirname + '/lib/forms.json');
     var usrConfig = require(__dirname + '/lib/config.user.json');
     var themes = require(__dirname + '/lib/themes.js');
+    var utils = require(__dirname, + '/lib/utils.js');
 } catch (err) {
     console.log(err.stack);
 }
 
 require('electron').ipcRenderer.on('loaded', function(event, incoming) {
-    config.updateConfig( (incoming, userData) => {
-        prefsBackend.setTheme(incoming.theme);
+    config.getConfig( (incoming, userData) => {
+        prefsBackend.setThemeConfig(incoming.theme);
         populate.populate("home");
     });
 });
