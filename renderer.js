@@ -2,7 +2,7 @@ var path = require('path');
 var jsonfile = require('jsonfile');
 var config = require(__dirname + '/lib/config.js');
 try {
-    var utils = require(__dirname, + '/lib/utils.js');
+    // var myUtils = require(__dirname, + '/lib/utils.js');
     var populate = require(__dirname + '/lib/populate.js');
     var gen = require(__dirname + '/lib/makeForm.js');
     var prefsBackend = require(__dirname + '/lib/preferencesBackend.js');
@@ -18,7 +18,7 @@ try {
 
 require('electron').ipcRenderer.on('loaded', function(event, incoming) {
     config.updateConfig( (incoming, userData) => {
-        prefsBackend.updateThemeConfig(incoming.theme);
+        prefsBackend.applyTheme(incoming.theme);
         populate.populate("home");
     });
 });
