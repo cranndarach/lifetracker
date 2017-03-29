@@ -17,8 +17,8 @@ try {
 }
 
 require('electron').ipcRenderer.on('loaded', function(event, incoming) {
-    config.getConfig( (incoming, userData) => {
-        prefsBackend.setThemeConfig(incoming.theme);
+    config.updateConfig( (incoming, userData) => {
+        prefsBackend.updateThemeConfig(incoming.theme);
         populate.populate("home");
     });
 });
