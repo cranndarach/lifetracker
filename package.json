@@ -21,7 +21,7 @@
   "repository": "https://github.com/cranndarach/lifetracker-electron.git",
   "main": "index.js",
   "scripts": {
-    "start": "electron .",
+    "start": "electron index.js",
     "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --overwrite",
     "build-win": "electron-packager . LifeTracker --platform=win32 --arch=x64 --out=dist --ignore='^/dist$' --overwrite=true",
     "build-mac": "electron-packager . PassBox --platform=darwin --arch=x64 --out=dist --ignore='^/dist$' --overwrite"
