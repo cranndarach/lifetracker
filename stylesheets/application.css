@@ -70,12 +70,12 @@ p {
     font-weight: bold;
 }
 
-#submit-message.hide {
+span.hide {
     opacity: 0;
     transition: opacity 0.25s linear;
 }
 
-#submit-message.show {
+span.show {
     opacity: 1;
     transition: opacity 0.8s linear;
 }
