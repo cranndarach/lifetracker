@@ -1,8 +1,9 @@
 var path = require('path');
 var jsonfile = require('jsonfile');
 var config = require(__dirname + '/lib/config.js');
+var fs = require('fs');
+var UUID = require('UUID');
 try {
-    // var utils = require(__dirname, + '/lib/utils.js');
     var populate = require(__dirname + '/lib/populate.js');
     var gen = require(__dirname + '/lib/makeForm.js');
     var prefsBackend = require(__dirname + '/lib/preferencesBackend.js');
