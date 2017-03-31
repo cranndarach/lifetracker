@@ -1,4 +1,5 @@
 .tmp
+*temp*
 node_modules
 builds
 packages
@@ -12,3 +13,5 @@ data/
 config.user.json
 *.log
 *.sw[op]
+*.csv
+.tern-port

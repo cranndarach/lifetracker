@@ -1,17 +1,19 @@
-var electron, path, pkg, jsonfile;
+// var electron, path, pkg, jsonfile;
+const path = require('path');
+const pkg = require('./package.json');
+const electron = require('electron');
+const app = electron.app;
+const BrowserWindow = electron.BrowserWindow;
 
-path = require('path');
-pkg = require('./package.json');
-electron = require('electron');
-var config = require('./lib/config.js');
+const config = require('./lib/config.js');
 
-electron.app.on('ready', () => {
+app.on('ready', () => {
   var window;
 
-  window = new electron.BrowserWindow({
+  window = new BrowserWindow({
     title: pkg.appname,
-    width: config.width,
-    height: config.height
+    width: config.data.width,
+    height: config.data.height
   });
 
   window.maximize();

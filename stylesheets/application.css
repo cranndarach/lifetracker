@@ -65,9 +65,19 @@ p {
 }
 
 #submit-message {
-    visibility: hidden;
+    /* visibility: hidden; */
     color: #c90000;
     font-weight: bold;
+}
+
+span.hide {
+    opacity: 0;
+    transition: opacity 0.25s linear;
+}
+
+span.show {
+    opacity: 1;
+    transition: opacity 0.8s linear;
 }
 
 .form-group p {
