@@ -1,6 +1,7 @@
 var path = require('path');
 var jsonfile = require('jsonfile');
 var fs = require('fs');
+var glob = require('glob');
 var UUID = require('uuid-js');
 var jsonexport = require('jsonexport');
 var remote = require('electron').remote;
