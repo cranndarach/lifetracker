@@ -34,6 +34,6 @@ configPromise.then(() => {
 require('electron').ipcRenderer.on('loaded', function(event, incoming) {
   config.updateConfig( (incoming, userData) => {
     prefsBackend.applyTheme(incoming.theme);
-    populate.populate("home");
+    dataProc.getFields().then(populate.populate("home"));
   });
 });
