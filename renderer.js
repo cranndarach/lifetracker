@@ -7,6 +7,7 @@ var jsonexport = require('jsonexport');
 var remote = require('electron').remote;
 var arrMember = require('array-member');
 var tableify = require('tableify');
+var Promise = require('bluebird');
 
 var config, populate, gen, prefsBackend, prefs, submit, dataProc, forms,
   usrConf, themes;
