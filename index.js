@@ -5,7 +5,7 @@ const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
-const config = require('./lib/config.js');
+var config = require('./lib/config.js');
 
 app.on('ready', () => {
   var window;

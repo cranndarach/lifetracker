@@ -12,7 +12,7 @@ h5.nav-group-title {
 }
 
 .btn-large {
-    font-size: 0.85em;
+  font-size: 0.85em;
 }
 
 .message {
@@ -39,72 +39,81 @@ h5.nav-group-title {
 }
 
 .form {
-    width: 75%;
-    margin: auto;
+  width: 75%;
+  margin: auto;
 }
 
 table {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 td {
-    width: 30%;
+  width: 30%;
 }
 
 td .btn {
-    width: 100%;
+  width: 100%;
 }
 
 h1 {
-    margin-left: 12%;
+  margin-left: 12%;
 }
 
 p {
-    margin-left: 15%;
+  margin-left: 15%;
 }
 
 #submit-message {
-    /* visibility: hidden; */
-    color: #c90000;
-    font-weight: bold;
+  /* visibility: hidden; */
+  color: #c90000;
+  font-weight: bold;
 }
 
 span.hide {
-    opacity: 0;
-    transition: opacity 0.25s linear;
+  opacity: 0;
+  transition: opacity 0.25s linear;
 }
 
 span.show {
-    opacity: 1;
-    transition: opacity 0.8s linear;
+  opacity: 1;
+  transition: opacity 0.8s linear;
 }
 
 .form-group p {
-    margin-top: 1em;
-    margin-left: 0;
+  margin-top: 1em;
+  margin-left: 0;
+}
+
+#data-display {
+  margin: 1em;
+  overflow-x: scroll;
+}
+
+#data-display td {
+  position: relative;
 }
 
 @media only screen and (min-width: 650px) {
-    .form {
-        width: 65%;
-    }
-    table {
-        width: 70%;
-    }
-    /*td {
-        width: 27%;
-    }*/
+  .form {
+    width: 65%;
+  }
+  table {
+    width: 70%;
+  }
+  /*td {
+    width: 27%;
+  }*/
 }
 
 @media only screen and (min-width: 850px) {
-    .form {
-        width: 55%;
-    }
-    table {
-        width: 60%;
-    }
-    /*td {
-        width: 24%;
-    }*/
+  .form {
+    width: 55%;
+  }
+  table {
+    width: 60%;
+  }
+  /*td {
+    width: 24%;
+  }*/
 }
