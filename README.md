@@ -48,17 +48,32 @@ to start the program!
 
 ## To-do
 
-The main feature that is coming up is the ability to view, manipulate, and export your data. I mean very soon, because that's practically the point of this whole project.
-
-This will be a place where I will *especially* welcome contributions.
+* More options for viewing, manipulating, and analyzing data.
+  * Contributions are encouraged here. It doesn't even have to be part of the
+  app itself. If you have an R script that you use to analyze your data, for
+  example, please share it! Maybe we could even make an awesome-lifetracker
+  repository for community-submitted data utilities.
+* The UI theme is evolving bit by bit. More themes are definitely needed.
+* Easier manipulation/creation of entry forms.
+* A way to edit past entries in-app.
+* A way to see all prevously-entered categories when writing an entry.
 
 ## Contributing
 
-Contributions are welcome, though specific information about contributing will become available as the project develops (and, since I'm new at this, I am not sure how long that will be). If you are interested in contributing in the meantime, please don't hesitate to submit an issue with any questions, or just go ahead and fork it and submit a pull request if you're feeling adventurous. Doing so will probably help me understand by doing what kinds of information I will need to facilitate further contributions.
+Contributions are welcome, though specific information about contributing will
+become available as the project develops (and, since I'm new at this, I am not
+sure how long that will be). If you are interested in contributing in the
+meantime, please don't hesitate to submit an issue with any questions, or just
+go ahead and fork it and submit a pull request if you're feeling adventurous.
+Doing so will probably help me understand by doing what kinds of information
+I will need to facilitate further contributions.
 
-Beginners are definitely welcome---this project is a learning experience for me, so it makes sense for it to also be a learning experience for anyone!
+Beginners are definitely welcome---this project is a learning experience for
+me, so it makes sense for it to also be a learning experience for anyone!
 
 ## License info
 
-Copyright © 2016 R Steiner, licenced under the terms of the [MIT license](https://github.com/cranndarach/lifetracker-electron/blob/master/LICENSE).
-The structure of `index.js` is adapted from [Bozon](https://github.com/railsware/bozon), © Alex Chaplinsky, MIT Licence.
+Copyright © 2016-2017 R Steiner, licenced under the terms of the [MIT
+license](https://github.com/cranndarach/lifetracker-electron/blob/master/LICENSE).
+The structure of `index.js` is adapted from
+[Bozon](https://github.com/railsware/bozon), © Alex Chaplinsky, MIT Licence.
