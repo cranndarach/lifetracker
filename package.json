@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "array-member": "^1.2.2",
+    "bluebird": "^3.5.0",
     "chart.js": "^2.3.0",
     "csv": "^1.1.0",
     "glob": "^7.1.1",
