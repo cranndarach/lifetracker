@@ -80,18 +80,28 @@ p {
   font-weight: bold;
 }
 
-span.hide {
+#submit-message .hide {
   /* start visible */
-  opacity: 1;
-  animation: fadeout 0.25s;
+  /* opacity: 1; */
+  animation: fadeout 0.4s linear;
+  -webkit-animation: fadeout 0.4s;
   /* opacity: 0; */
 }
 
-span.show {
-  /* start invisible */
+#submit-message .hidden {
   opacity: 0;
-  animation: fadein 0.8s;
+}
+
+#submit-message .show {
+  /* start invisible */
+  /* opacity: 0; */
+  animation: fadein 0.8s linear;
+  -webkit-animation: fadein 0.8s;
   /* opacity: 1; */
+}
+
+#submit-message .shown {
+  opacity: 1;
 }
 
 /* span.update { */
