@@ -81,14 +81,22 @@ p {
 }
 
 span.hide {
-  /* opacity: 0; */
+  /* start visible */
+  opacity: 1;
   animation: fadeout 0.25s;
+  /* opacity: 0; */
 }
 
 span.show {
-  /* opacity: 1; */
+  /* start invisible */
+  opacity: 0;
   animation: fadein 0.8s;
+  /* opacity: 1; */
 }
+
+/* span.update { */
+/*   animation: fadeout 0.25s, fadein 0.8s; */
+/* } */
 
 .form-group p {
   margin-top: 1em;
