@@ -4,10 +4,13 @@ var fs = require('fs');
 var glob = require('glob');
 var UUID = require('uuid-js');
 var jsonexport = require('jsonexport');
-var remote = require('electron').remote;
+// var remote = require('electron').remote;
+const {dialog} = require('electron').remote;
 var arrMember = require('array-member');
 var tableify = require('tableify');
 var Promise = require('bluebird');
+
+var readjson = Promise.promisify(jsonfile.readFile);
 
 var config, populate, gen, prefsBackend, prefs, submit, dataProc, forms,
   usrConf, themes;

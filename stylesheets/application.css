@@ -11,6 +11,16 @@ h5.nav-group-title {
   font-size: 1em;
 }
 
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
 .btn-large {
   font-size: 0.85em;
 }
@@ -70,19 +80,40 @@ p {
   font-weight: bold;
 }
 
-span.hide {
-  opacity: 0;
-  transition: opacity 0.25s linear;
+#submit-message .hide {
+  /* start visible */
+  /* opacity: 1; */
+  animation: fadeout 0.4s linear;
+  -webkit-animation: fadeout 0.4s;
+  /* opacity: 0; */
 }
 
-span.show {
-  opacity: 1;
-  transition: opacity 0.8s linear;
+#submit-message .hidden {
+  /* opacity: 0; */
+  visibility: hidden;
 }
+
+#submit-message .show {
+  /* start invisible */
+  /* opacity: 0; */
+  animation: fadein 0.8s linear;
+  -webkit-animation: fadein 0.8s;
+  /* opacity: 1; */
+}
+
+#submit-message .shown {
+  /* opacity: 1; */
+  visibility: visible;
+}
+
+/* span.update { */
+/*   animation: fadeout 0.25s, fadein 0.8s; */
+/* } */
 
 .form-group p {
   margin-top: 1em;
-  margin-left: 0;
+  margin
+  -left: 0;
 }
 
 #data-display {
