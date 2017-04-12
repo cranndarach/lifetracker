@@ -11,14 +11,14 @@
     "health",
     "disability"
   ],
-  "bugs": "https://github.com/cranndarach/lifetracker-electron/issues",
+  "bugs": "https://github.com/cranndarach/lifetracker/issues",
   "author": {
     "name": "Rachael Steiner",
     "email": "r.steiner@uconn.edu",
     "maintainer": "@cranndarach"
   },
   "license": "MIT",
-  "repository": "https://github.com/cranndarach/lifetracker-electron.git",
+  "repository": "https://github.com/cranndarach/lifetracker.git",
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
