@@ -18,8 +18,8 @@ app.on('ready', () => {
     height: config.data.height
   });
 
-  window.maximize();
-  window.openDevTools();
+  // window.maximize();
+  // window.openDevTools();
 
   window.webContents.on('did-finish-load', () => {
     window.webContents.send('loaded', {
