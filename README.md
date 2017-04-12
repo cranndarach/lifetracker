@@ -24,6 +24,32 @@ Whether you're tracking out of simple curiosity, to increase your productivity,
 to manage your health, or any other reason, my hope is that LifeTracker can
 help make the patterns clearer and give you better control over your life.
 
+## How does it work?
+
+Here is a basic overview, but LifeTracker is designed to be flexible and modifiable,
+so you can really use it in whatever way works best for you.
+
+First, pick which kind of entry you want to log.
+
+![Pick a page](screenshots/influences-page.png)
+
+>Image of a window showing the "Infuences" page of LifeTracker. The page header
+says "LifeTracker," and below it are four blue buttons: three in the first row,
+and one in the second. The buttons are labeled "Log Misc. Influence," "Log
+Sleep," "Log Coping Mechanism," and "Log Medicine Taken." On the left is
+a naviagation bar. Its header says "Pages." Below it are links labeled "Home,"
+"Main," "Influences," "Status," "Data," and "Edit preferences." The
+"Influences" link is highlighted.
+
+![Pick a form](screenshots/log-sleep-blank.png)
+
+>Image of the "Log Sleep" form. From top to bottom, the fields are: a date-time
+field labeled "Went to bed" showing the default time, a date-time field labeled
+"Woke up" showing the default time, a text field labeled "Location" showing the
+default hint "e.g., home, work," a slider labeled "Quality" set to zero,
+a blank text area labeled "Notes," and a blank text field labeled "Tags." At the
+bottom, there is a button that says "Submit."
+
 ## Installation
 
 Binaries are coming soon! In the meantime, it will need to be built from source. Requires node.js and npm.
