@@ -2,6 +2,8 @@
 
 > Keep track of events and trends in your life.
 
+[![npm version](https://badge.fury.io/js/lifetracker.svg)](https://badge.fury.io/js/lifetracker)
+
 This project is largely a learning experience, and so it will develop as my
 skills develop, and it will not always be clean or elegant. But I've also been
 excited about this project for a long time, and so I do plan to keep working on
