@@ -88,7 +88,7 @@ your data.*
 Go to the [Releases](/releases) tab and download the version for your OS. Unzip
 it and run the file called `Lifetracker` or `Lifetracker.exe`.
 
-## From npm
+### From npm
 
 Requires node.js and npm.
 
@@ -105,7 +105,7 @@ lifetracker
 ```
 into your terminal or command prompt.
 
-## From source
+### From source
 
 Requires node.js and npm. Other dependencies will be installed using npm.
 
