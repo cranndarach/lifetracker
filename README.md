@@ -1,8 +1,28 @@
-# Lifetracker
+# LifeTracker
 
 > Keep track of events and trends in your life.
 
-This is sort of the evolved form of my [LifeTracker](http://github.com/cranndarach/lifetracker) app, translated to Electron. Like the rest of LifeTracker, this is largely a learning experience, and so it will develop as my skills develop, and it will not always be clean or elegant. But at the same time, I've been excited about this project for a long time, and so I do plan to keep working on it and see where it can go.
+This project is largely a learning experience, and so it will develop as my
+skills develop, and it will not always be clean or elegant. But I've also been
+excited about this project for a long time, and so I do plan to keep working on
+it and see where it can go.
+
+## What is it?
+
+Our lives are filled with a ton of data, and it can be hard to keep it all in
+mind and make sense of it.
+
+LifeTracker is an app that lets you track all kinds of things in your life. Log
+what you're doing, how well you slept last night, how you're feeling, what
+you've eaten, anything you want.
+
+Then, you can export your data and start asking questions: How well do you feel
+on days when you eat breakfast compared to when you don't? At what time of day
+do you work best? How much is your energy affected by X, Y, and Z?
+
+Whether you're tracking out of simple curiosity, to increase your productivity,
+to manage your health, or any other reason, my hope is that LifeTracker can
+help make the patterns clearer and give you better control over your life.
 
 ## Installation
 
