@@ -125,6 +125,14 @@ p {
   position: relative;
 }
 
+fieldset {
+  border-radius: 5px;
+}
+
+/* fieldset input, fieldset select { */
+/*  */
+/* } */
+
 @media only screen and (min-width: 650px) {
   .form {
     width: 65%;
