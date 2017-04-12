@@ -30,7 +30,7 @@ help make the patterns clearer and give you better control over your life.
 
 Here is a basic overview, but LifeTracker is designed to be flexible and
 modifiable, so you can really use it in whatever way works best for you (see
-the [wiki](/wiki) for tips).
+the [wiki](https://github.com/cranndarach/lifetracker/wiki) for tips).
 
 First, pick which kind of entry you want to log.
 
@@ -87,7 +87,7 @@ your data.*
 
 ### Standalone version
 
-Go to the [Releases](/releases) tab and download the version for your OS. Unzip
+Go to the [Releases](https://github.com/cranndarach/lifetracker/releases) tab and download the version for your OS. Unzip
 it and run the file called `Lifetracker` or `Lifetracker.exe`.
 
 ### From npm
@@ -182,7 +182,7 @@ customization. If you develop a feature, make tweaks to the UI or add a whole
 new theme, or make any changes that you think should be part of the main
 project, please submit a pull request! If you make some changes that are more
 tailored to you, but that you'd like to share anyway, consider adding it to the
-[Show off your style](wiki/Show-off-your-style) wiki page.
+[Show off your style](https://github.com/cranndarach/lifetracker/wiki/Show-off-your-style) wiki page.
 
 Beginners are definitely welcome---this project is a learning experience for
 me, so it makes sense for it to also be a learning experience for anyone! If
