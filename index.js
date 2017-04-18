@@ -15,7 +15,8 @@ app.on('ready', () => {
   window = new BrowserWindow({
     title: pkg.appname,
     width: config.data.width,
-    height: config.data.height
+    height: config.data.height,
+    show: false
   });
 
   // window.maximize();
@@ -28,6 +29,9 @@ app.on('ready', () => {
   });
 
   window.loadURL('file://' + path.join(__dirname) + '/index.html');
+  window.once("ready-to-show", () => {
+    window.show();
+  });
 
   window.on('closed', () => {
     window = null;
