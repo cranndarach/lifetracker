@@ -6,31 +6,48 @@ const pkg = require('./package.json');
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
+const windowStateKeeper = require('electron-window-state');
 
 var config = require('./lib/config.js');
 
-app.on('ready', () => {
-  var window;
+let mainWindow;
 
-  window = new BrowserWindow({
-    title: pkg.appname,
-    width: config.data.width,
-    height: config.data.height
+function createWindow() {
+  let winState = windowStateKeeper({
+    defaultWidth: 600,
+    defaultHeight: 600
   });
 
-  // window.maximize();
-  // window.openDevTools();
+  mainWindow = new BrowserWindow({
+    title: pkg.appname,
+    width: winState.width,
+    height: winState.height,
+    x: winState.x,
+    y: winState.y,
+    minWidth: 200,
+    minHeight: 300,
+    show: false
+  });
 
-  window.webContents.on('did-finish-load', () => {
-    window.webContents.send('loaded', {
+  winState.manage(mainWindow);
+
+  let mainContents = mainWindow.webContents;
+
+  mainContents.on('did-finish-load', () => {
+    mainContents.send('loaded', {
       appName: pkg.appname
     });
   });
 
-  window.loadURL('file://' + path.join(__dirname) + '/index.html');
+  mainWindow.loadURL(`file://${__dirname}/index.html`);
 
-  window.on('closed', () => {
-    window = null;
+  mainWindow.once("ready-to-show", () => {
+    mainWindow.show();
   });
 
-});
+  mainWindow.on('closed', () => {
+    mainWindow = null;
+  });
+}
+
+app.on('ready', createWindow);
