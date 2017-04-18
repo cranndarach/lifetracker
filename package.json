@@ -1,7 +1,7 @@
 {
   "name": "lifetracker",
   "appname": "LifeTracker",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Keep track of events and trends in your life.",
   "keywords": [
     "accessibility",
@@ -11,20 +11,20 @@
     "health",
     "disability"
   ],
-  "bugs": "https://github.com/cranndarach/lifetracker-electron/issues",
+  "bugs": "https://github.com/cranndarach/lifetracker/issues",
   "author": {
     "name": "Rachael Steiner",
     "email": "r.steiner@uconn.edu",
     "maintainer": "@cranndarach"
   },
   "license": "MIT",
-  "repository": "https://github.com/cranndarach/lifetracker-electron.git",
+  "repository": "https://github.com/cranndarach/lifetracker.git",
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
     "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --overwrite",
     "build-win": "electron-packager . LifeTracker --platform=win32 --arch=x64 --out=dist --ignore='^/dist$' --overwrite=true",
-    "build-mac": "electron-packager . PassBox --platform=darwin --arch=x64 --out=dist --ignore='^/dist$' --overwrite"
+    "build-mac": "electron-packager . LifeTracker --platform=darwin --arch=x64 --out=dist --ignore='^/dist$' --overwrite"
   },
   "directories": {
     "lib": "lib/"
