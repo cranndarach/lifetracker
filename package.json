@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "electron": "1.4.x",
-    "electron-packager": "^8.2.0"
+    "electron-packager": "^8.2.0",
+    "electron-reload": "^1.1.0"
   }
 }
