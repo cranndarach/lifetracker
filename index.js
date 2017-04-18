@@ -31,8 +31,10 @@ function createWindow() {
 
   winState.manage(mainWindow);
 
-  mainWindow.webContents.on('did-finish-load', () => {
-    mainWindow.webContents.send('loaded', {
+  let mainContents = mainWindow.webContents;
+
+  mainContents.on('did-finish-load', () => {
+    mainContents.send('loaded', {
       appName: pkg.appname
     });
   });
@@ -46,7 +48,6 @@ function createWindow() {
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
-
 }
 
 app.on('ready', createWindow);
