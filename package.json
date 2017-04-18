@@ -41,6 +41,7 @@
     "uuid-js": "^0.7.5"
   },
   "devDependencies": {
+    "devtron": "^1.4.0",
     "electron": "1.4.x",
     "electron-packager": "^8.2.0",
     "electron-reload": "^1.1.0"
