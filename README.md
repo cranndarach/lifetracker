@@ -2,7 +2,7 @@
 
 > Keep track of events and trends in your life.
 
-[![npm version](https://badge.fury.io/js/lifetracker.svg)](https://badge.fury.io/js/lifetracker)
+[![NPM](https://nodei.co/npm/lifetracker.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/lifetracker/)
 
 This project is largely a learning experience, and so it will develop as my
 skills develop, and it will not always be clean or elegant. But I've also been
