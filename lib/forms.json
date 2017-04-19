@@ -21,13 +21,13 @@
                 "label":"Start",
                 "name":"start",
                 "type":"datetime-local",
-                "value":""
+                "value":"dataProc.setDate()"
             },
             {
                 "label":"End",
                 "name":"end",
                 "type":"datetime-local",
-                "value":""
+                "value":"dataProc.setDate()"
             },
             {
                 "label":"Location",
