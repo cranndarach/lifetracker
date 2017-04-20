@@ -53,6 +53,10 @@ h5.nav-group-title {
   margin: auto;
 }
 
+.pane {
+  border: 0;
+}
+
 table {
   width: 80%;
   margin: auto;
