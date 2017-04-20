@@ -27,29 +27,16 @@ forms = require(__dirname + '/lib/forms.json');
 populate = require(__dirname + '/lib/populate.js');
 gen = require(__dirname + '/lib/makeForm.js');
 
-// When loaded:
 require('electron').ipcRenderer.on('loaded', function(event, incoming) {
-  // Config is required by the following modules, so it needs to be definitely
-  // loaded before they are.
   requirePromise("config").then((mod) => {
     config = mod;
+    // Promise:
     return config.applyUserConfig;
   })
-  // Preferences chain:
     .then(() => {
-      // requirePromise("preferencesBackend")
-      //   .then((mod) => {
-      //     return new Promise((resolve, reject) => {
-      //       prefsBackend = mod;
-      //       resolve(console.log("Loaded prefsBackend"));
-      //     });
-      //   })
-        // .then(() => {
       config.applyTheme();
       prefs = require(__dirname + '/lib/preferences.js');
-        // })
 
-      // dataProc chain:
       requirePromise("data")
         .then((mod) => {
           dataProc = mod;
