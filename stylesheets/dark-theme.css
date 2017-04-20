@@ -18,7 +18,7 @@ body, label,
     background-color: #282826;
 }
 
-.form-control {
+.form-control, .btn-default {
     background-color: #36363b;
 }
 .form-control:focus {
@@ -48,9 +48,9 @@ h5.nav-group-title {
     font-size: 1em;
 }*/
 
-.pane {
-    border-left: 1px solid #0a0a0a;
-}
+/* .pane { */
+/*     border-left: 1px solid #0a0a0a; */
+/* } */
 
 .window-content {
     border-top: 1px solid #0a0a0a;

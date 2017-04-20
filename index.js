@@ -8,8 +8,6 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const windowStateKeeper = require('electron-window-state');
 
-var config = require('./lib/config.js');
-
 let mainWindow;
 
 function createWindow() {
