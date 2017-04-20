@@ -18,7 +18,7 @@ body, label,
     background-color: #282826;
 }
 
-.form-control {
+.form-control, .btn-default {
     background-color: #36363b;
 }
 .form-control:focus {
