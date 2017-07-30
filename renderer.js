@@ -1,4 +1,5 @@
 const path = require('path');
+const CSON = require('cson');
 const jsonfile = require('jsonfile');
 const fs = require('fs');
 const glob = require('glob');
@@ -11,6 +12,9 @@ var Promise = require('bluebird');
 
 var readjson = Promise.promisify(jsonfile.readFile);
 var writejson = Promise.promisify(jsonfile.writeFile);
+var loadCSON = Promise.promisify(CSON.load);
+var createCSON = Promise.promisify(CSON.createCSONString);
+var writeFile = Promise.promisify(fs.writeFile);
 function requirePromise(mod) {
   return new Promise((resolve, reject) => {
     resolve(require(`${__dirname}/lib/${mod}.js`));
