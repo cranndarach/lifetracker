@@ -46,7 +46,10 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
           dataProc = mod;
           return dataProc.getFields();
         })
-        .then(populate.populate("home"));
+        .then(() => {
+          dataProc.getCategories();
+          populate.populate("home");
+        });
     })
     .catch((err) => {
       console.log(err.stack);
