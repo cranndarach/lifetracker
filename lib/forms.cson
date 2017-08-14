@@ -353,7 +353,7 @@ health:
   h1: "Log Health/Symptoms"
   fields:
 
-    name: "symptom title"
+    symptom:
       label: "Symptom"
       type: "text"
       value: ""
@@ -413,7 +413,7 @@ headache:
   h1: "Log Headache"
   fields:
 
-    name: "headache-type title"
+    headacheType:
       label: "Headache type/location"
       type: "text"
       value: ""
