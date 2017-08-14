@@ -10,7 +10,7 @@ _old
 *_old
 dist
 data/
-config.user.json
+*config.user.*
 *.log
 *.sw[op]
 *.csv
