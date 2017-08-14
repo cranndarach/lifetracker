@@ -1,731 +1,594 @@
-[
-
-		name: "event"
-		page: "main"
-		h1: "Log an Event"
-		fields: [
-
-				label: "Title"
-				name: "title"
-				type: "text"
-				value: ""
-
-
-				label: "Category"
-				name: "category"
-				type: "text"
-				value: ""
-
-
-				label: "Start"
-				name: "start"
-				type: "datetime-local"
-				value: "dataProc.setDate()"
-
-
-				label: "End"
-				name: "end"
-				type: "datetime-local"
-				value: "dataProc.setDate()"
-
-
-				label: "Location"
-				name: "loc"
-				type: "text"
-				value: "e.g., home, work"
-
-
-				label: "Mood"
-				name: "valence"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Spoons"
-				name: "spoons"
-				type: "range min=0 max=100"
-				value: 0
-
-		]
-
-
-		name: "task"
-		page: "main"
-		h1: "Log a Task"
-		fields: [
-
-				label: "Title"
-				name: "title"
-				type: "text"
-				value: ""
-
-
-				label: "Category"
-				name: "category"
-				type: "text"
-				value: ""
-
-
-				label: "Start"
-				name: "start"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "End"
-				name: "end"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Location"
-				name: "loc"
-				type: "text"
-				value: "e.g., home, work"
-
-
-				label: "Mood"
-				name: "valence"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Spoons"
-				name: "spoons"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Size of task"
-				name: "size"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Difficulty of task"
-				name: "difficulty"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Progress/completion"
-				name: "progress"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Satisfaction/quality"
-				name: "quality"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "EXP Gained"
-				name: "experience"
-				type: "number"
-				value: 0
-
-		]
-
-
-		name: "exp"
-		page: "main"
-		h1: "Add EXP Gained"
-		fields: [
-
-				label: "EXP Gained"
-				name: "experience"
-				type: "number"
-				value: 0
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-		]
-
-
-		name: "simple"
-		page: "main"
-		h1: "Log a Simple Entry"
-		fields: [
-
-				label: "Title"
-				name: "title"
-				type: "text"
-				value: ""
-
-
-				label: "Category"
-				name: "category"
-				type: "text"
-				value: ""
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Location"
-				name: "loc"
-				type: "text"
-				value: "e.g., home, work"
-
-		]
-
-
-		name: "miscInfluence"
-		page: "influences"
-		h1: "Log Misc. Influence"
-		fields: [
-
-				label: "Title"
-				name: "title"
-				type: "text"
-				value: ""
-
-
-				label: "Category"
-				name: "category"
-				type: "text"
-				value: ""
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Intensity"
-				name: "intensity"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Location"
-				name: "loc"
-				type: "text"
-				value: "e.g., home, work"
-
-		]
-
-
-		name: "sleep"
-		page: "influences"
-		h1: "Log Sleep"
-		fields: [
-
-				label: "Went to bed"
-				name: "start"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Woke up"
-				name: "end"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Location"
-				name: "loc"
-				type: "text"
-				value: "e.g., home, work"
-
-
-				label: "Quality"
-				name: "quality"
-				type: "range min=0 max=100"
-				value: 0
-
-		]
-
-
-		name: "coping"
-		page: "influences"
-		h1: "Log Coping Mechanism"
-		fields: [
-
-				label: "Coping Mechanism Used"
-				name: "title coping-mech"
-				type: "text"
-				value: ""
-
-
-				label: "Category"
-				name: "category"
-				type: "text"
-				value: ""
-
-
-				label: "Reason (optional)"
-				name: "reason"
-				type: "text"
-				value: ""
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Location"
-				name: "loc"
-				type: "text"
-				value: "e.g., home, work"
-
-
-				label: "Mood"
-				name: "valence"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Spoons"
-				name: "spoons"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Benefit/Improvement"
-				name: "benefit"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "EXP Gained"
-				name: "experience"
-				type: "number"
-				value: 0
-
-		]
-
-
-		name: "meds"
-		page: "influences"
-		h1: "Log Medicine Taken"
-		fields: [
-
-				label: "Medicine"
-				name: "med-taken title"
-				type: "text"
-				value: ""
-
-
-				label: "Category"
-				name: "category"
-				type: "text"
-				value: ""
-
-
-				label: "Dosage"
-				name: "dosage"
-				type: "text"
-				value: ""
-
-
-				label: "Reason for taking (optional)"
-				name: "reason"
-				type: "text"
-				value: ""
-
-
-				label: "Start time"
-				name: "start"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "End (if known)"
-				name: "end"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Benefit/Improvement (if known)"
-				name: "benefit"
-				type: "range min=0 max=100"
-				value: 0
-
-		]
-
-
-		name: "spoons"
-		page: "status"
-		h1: "Log Your Spoons"
-		fields: [
-
-				label: "Spoons"
-				name: "spoons"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-		]
-
-
-		name: "mood"
-		page: "status"
-		h1: "Log Your Mood"
-		fields: [
-
-				label: "Mood"
-				name: "valence"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Worry/Anxiety"
-				name: "anxiety"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Tension (emotional or physical)"
-				name: "tension"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Focus"
-				name: "focus"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Intensity of mood"
-				name: "intensity"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Energy"
-				name: "energy"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Spoons"
-				name: "spoons"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-		]
-
-
-		name: "health"
-		page: "status"
-		h1: "Log Health/Symptoms"
-		fields: [
-
-				label: "Symptom"
-				name: "symptom title"
-				type: "text"
-				value: ""
-
-
-				label: "Category"
-				name: "category"
-				type: "text"
-				value: ""
-
-
-				label: "Start time"
-				name: "start"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "End (if applicable)"
-				name: "end"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Trigger (if known)"
-				name: "trigger"
-				type: "text"
-				value: ""
-
-
-				label: "Intensity"
-				name: "intensity"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Your location"
-				name: "loc"
-				type: "text"
-				value: ""
-
-		]
-
-
-		name: "hunger"
-		page: "status"
-		h1: "Log Hunger"
-		fields: [
-
-				label: "Hunger"
-				name: "hunger"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Your location"
-				name: "loc"
-				type: "text"
-				value: ""
-
-		]
-
-
-		name: "headache"
-		page: "status"
-		h1: "Log Headache"
-		fields: [
-
-				label: "Headache type/location"
-				name: "headache-type title"
-				type: "text"
-				value: ""
-
-
-				label: "Trigger (if known)"
-				name: "trigger"
-				type: "text"
-				value: ""
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Intensity"
-				name: "intensity"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Your location"
-				name: "loc"
-				type: "text"
-				value: ""
-
-		]
-
-
-		name: "mobility"
-		page: "status"
-		h1: "Log Mobility"
-		fields: [
-
-				label: "Shakiness"
-				name: "shakiness"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Dyspraxia (fine)"
-				name: "dyspraxia-fine"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Dyspraxia (gross)"
-				name: "dyspraxia-gross"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Weakness"
-				name: "weakness"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Your location"
-				name: "loc"
-				type: "text"
-				value: ""
-
-		]
-
-
-		name: "pain"
-		page: "status"
-		h1: "Log Pain Levels"
-		fields: [
-
-				label: "Left shoulder pain"
-				name: "left-shoulder-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Left neck pain"
-				name: "left-neck-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Left head/upper neck pain"
-				name: "left-upper-neck-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Left jaw pain"
-				name: "left-jaw-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Left upper back pain"
-				name: "left-high-back-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Left mid back pain"
-				name: "left-mid-back-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Left low back pain"
-				name: "left-low-back-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Left wrist pain"
-				name: "left-wrist-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Left knee pain"
-				name: "left-knee-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Right shoulder pain"
-				name: "right-shoulder-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Right neck pain"
-				name: "right-neck-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Right head/upper neck pain"
-				name: "right-upper-neck-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Right jaw pain"
-				name: "right-jaw-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Right upper back pain"
-				name: "right-high-back-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "right mid back pain"
-				name: "right-mid-back-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Right low back pain"
-				name: "right-low-back-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Right wrist pain"
-				name: "right-wrist-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Right knee pain"
-				name: "right-knee-pain"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Tension (emotional or physical)"
-				name: "tension"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Focus"
-				name: "focus"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "Spoons"
-				name: "spoons"
-				type: "range min=0 max=100"
-				value: 0
-
-
-				label: "When"
-				name: "when"
-				type: "datetime-local"
-				value: ""
-
-
-				label: "Your location"
-				name: "loc"
-				type: "text"
-				value: ""
-
-		]
-
-]
+event:
+  page: "main"
+  h1: "Log an Event"
+  fields:
+
+    title:
+      label: "Title"
+      type: "text"
+      value: ""
+
+   category:
+      label: "Category"
+      type: "text"
+      value: ""
+
+    start:
+      label: "Start"
+      type: "datetime-local"
+      value: ""
+
+    end:
+      label: "End"
+      type: "datetime-local"
+      value: ""
+
+    loc:
+      label: "Location"
+      type: "text"
+      value: "e.g., home, work"
+
+    valence:
+      label: "Mood"
+      type: "range min=0 max=100"
+      value: 0
+
+    spoons:
+      label: "Spoons"
+      type: "range min=0 max=100"
+      value: 0
+
+task:
+  page: "main"
+  h1: "Log a Task"
+  fields:
+
+    title:
+      label: "Title"
+      type: "text"
+      value: ""
+
+    category:
+      label: "Category"
+      type: "text"
+      value: ""
+
+    start:
+      label: "Start"
+      type: "datetime-local"
+      value: ""
+
+    end:
+      label: "End"
+      type: "datetime-local"
+      value: ""
+
+    loc:
+      label: "Location"
+      type: "text"
+      value: "e.g., home, work"
+
+    valence:
+      label: "Mood"
+      type: "range min=0 max=100"
+      value: 0
+
+    spoons:
+      label: "Spoons"
+      type: "range min=0 max=100"
+      value: 0
+
+    size:
+      label: "Size of task"
+      type: "range min=0 max=100"
+      value: 0
+
+    difficulty:
+      label: "Difficulty of task"
+      type: "range min=0 max=100"
+      value: 0
+
+    progress:
+      label: "Progress/completion"
+      type: "range min=0 max=100"
+      value: 0
+
+    quality:
+      label: "Satisfaction/quality"
+      type: "range min=0 max=100"
+      value: 0
+
+    experience:
+      label: "EXP Gained"
+      type: "number"
+      value: 0
+
+exp:
+  page: "main"
+  h1: "Add EXP Gained"
+  fields:
+
+    experience:
+      label: "EXP Gained"
+      type: "number"
+      value: 0
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+simple:
+  page: "main"
+  h1: "Log a Simple Entry"
+  fields:
+
+    title:
+      label: "Title"
+      type: "text"
+      value: ""
+
+    category:
+      label: "Category"
+      type: "text"
+      value: ""
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+    loc:
+      label: "Location"
+      type: "text"
+      value: "e.g., home, work"
+
+miscInfluence:
+  page: "influences"
+  h1: "Log Misc. Influence"
+  fields:
+
+    title:
+      label: "Title"
+      type: "text"
+      value: ""
+
+    category:
+      label: "Category"
+      type: "text"
+      value: ""
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+    intensity:
+      label: "Intensity"
+      type: "range min=0 max=100"
+      value: 0
+
+    loc:
+      label: "Location"
+      type: "text"
+      value: "e.g., home, work"
+
+sleep:
+  page: "influences"
+  h1: "Log Sleep"
+  fields:
+
+    start:
+      label: "Went to bed"
+      type: "datetime-local"
+      value: ""
+
+    end:
+      label: "Woke up"
+      type: "datetime-local"
+      value: ""
+
+    loc:
+      label: "Location"
+      type: "text"
+      value: "e.g., home, work"
+
+    quality:
+      label: "Quality"
+      type: "range min=0 max=100"
+      value: 0
+
+coping:
+  page: "influences"
+  h1: "Log Coping Mechanism"
+  fields:
+
+    name: "coping-mech"
+      label: "Coping Mechanism Used"
+      type: "text"
+      value: ""
+
+    category:
+      label: "Category"
+      type: "text"
+      value: ""
+
+    reason:
+      label: "Reason (optional)"
+      type: "text"
+      value: ""
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+    loc:
+      label: "Location"
+      type: "text"
+      value: "e.g., home, work"
+
+    valence:
+      label: "Mood"
+      type: "range min=0 max=100"
+      value: 0
+
+    spoons:
+      label: "Spoons"
+      type: "range min=0 max=100"
+      value: 0
+
+    benefit:
+      label: "Benefit/Improvement"
+      type: "range min=0 max=100"
+      value: 0
+
+    experience:
+      label: "EXP Gained"
+      type: "number"
+      value: 0
+
+meds:
+  page: "influences"
+  h1: "Log Medicine Taken"
+  fields:
+
+    name: "med-taken"
+      label: "Medicine"
+      type: "text"
+      value: ""
+
+    category:
+      label: "Category"
+      type: "text"
+      value: ""
+
+    dosage:
+      label: "Dosage"
+      type: "text"
+      value: ""
+
+    reason:
+      label: "Reason for taking (optional)"
+      type: "text"
+      value: ""
+
+    start:
+      label: "Start time"
+      type: "datetime-local"
+      value: ""
+
+    end:
+      label: "End (if known)"
+      type: "datetime-local"
+      value: ""
+
+    benefit:
+      label: "Benefit/Improvement (if known)"
+      type: "range min=0 max=100"
+      value: 0
+
+spoons:
+  page: "status"
+  h1: "Log Your Spoons"
+  fields:
+
+    spoons:
+      label: "Spoons"
+      type: "range min=0 max=100"
+      value: 0
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+mood:
+  page: "status"
+  h1: "Log Your Mood"
+  fields:
+
+    valence:
+      label: "Mood"
+      type: "range min=0 max=100"
+      value: 0
+
+    anxiety:
+      label: "Worry/Anxiety"
+      type: "range min=0 max=100"
+      value: 0
+
+    tension:
+      label: "Tension (emotional or physical)"
+      type: "range min=0 max=100"
+      value: 0
+
+    focus:
+      label: "Focus"
+      type: "range min=0 max=100"
+      value: 0
+
+    intensity:
+      label: "Intensity of mood"
+      type: "range min=0 max=100"
+      value: 0
+
+    energy:
+      label: "Energy"
+      type: "range min=0 max=100"
+      value: 0
+
+    spoons:
+      label: "Spoons"
+      type: "range min=0 max=100"
+      value: 0
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+health:
+  page: "status"
+  h1: "Log Health/Symptoms"
+  fields:
+
+    name: "symptom title"
+      label: "Symptom"
+      type: "text"
+      value: ""
+
+    category:
+      label: "Category"
+      type: "text"
+      value: ""
+
+    start:
+      label: "Start time"
+      type: "datetime-local"
+      value: ""
+
+    end:
+      label: "End (if applicable)"
+      type: "datetime-local"
+      value: ""
+
+    trigger:
+      label: "Trigger (if known)"
+      type: "text"
+      value: ""
+
+    intensity:
+      label: "Intensity"
+      type: "range min=0 max=100"
+      value: 0
+
+    loc:
+      label: "Your location"
+      type: "text"
+      value: ""
+
+hunger:
+  page: "status"
+  h1: "Log Hunger"
+  fields:
+
+    hunger:
+      label: "Hunger"
+      type: "range min=0 max=100"
+      value: 0
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+    loc:
+      label: "Your location"
+      type: "text"
+      value: ""
+
+headache:
+  page: "status"
+  h1: "Log Headache"
+  fields:
+
+    name: "headache-type title"
+      label: "Headache type/location"
+      type: "text"
+      value: ""
+
+    trigger:
+      label: "Trigger (if known)"
+      type: "text"
+      value: ""
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+    intensity:
+      label: "Intensity"
+      type: "range min=0 max=100"
+      value: 0
+
+    loc:
+      label: "Your location"
+      type: "text"
+      value: ""
+
+mobility:
+  page: "status"
+  h1: "Log Mobility"
+  fields:
+
+    shakiness:
+      label: "Shakiness"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "dyspraxia-fine"
+      label: "Dyspraxia (fine)"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "dyspraxia-gross"
+      label: "Dyspraxia (gross)"
+      type: "range min=0 max=100"
+      value: 0
+
+    weakness:
+      label: "Weakness"
+      type: "range min=0 max=100"
+      value: 0
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+    loc:
+      label: "Your location"
+      type: "text"
+      value: ""
+
+pain:
+  page: "status"
+  h1: "Log Pain Levels"
+  fields:
+
+    name: "left-shoulder-pain"
+      label: "Left shoulder pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "left-neck-pain"
+      label: "Left neck pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "left-upper-neck-pain"
+      label: "Left head/upper neck pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "left-jaw-pain"
+      label: "Left jaw pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "left-high-back-pain"
+      label: "Left upper back pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "left-mid-back-pain"
+      label: "Left mid back pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "left-low-back-pain"
+      label: "Left low back pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "left-wrist-pain"
+      label: "Left wrist pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "left-knee-pain"
+      label: "Left knee pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "right-shoulder-pain"
+      label: "Right shoulder pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "right-neck-pain"
+      label: "Right neck pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "right-upper-neck-pain"
+      label: "Right head/upper neck pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "right-jaw-pain"
+      label: "Right jaw pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "right-high-back-pain"
+      label: "Right upper back pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "right-mid-back-pain"
+      label: "right mid back pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "right-low-back-pain"
+      label: "Right low back pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "right-wrist-pain"
+      label: "Right wrist pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    name: "right-knee-pain"
+      label: "Right knee pain"
+      type: "range min=0 max=100"
+      value: 0
+
+    tension:
+      label: "Tension (emotional or physical)"
+      type: "range min=0 max=100"
+      value: 0
+
+    focus:
+      label: "Focus"
+      type: "range min=0 max=100"
+      value: 0
+
+    spoons:
+      label: "Spoons"
+      type: "range min=0 max=100"
+      value: 0
+
+    when:
+      label: "When"
+      type: "datetime-local"
+      value: ""
+
+    loc:
+      label: "Your location"
+      type: "text"
+      value: ""
