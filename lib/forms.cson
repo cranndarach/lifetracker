@@ -203,7 +203,7 @@ coping:
   h1: "Log Coping Mechanism"
   fields:
 
-    name: "coping-mech"
+    copingMech:
       label: "Coping Mechanism Used"
       type: "text"
       value: ""
@@ -253,7 +253,7 @@ meds:
   h1: "Log Medicine Taken"
   fields:
 
-    name: "med-taken"
+    medTaken:
       label: "Medicine"
       type: "text"
       value: ""
@@ -448,12 +448,12 @@ mobility:
       type: "range min=0 max=100"
       value: 0
 
-    name: "dyspraxia-fine"
+    dyspraxiaFine:
       label: "Dyspraxia (fine)"
       type: "range min=0 max=100"
       value: 0
 
-    name: "dyspraxia-gross"
+    dyspraxiaGross:
       label: "Dyspraxia (gross)"
       type: "range min=0 max=100"
       value: 0
@@ -478,92 +478,92 @@ pain:
   h1: "Log Pain Levels"
   fields:
 
-    name: "left-shoulder-pain"
+    leftShoulderPain:
       label: "Left shoulder pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "left-neck-pain"
+    leftNeckPain:
       label: "Left neck pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "left-upper-neck-pain"
+    leftUpperNeckPain:
       label: "Left head/upper neck pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "left-jaw-pain"
+    leftJawPain:
       label: "Left jaw pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "left-high-back-pain"
+    leftHighBackPain:
       label: "Left upper back pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "left-mid-back-pain"
+    leftMidBackPain:
       label: "Left mid back pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "left-low-back-pain"
+    leftLowBackPain:
       label: "Left low back pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "left-wrist-pain"
+    leftWristPain:
       label: "Left wrist pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "left-knee-pain"
+    leftKneePain:
       label: "Left knee pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "right-shoulder-pain"
+    rightShoulderPain:
       label: "Right shoulder pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "right-neck-pain"
+    rightNeckPain:
       label: "Right neck pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "right-upper-neck-pain"
+    rightUpperNeckPain:
       label: "Right head/upper neck pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "right-jaw-pain"
+    rightJawPain:
       label: "Right jaw pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "right-high-back-pain"
+    rightHighBackPain:
       label: "Right upper back pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "right-mid-back-pain"
+    rightMidBackPain:
       label: "right mid back pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "right-low-back-pain"
+    rightLowBackPain:
       label: "Right low back pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "right-wrist-pain"
+    rightWristPain:
       label: "Right wrist pain"
       type: "range min=0 max=100"
       value: 0
 
-    name: "right-knee-pain"
+    rightKneePain:
       label: "Right knee pain"
       type: "range min=0 max=100"
       value: 0
