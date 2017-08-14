@@ -8,7 +8,7 @@ const jsonexport = require('jsonexport');
 const {dialog} = require('electron').remote;
 const arrMember = require('array-member');
 const tableify = require('tableify');
-var Promise = require('bluebird');
+const Promise = require('bluebird');
 
 var readjson = Promise.promisify(jsonfile.readFile);
 var writejson = Promise.promisify(jsonfile.writeFile);
