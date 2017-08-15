@@ -44,11 +44,14 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
       requirePromise("data")
         .then((mod) => {
           dataProc = mod;
-          return dataProc.getFields();
+          // return dataProc.getFields();
+          return dataProc.loadData();
         })
-        .then(() => {
-          dataProc.getCategories();
-          populate.populate("home");
+        .then((d) => {
+          return Promise.join(dataProc.getFields(d), dataProc.getCategories(d), () => {
+            populate.populate("home");
+          });
+          // dataProc.getCategories();
         })
         .catch((err) => {
           console.log(err.stack);
