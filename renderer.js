@@ -27,7 +27,8 @@ var config, populate, gen, prefsBackend, prefs, submit, dataProc, forms,
 // and can be loaded asynchronously.
 themes = require(__dirname + '/lib/themes.js');
 submit = require(__dirname + '/lib/submit.js');
-forms = require(__dirname + '/lib/forms.json');
+// forms = require(__dirname + '/forms.cson');
+forms = CSON.requireFile(__dirname + "/forms.cson");
 populate = require(__dirname + '/lib/populate.js');
 gen = require(__dirname + '/lib/makeForm.js');
 
