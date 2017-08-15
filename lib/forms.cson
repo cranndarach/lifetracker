@@ -8,7 +8,7 @@ event:
       type: "text"
       value: ""
 
-   category:
+    category:
       label: "Category"
       type: "text"
       value: ""
