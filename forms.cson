@@ -1,6 +1,6 @@
 main:
 	event:
-		h1: "Log an Event"
+		formTitle: "Log an Event"
 		fields:
 			title:
 				label: "Title"
@@ -31,7 +31,7 @@ main:
 				type: "range min=0 max=100"
 				value: 0
 	task:
-		h1: "Log a Task"
+		formTitle: "Log a Task"
 		fields:
 			title:
 				label: "Title"
@@ -82,7 +82,7 @@ main:
 				type: "number"
 				value: 0
 	exp:
-		h1: "Add EXP Gained"
+		formTitle: "Add EXP Gained"
 		fields:
 			experience:
 				label: "EXP Gained"
@@ -93,7 +93,7 @@ main:
 				type: "datetime-local"
 				value: ""
 	simple:
-		h1: "Log a Simple Entry"
+		formTitle: "Log a Simple Entry"
 		fields:
 			title:
 				label: "Title"
@@ -113,7 +113,7 @@ main:
 				value: "e.g., home, work"
 status:
 	spoons:
-		h1: "Log Your Spoons"
+		formTitle: "Log Your Spoons"
 		fields:
 			spoons:
 				label: "Spoons"
@@ -124,7 +124,7 @@ status:
 				type: "datetime-local"
 				value: ""
 	mood:
-		h1: "Log Your Mood"
+		formTitle: "Log Your Mood"
 		fields:
 			valence:
 				label: "Mood"
@@ -159,7 +159,7 @@ status:
 				type: "datetime-local"
 				value: ""
 	health:
-		h1: "Log Health/Symptoms"
+		formTitle: "Log Health/Symptoms"
 		fields:
 			symptom:
 				label: "Symptom"
@@ -190,7 +190,7 @@ status:
 				type: "text"
 				value: ""
 	hunger:
-		h1: "Log Hunger"
+		formTitle: "Log Hunger"
 		fields:
 			hunger:
 				label: "Hunger"
@@ -205,7 +205,7 @@ status:
 				type: "text"
 				value: ""
 	headache:
-		h1: "Log Headache"
+		formTitle: "Log Headache"
 		fields:
 			headacheType:
 				label: "Headache type/location"
@@ -228,7 +228,7 @@ status:
 				type: "text"
 				value: ""
 	mobility:
-		h1: "Log Mobility"
+		formTitle: "Log Mobility"
 		fields:
 			shakiness:
 				label: "Shakiness"
@@ -255,7 +255,7 @@ status:
 				type: "text"
 				value: ""
 	pain:
-		h1: "Log Pain Levels"
+		formTitle: "Log Pain Levels"
 		fields:
 			leftShoulderPain:
 				label: "Left shoulder pain"
@@ -314,7 +314,7 @@ status:
 				type: "range min=0 max=100"
 				value: 0
 			rightMidBackPain:
-				label: "right mid back pain"
+				label: "Right mid back pain"
 				type: "range min=0 max=100"
 				value: 0
 			rightLowBackPain:
@@ -351,7 +351,7 @@ status:
 				value: ""
 influences:
 	miscInfluence:
-		h1: "Log Misc. Influence"
+		formTitle: "Log Misc. Influence"
 		fields:
 			title:
 				label: "Title"
@@ -374,7 +374,7 @@ influences:
 				type: "text"
 				value: "e.g., home, work"
 	sleep:
-		h1: "Log Sleep"
+		formTitle: "Log Sleep"
 		fields:
 			start:
 				label: "Went to bed"
@@ -393,7 +393,7 @@ influences:
 				type: "range min=0 max=100"
 				value: 0
 	coping:
-		h1: "Log Coping Mechanism"
+		formTitle: "Log Coping Mechanism"
 		fields:
 			copingMech:
 				label: "Coping Mechanism Used"
@@ -432,7 +432,7 @@ influences:
 				type: "number"
 				value: 0
 	meds:
-		h1: "Log Medicine Taken"
+		formTitle: "Log Medicine Taken"
 		fields:
 			medTaken:
 				label: "Medicine"
