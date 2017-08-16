@@ -41,23 +41,19 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
     .then(() => {
       config.applyTheme();
       prefs = require(__dirname + '/lib/preferences.js');
-
-      requirePromise("data")
-        .then((mod) => {
-          dataProc = mod;
-          // return dataProc.getFields();
-          return dataProc.loadData();
-        })
-        .then((d) => {
-          return Promise.join(dataProc.getFields(d), dataProc.getCategories(d), () => {
-            // dataProc.makeCategoryOptions();
-            populate.populate("home");
-          });
-          // dataProc.getCategories();
-        })
-        .catch((err) => {
-          console.log(err.stack);
-        });
+      return requirePromise("data");
+    })
+    .then((mod) => {
+      dataProc = mod;
+      // return dataProc.getFields();
+      return dataProc.loadData();
+    })
+    .then((d) => {
+      return Promise.join(dataProc.getFields(d), dataProc.getCategories(d), () => {
+        // dataProc.makeCategoryOptions();
+        populate.populate("home");
+      });
+      // dataProc.getCategories();
     })
     .catch((err) => {
       console.log(err.stack);
