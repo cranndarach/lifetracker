@@ -1,4 +1,5 @@
 main:
+  pageTitle: "Main"
 	event:
 		formTitle: "Log an Event"
 		fields:
@@ -112,6 +113,7 @@ main:
 				type: "text"
 				value: "e.g., home, work"
 status:
+  pageTitle: "Status"
 	spoons:
 		formTitle: "Log Your Spoons"
 		fields:
@@ -350,6 +352,7 @@ status:
 				type: "text"
 				value: ""
 influences:
+  pageTitle: "Influences"
 	miscInfluence:
 		formTitle: "Log Misc. Influence"
 		fields:
