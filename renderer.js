@@ -33,6 +33,7 @@ populate = require(__dirname + '/lib/populate.js');
 gen = require(__dirname + '/lib/makeForm.js');
 
 require('electron').ipcRenderer.on('loaded', function(event, incoming) {
+  populate.fillSidebar();
   requirePromise("config").then((mod) => {
     config = mod;
     // Promise:
@@ -45,15 +46,12 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
     })
     .then((mod) => {
       dataProc = mod;
-      // return dataProc.getFields();
       return dataProc.loadData();
     })
     .then((d) => {
       return Promise.join(dataProc.getFields(d), dataProc.getCategories(d), () => {
-        // dataProc.makeCategoryOptions();
         populate.populate("home");
       });
-      // dataProc.getCategories();
     })
     .catch((err) => {
       console.log(err.stack);
