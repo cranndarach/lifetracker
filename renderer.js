@@ -1,3 +1,4 @@
+const _ = require("lodash");
 const path = require('path');
 const CSON = require('cson');
 const jsonfile = require('jsonfile');
