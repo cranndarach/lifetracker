@@ -1,0 +1,496 @@
+main:
+	pageTitle: "Main"
+	event:
+		formTitle: "Log an Event"
+		fields:
+			title:
+				label: "Title"
+				type: "text"
+				value: ""
+			category:
+				label: "Category"
+				type: "text"
+				value: ""
+			start:
+				label: "Start"
+				type: "datetime-local"
+				value: ""
+			end:
+				label: "End"
+				type: "datetime-local"
+				value: ""
+			loc:
+				label: "Location"
+				type: "text"
+				value: "e.g., home, work"
+			valence:
+				label: "Mood"
+				type: "range min=0 max=100"
+				value: 0
+			spoons:
+				label: "Spoons"
+				type: "range min=0 max=100"
+				value: 0
+	task:
+		formTitle: "Log a Task"
+		fields:
+			title:
+				label: "Title"
+				type: "text"
+				value: ""
+			category:
+				label: "Category"
+				type: "text"
+				value: ""
+			start:
+				label: "Start"
+				type: "datetime-local"
+				value: ""
+			end:
+				label: "End"
+				type: "datetime-local"
+				value: ""
+			loc:
+				label: "Location"
+				type: "text"
+				value: "e.g., home, work"
+			valence:
+				label: "Mood"
+				type: "range min=0 max=100"
+				value: 0
+			spoons:
+				label: "Spoons"
+				type: "range min=0 max=100"
+				value: 0
+			size:
+				label: "Size of task"
+				type: "range min=0 max=100"
+				value: 0
+			difficulty:
+				label: "Difficulty of task"
+				type: "range min=0 max=100"
+				value: 0
+			progress:
+				label: "Progress/completion"
+				type: "range min=0 max=100"
+				value: 0
+			quality:
+				label: "Satisfaction/quality"
+				type: "range min=0 max=100"
+				value: 0
+			experience:
+				label: "EXP Gained"
+				type: "number"
+				value: 0
+	exp:
+		formTitle: "Add EXP Gained"
+		fields:
+			experience:
+				label: "EXP Gained"
+				type: "number"
+				value: 0
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+	simple:
+		formTitle: "Log a Simple Entry"
+		fields:
+			title:
+				label: "Title"
+				type: "text"
+				value: ""
+			category:
+				label: "Category"
+				type: "text"
+				value: ""
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+			loc:
+				label: "Location"
+				type: "text"
+				value: "e.g., home, work"
+adventureLogs:
+	pageTitle: "Adventure Logs"
+	dragonFights:
+		formTitle: "Dragon Fights"
+		fields:
+			title:
+				label: "Title"
+				type: "text"
+				value: "Fought a dragon"
+			itWas:
+				label: "It was"
+				type: "text"
+				value: "awesome!"
+			loc:
+				label: "Location"
+				type: "text"
+				value: "my backyard"
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+			difficulty:
+				label: "Difficulty"
+				type: "range min=0 max=100"
+				value: 0
+			experience:
+				label: "EXP gained"
+				type: "number"
+				value: 0
+status:
+	pageTitle: "Status"
+	spoons:
+		formTitle: "Log Your Spoons"
+		fields:
+			spoons:
+				label: "Spoons"
+				type: "range min=0 max=100"
+				value: 0
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+	mood:
+		formTitle: "Log Your Mood"
+		fields:
+			valence:
+				label: "Mood"
+				type: "range min=0 max=100"
+				value: 0
+			anxiety:
+				label: "Worry/Anxiety"
+				type: "range min=0 max=100"
+				value: 0
+			tension:
+				label: "Tension (emotional or physical)"
+				type: "range min=0 max=100"
+				value: 0
+			focus:
+				label: "Focus"
+				type: "range min=0 max=100"
+				value: 0
+			intensity:
+				label: "Intensity of mood"
+				type: "range min=0 max=100"
+				value: 0
+			energy:
+				label: "Energy"
+				type: "range min=0 max=100"
+				value: 0
+			spoons:
+				label: "Spoons"
+				type: "range min=0 max=100"
+				value: 0
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+	health:
+		formTitle: "Log Health/Symptoms"
+		fields:
+			symptom:
+				label: "Symptom"
+				type: "text"
+				value: ""
+			category:
+				label: "Category"
+				type: "text"
+				value: ""
+			start:
+				label: "Start time"
+				type: "datetime-local"
+				value: ""
+			end:
+				label: "End (if applicable)"
+				type: "datetime-local"
+				value: ""
+			trigger:
+				label: "Trigger (if known)"
+				type: "text"
+				value: ""
+			intensity:
+				label: "Intensity"
+				type: "range min=0 max=100"
+				value: 0
+			loc:
+				label: "Your location"
+				type: "text"
+				value: ""
+	hunger:
+		formTitle: "Log Hunger"
+		fields:
+			hunger:
+				label: "Hunger"
+				type: "range min=0 max=100"
+				value: 0
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+			loc:
+				label: "Your location"
+				type: "text"
+				value: ""
+	headache:
+		formTitle: "Log Headache"
+		fields:
+			headacheType:
+				label: "Headache type/location"
+				type: "text"
+				value: ""
+			trigger:
+				label: "Trigger (if known)"
+				type: "text"
+				value: ""
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+			intensity:
+				label: "Intensity"
+				type: "range min=0 max=100"
+				value: 0
+			loc:
+				label: "Your location"
+				type: "text"
+				value: ""
+	mobility:
+		formTitle: "Log Mobility"
+		fields:
+			shakiness:
+				label: "Shakiness"
+				type: "range min=0 max=100"
+				value: 0
+			dyspraxiaFine:
+				label: "Dyspraxia (fine)"
+				type: "range min=0 max=100"
+				value: 0
+			dyspraxiaGross:
+				label: "Dyspraxia (gross)"
+				type: "range min=0 max=100"
+				value: 0
+			weakness:
+				label: "Weakness"
+				type: "range min=0 max=100"
+				value: 0
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+			loc:
+				label: "Your location"
+				type: "text"
+				value: ""
+	pain:
+		formTitle: "Log Pain Levels"
+		fields:
+			leftShoulderPain:
+				label: "Left shoulder pain"
+				type: "range min=0 max=100"
+				value: 0
+			leftNeckPain:
+				label: "Left neck pain"
+				type: "range min=0 max=100"
+				value: 0
+			leftUpperNeckPain:
+				label: "Left head/upper neck pain"
+				type: "range min=0 max=100"
+				value: 0
+			leftJawPain:
+				label: "Left jaw pain"
+				type: "range min=0 max=100"
+				value: 0
+			leftHighBackPain:
+				label: "Left upper back pain"
+				type: "range min=0 max=100"
+				value: 0
+			leftMidBackPain:
+				label: "Left mid back pain"
+				type: "range min=0 max=100"
+				value: 0
+			leftLowBackPain:
+				label: "Left low back pain"
+				type: "range min=0 max=100"
+				value: 0
+			leftWristPain:
+				label: "Left wrist pain"
+				type: "range min=0 max=100"
+				value: 0
+			leftKneePain:
+				label: "Left knee pain"
+				type: "range min=0 max=100"
+				value: 0
+			rightShoulderPain:
+				label: "Right shoulder pain"
+				type: "range min=0 max=100"
+				value: 0
+			rightNeckPain:
+				label: "Right neck pain"
+				type: "range min=0 max=100"
+				value: 0
+			rightUpperNeckPain:
+				label: "Right head/upper neck pain"
+				type: "range min=0 max=100"
+				value: 0
+			rightJawPain:
+				label: "Right jaw pain"
+				type: "range min=0 max=100"
+				value: 0
+			rightHighBackPain:
+				label: "Right upper back pain"
+				type: "range min=0 max=100"
+				value: 0
+			rightMidBackPain:
+				label: "Right mid back pain"
+				type: "range min=0 max=100"
+				value: 0
+			rightLowBackPain:
+				label: "Right low back pain"
+				type: "range min=0 max=100"
+				value: 0
+			rightWristPain:
+				label: "Right wrist pain"
+				type: "range min=0 max=100"
+				value: 0
+			rightKneePain:
+				label: "Right knee pain"
+				type: "range min=0 max=100"
+				value: 0
+			tension:
+				label: "Tension (emotional or physical)"
+				type: "range min=0 max=100"
+				value: 0
+			focus:
+				label: "Focus"
+				type: "range min=0 max=100"
+				value: 0
+			spoons:
+				label: "Spoons"
+				type: "range min=0 max=100"
+				value: 0
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+			loc:
+				label: "Your location"
+				type: "text"
+				value: ""
+influences:
+	pageTitle: "Influences"
+	miscInfluence:
+		formTitle: "Log Misc. Influence"
+		fields:
+			title:
+				label: "Title"
+				type: "text"
+				value: ""
+			category:
+				label: "Category"
+				type: "text"
+				value: ""
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+			intensity:
+				label: "Intensity"
+				type: "range min=0 max=100"
+				value: 0
+			loc:
+				label: "Location"
+				type: "text"
+				value: "e.g., home, work"
+	sleep:
+		formTitle: "Log Sleep"
+		fields:
+			start:
+				label: "Went to bed"
+				type: "datetime-local"
+				value: ""
+			end:
+				label: "Woke up"
+				type: "datetime-local"
+				value: ""
+			loc:
+				label: "Location"
+				type: "text"
+				value: "e.g., home, work"
+			quality:
+				label: "Quality"
+				type: "range min=0 max=100"
+				value: 0
+	coping:
+		formTitle: "Log Coping Mechanism"
+		fields:
+			copingMech:
+				label: "Coping Mechanism Used"
+				type: "text"
+				value: ""
+			category:
+				label: "Category"
+				type: "text"
+				value: ""
+			reason:
+				label: "Reason (optional)"
+				type: "text"
+				value: ""
+			when:
+				label: "When"
+				type: "datetime-local"
+				value: ""
+			loc:
+				label: "Location"
+				type: "text"
+				value: "e.g., home, work"
+			valence:
+				label: "Mood"
+				type: "range min=0 max=100"
+				value: 0
+			spoons:
+				label: "Spoons"
+				type: "range min=0 max=100"
+				value: 0
+			benefit:
+				label: "Benefit/Improvement"
+				type: "range min=0 max=100"
+				value: 0
+			experience:
+				label: "EXP Gained"
+				type: "number"
+				value: 0
+	meds:
+		formTitle: "Log Medicine Taken"
+		fields:
+			medTaken:
+				label: "Medicine"
+				type: "text"
+				value: ""
+			category:
+				label: "Category"
+				type: "text"
+				value: ""
+			dosage:
+				label: "Dosage"
+				type: "text"
+				value: ""
+			reason:
+				label: "Reason for taking (optional)"
+				type: "text"
+				value: ""
+			start:
+				label: "Start time"
+				type: "datetime-local"
+				value: ""
+			end:
+				label: "End (if known)"
+				type: "datetime-local"
+				value: ""
+			benefit:
+				label: "Benefit/Improvement (if known)"
+				type: "range min=0 max=100"
+				value: 0

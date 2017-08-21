@@ -11,6 +11,27 @@ h5.nav-group-title {
   font-size: 1em;
 }
 
+.nav-group-item a {
+  display: block;
+  padding: 2px 10px 2px 25px;
+}
+
+a.nav-group-subitem {
+  padding: 2px 10px 2px 50px;
+  /* visibility: hidden; */
+  display: none;
+  /* color: #333; */
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-group-subitem:active, .active .nav-group-subitem {
+  /* visibility: visible; */
+  display: block;
+  /* background-color: #dcdfe1; */
+}
+
 @keyframes fadein {
   from {opacity: 0;}
   to {opacity: 1;}
