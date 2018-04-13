@@ -1,6 +1,5 @@
 const _ = require("lodash");
 const path = require('path');
-const CSON = require('cson');
 const jsonfile = require('jsonfile');
 const fs = require('fs');
 const glob = require('glob');
@@ -11,10 +10,11 @@ const arrMember = require('array-member');
 const tableify = require('tableify');
 var Promise = require('bluebird');
 
+var CSON = Promise.promisifyAll(require('cson'));
 var readjson = Promise.promisify(jsonfile.readFile);
 var writejson = Promise.promisify(jsonfile.writeFile);
-var loadCSON = Promise.promisify(CSON.load);
-var createCSON = Promise.promisify(CSON.createCSONString);
+// var loadCSON = Promise.promisify(CSON.load);
+// var createCSON = Promise.promisify(CSON.createCSONString);
 var writeFile = Promise.promisify(fs.writeFile);
 function requirePromise(mod) {
   return new Promise((resolve, reject) => {
@@ -38,7 +38,7 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
   requirePromise("config").then((mod) => {
     config = mod;
     // Promise:
-    return config.applyUserConfig;
+    return config.loadUserConfig();
   })
     .then(() => {
       config.applyTheme();
