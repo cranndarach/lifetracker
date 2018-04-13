@@ -192,5 +192,5 @@ label](https://github.com/cranndarach/lifetracker/issues?q=is%3Aissue+is%3Aopen+
 
 ## License info
 
-Copyright © 2016-2017 R Steiner, licenced under the terms of the [MIT
+Copyright © 2016-2018 R Steiner, licenced under the terms of the [MIT
 license](https://github.com/cranndarach/lifetracker/blob/master/LICENSE).
