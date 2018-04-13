@@ -78,6 +78,10 @@ a.nav-group-subitem {
   border: 0;
 }
 
+.pane p {
+  width: 80%;
+}
+
 table {
   width: 80%;
   margin: auto;
