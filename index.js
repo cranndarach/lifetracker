@@ -8,6 +8,13 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const windowStateKeeper = require('electron-window-state');
 
+try {
+  require('electron-reloader')(module, {
+    ignore: ["config.cson"],
+    debug: true
+  });
+} catch (err) {}
+
 let mainWindow;
 
 function createWindow() {

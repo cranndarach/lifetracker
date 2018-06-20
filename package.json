@@ -52,6 +52,7 @@
     "devtron": "^1.4.0",
     "electron-packager": "^8.2.0",
     "electron-reload": "^1.1.0",
+    "electron-reloader": "^0.2.0",
     "materialize-css": "^0.100.2"
   }
 }
