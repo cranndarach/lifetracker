@@ -11,6 +11,10 @@ h5.nav-group-title {
   font-size: 1em;
 }
 
+.window {
+  height: 100%;
+}
+
 .nav-group-item a {
   display: block;
   padding: 2px 10px 2px 25px;
