@@ -74,11 +74,11 @@ a.nav-group-subitem {
   margin: auto;
 }
 
-.pane {
+.main {
   border: 0;
 }
 
-.pane p {
+.main p {
   width: 80%;
 }
 
