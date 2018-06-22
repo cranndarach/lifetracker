@@ -2,7 +2,6 @@ html, body {
   padding: 0;
   margin: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 body, label,
@@ -13,6 +12,7 @@ h5.nav-group-title {
 
 .window {
   height: 100%;
+  overflow-y: scroll;
 }
 
 .nav-group-item a {
