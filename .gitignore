@@ -15,6 +15,7 @@ config.cson
 *.sw[op]
 *.csv
 .tern-port
+.sass-cache/
 
 \.sass-cache/70fac3a315a0ef36a720107138e8656769811f15/
 
