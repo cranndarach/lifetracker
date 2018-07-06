@@ -1,12 +1,8 @@
-body, label,
-.btn-large, h5.nav-group-title {
-  color: #cccccc; }
-
 /* .nav-group-subitem { */
 /*   color: */
 /* } */
 .form-control, .btn-default {
-  background-color: #36363b; }
+  background-color: color("grey", "darken-3"); }
 
 .btn-primary {
   border-color: #1d4980;
@@ -53,13 +49,13 @@ h5.nav-group-title {
 .materialize-red.lighten-3 {
   background-color: #f3989b !important; }
 
-.materialize-red-text.text-lighten-3, .materialize-red-text.window, .materialize-red-text.sidebar, .materialize-red-text.active, .materialize-red-text.nav-group-item:active {
+.materialize-red-text.text-lighten-3 {
   color: #f3989b !important; }
 
 .materialize-red.lighten-2 {
   background-color: #ee6e73 !important; }
 
-.materialize-red-text.text-lighten-2 {
+.materialize-red-text.text-lighten-2, .materialize-red-text.window, .materialize-red-text.sidenav, .sidenav li.materialize-red-text.active, .materialize-red-text.form-control, .materialize-red-text.btn-default {
   color: #ee6e73 !important; }
 
 .materialize-red.lighten-1 {
@@ -80,13 +76,13 @@ h5.nav-group-title {
 .materialize-red-text.text-darken-2 {
   color: #b9151b !important; }
 
-.materialize-red.darken-3 {
+.materialize-red.darken-3, .materialize-red.sidenav, .sidenav li.materialize-red.active {
   background-color: #a21318 !important; }
 
 .materialize-red-text.text-darken-3 {
   color: #a21318 !important; }
 
-.materialize-red.darken-4, .materialize-red.window, .materialize-red.sidebar, .materialize-red.active, .materialize-red.nav-group-item:active, tbody.materialize-red {
+.materialize-red.darken-4, .materialize-red.window, tbody.materialize-red {
   background-color: #8b1014 !important; }
 
 .materialize-red-text.text-darken-4 {
@@ -113,13 +109,13 @@ h5.nav-group-title {
 .red.lighten-3 {
   background-color: #EF9A9A !important; }
 
-.red-text.text-lighten-3, .red-text.window, .red-text.sidebar, .red-text.active, .red-text.nav-group-item:active {
+.red-text.text-lighten-3 {
   color: #EF9A9A !important; }
 
 .red.lighten-2 {
   background-color: #E57373 !important; }
 
-.red-text.text-lighten-2 {
+.red-text.text-lighten-2, .red-text.window, .red-text.sidenav, .sidenav li.red-text.active, .red-text.form-control, .red-text.btn-default {
   color: #E57373 !important; }
 
 .red.lighten-1 {
@@ -140,13 +136,13 @@ h5.nav-group-title {
 .red-text.text-darken-2 {
   color: #D32F2F !important; }
 
-.red.darken-3 {
+.red.darken-3, .red.sidenav, .sidenav li.red.active {
   background-color: #C62828 !important; }
 
 .red-text.text-darken-3 {
   color: #C62828 !important; }
 
-.red.darken-4, .red.window, .red.sidebar, .red.active, .red.nav-group-item:active, tbody.red {
+.red.darken-4, .red.window, tbody.red {
   background-color: #B71C1C !important; }
 
 .red-text.text-darken-4 {
@@ -197,13 +193,13 @@ h5.nav-group-title {
 .pink.lighten-3 {
   background-color: #f48fb1 !important; }
 
-.pink-text.text-lighten-3, .pink-text.window, .pink-text.sidebar, .pink-text.active, .pink-text.nav-group-item:active {
+.pink-text.text-lighten-3 {
   color: #f48fb1 !important; }
 
 .pink.lighten-2 {
   background-color: #f06292 !important; }
 
-.pink-text.text-lighten-2 {
+.pink-text.text-lighten-2, .pink-text.window, .pink-text.sidenav, .sidenav li.pink-text.active, .pink-text.form-control, .pink-text.btn-default {
   color: #f06292 !important; }
 
 .pink.lighten-1 {
@@ -224,13 +220,13 @@ h5.nav-group-title {
 .pink-text.text-darken-2 {
   color: #c2185b !important; }
 
-.pink.darken-3 {
+.pink.darken-3, .pink.sidenav, .sidenav li.pink.active {
   background-color: #ad1457 !important; }
 
 .pink-text.text-darken-3 {
   color: #ad1457 !important; }
 
-.pink.darken-4, .pink.window, .pink.sidebar, .pink.active, .pink.nav-group-item:active, tbody.pink {
+.pink.darken-4, .pink.window, tbody.pink {
   background-color: #880e4f !important; }
 
 .pink-text.text-darken-4 {
@@ -281,13 +277,13 @@ h5.nav-group-title {
 .purple.lighten-3 {
   background-color: #ce93d8 !important; }
 
-.purple-text.text-lighten-3, .purple-text.window, .purple-text.sidebar, .purple-text.active, .purple-text.nav-group-item:active {
+.purple-text.text-lighten-3 {
   color: #ce93d8 !important; }
 
 .purple.lighten-2 {
   background-color: #ba68c8 !important; }
 
-.purple-text.text-lighten-2 {
+.purple-text.text-lighten-2, .purple-text.window, .purple-text.sidenav, .sidenav li.purple-text.active, .purple-text.form-control, .purple-text.btn-default {
   color: #ba68c8 !important; }
 
 .purple.lighten-1 {
@@ -308,13 +304,13 @@ h5.nav-group-title {
 .purple-text.text-darken-2 {
   color: #7b1fa2 !important; }
 
-.purple.darken-3 {
+.purple.darken-3, .purple.sidenav, .sidenav li.purple.active {
   background-color: #6a1b9a !important; }
 
 .purple-text.text-darken-3 {
   color: #6a1b9a !important; }
 
-.purple.darken-4, .purple.window, .purple.sidebar, .purple.active, .purple.nav-group-item:active, tbody.purple {
+.purple.darken-4, .purple.window, tbody.purple {
   background-color: #4a148c !important; }
 
 .purple-text.text-darken-4 {
@@ -365,13 +361,13 @@ h5.nav-group-title {
 .deep-purple.lighten-3 {
   background-color: #b39ddb !important; }
 
-.deep-purple-text.text-lighten-3, .deep-purple-text.window, .deep-purple-text.sidebar, .deep-purple-text.active, .deep-purple-text.nav-group-item:active {
+.deep-purple-text.text-lighten-3 {
   color: #b39ddb !important; }
 
 .deep-purple.lighten-2 {
   background-color: #9575cd !important; }
 
-.deep-purple-text.text-lighten-2 {
+.deep-purple-text.text-lighten-2, .deep-purple-text.window, .deep-purple-text.sidenav, .sidenav li.deep-purple-text.active, .deep-purple-text.form-control, .deep-purple-text.btn-default {
   color: #9575cd !important; }
 
 .deep-purple.lighten-1 {
@@ -392,13 +388,13 @@ h5.nav-group-title {
 .deep-purple-text.text-darken-2 {
   color: #512da8 !important; }
 
-.deep-purple.darken-3 {
+.deep-purple.darken-3, .deep-purple.sidenav, .sidenav li.deep-purple.active {
   background-color: #4527a0 !important; }
 
 .deep-purple-text.text-darken-3 {
   color: #4527a0 !important; }
 
-.deep-purple.darken-4, .deep-purple.window, .deep-purple.sidebar, .deep-purple.active, .deep-purple.nav-group-item:active, tbody.deep-purple {
+.deep-purple.darken-4, .deep-purple.window, tbody.deep-purple {
   background-color: #311b92 !important; }
 
 .deep-purple-text.text-darken-4 {
@@ -449,13 +445,13 @@ h5.nav-group-title {
 .indigo.lighten-3 {
   background-color: #9fa8da !important; }
 
-.indigo-text.text-lighten-3, .indigo-text.window, .indigo-text.sidebar, .indigo-text.active, .indigo-text.nav-group-item:active {
+.indigo-text.text-lighten-3 {
   color: #9fa8da !important; }
 
 .indigo.lighten-2 {
   background-color: #7986cb !important; }
 
-.indigo-text.text-lighten-2 {
+.indigo-text.text-lighten-2, .indigo-text.window, .indigo-text.sidenav, .sidenav li.indigo-text.active, .indigo-text.form-control, .indigo-text.btn-default {
   color: #7986cb !important; }
 
 .indigo.lighten-1 {
@@ -476,13 +472,13 @@ h5.nav-group-title {
 .indigo-text.text-darken-2 {
   color: #303f9f !important; }
 
-.indigo.darken-3 {
+.indigo.darken-3, .indigo.sidenav, .sidenav li.indigo.active {
   background-color: #283593 !important; }
 
 .indigo-text.text-darken-3 {
   color: #283593 !important; }
 
-.indigo.darken-4, .indigo.window, .indigo.sidebar, .indigo.active, .indigo.nav-group-item:active, tbody.indigo {
+.indigo.darken-4, .indigo.window, tbody.indigo {
   background-color: #1a237e !important; }
 
 .indigo-text.text-darken-4 {
@@ -533,13 +529,13 @@ h5.nav-group-title {
 .blue.lighten-3 {
   background-color: #90CAF9 !important; }
 
-.blue-text.text-lighten-3, .blue-text.window, .blue-text.sidebar, .blue-text.active, .blue-text.nav-group-item:active {
+.blue-text.text-lighten-3 {
   color: #90CAF9 !important; }
 
 .blue.lighten-2 {
   background-color: #64B5F6 !important; }
 
-.blue-text.text-lighten-2 {
+.blue-text.text-lighten-2, .blue-text.window, .blue-text.sidenav, .sidenav li.blue-text.active, .blue-text.form-control, .blue-text.btn-default {
   color: #64B5F6 !important; }
 
 .blue.lighten-1 {
@@ -560,13 +556,13 @@ h5.nav-group-title {
 .blue-text.text-darken-2 {
   color: #1976D2 !important; }
 
-.blue.darken-3 {
+.blue.darken-3, .blue.sidenav, .sidenav li.blue.active {
   background-color: #1565C0 !important; }
 
 .blue-text.text-darken-3 {
   color: #1565C0 !important; }
 
-.blue.darken-4, .blue.window, .blue.sidebar, .blue.active, .blue.nav-group-item:active, tbody.blue {
+.blue.darken-4, .blue.window, tbody.blue {
   background-color: #0D47A1 !important; }
 
 .blue-text.text-darken-4 {
@@ -617,13 +613,13 @@ h5.nav-group-title {
 .light-blue.lighten-3 {
   background-color: #81d4fa !important; }
 
-.light-blue-text.text-lighten-3, .light-blue-text.window, .light-blue-text.sidebar, .light-blue-text.active, .light-blue-text.nav-group-item:active {
+.light-blue-text.text-lighten-3 {
   color: #81d4fa !important; }
 
 .light-blue.lighten-2 {
   background-color: #4fc3f7 !important; }
 
-.light-blue-text.text-lighten-2 {
+.light-blue-text.text-lighten-2, .light-blue-text.window, .light-blue-text.sidenav, .sidenav li.light-blue-text.active, .light-blue-text.form-control, .light-blue-text.btn-default {
   color: #4fc3f7 !important; }
 
 .light-blue.lighten-1 {
@@ -644,13 +640,13 @@ h5.nav-group-title {
 .light-blue-text.text-darken-2 {
   color: #0288d1 !important; }
 
-.light-blue.darken-3 {
+.light-blue.darken-3, .light-blue.sidenav, .sidenav li.light-blue.active {
   background-color: #0277bd !important; }
 
 .light-blue-text.text-darken-3 {
   color: #0277bd !important; }
 
-.light-blue.darken-4, .light-blue.window, .light-blue.sidebar, .light-blue.active, .light-blue.nav-group-item:active, tbody.light-blue {
+.light-blue.darken-4, .light-blue.window, tbody.light-blue {
   background-color: #01579b !important; }
 
 .light-blue-text.text-darken-4 {
@@ -701,13 +697,13 @@ h5.nav-group-title {
 .cyan.lighten-3 {
   background-color: #80deea !important; }
 
-.cyan-text.text-lighten-3, .cyan-text.window, .cyan-text.sidebar, .cyan-text.active, .cyan-text.nav-group-item:active {
+.cyan-text.text-lighten-3 {
   color: #80deea !important; }
 
 .cyan.lighten-2 {
   background-color: #4dd0e1 !important; }
 
-.cyan-text.text-lighten-2 {
+.cyan-text.text-lighten-2, .cyan-text.window, .cyan-text.sidenav, .sidenav li.cyan-text.active, .cyan-text.form-control, .cyan-text.btn-default {
   color: #4dd0e1 !important; }
 
 .cyan.lighten-1 {
@@ -728,13 +724,13 @@ h5.nav-group-title {
 .cyan-text.text-darken-2 {
   color: #0097a7 !important; }
 
-.cyan.darken-3 {
+.cyan.darken-3, .cyan.sidenav, .sidenav li.cyan.active {
   background-color: #00838f !important; }
 
 .cyan-text.text-darken-3 {
   color: #00838f !important; }
 
-.cyan.darken-4, .cyan.window, .cyan.sidebar, .cyan.active, .cyan.nav-group-item:active, tbody.cyan {
+.cyan.darken-4, .cyan.window, tbody.cyan {
   background-color: #006064 !important; }
 
 .cyan-text.text-darken-4 {
@@ -785,13 +781,13 @@ h5.nav-group-title {
 .teal.lighten-3 {
   background-color: #80cbc4 !important; }
 
-.teal-text.text-lighten-3, .teal-text.window, .teal-text.sidebar, .teal-text.active, .teal-text.nav-group-item:active {
+.teal-text.text-lighten-3 {
   color: #80cbc4 !important; }
 
 .teal.lighten-2 {
   background-color: #4db6ac !important; }
 
-.teal-text.text-lighten-2 {
+.teal-text.text-lighten-2, .teal-text.window, .teal-text.sidenav, .sidenav li.teal-text.active, .teal-text.form-control, .teal-text.btn-default {
   color: #4db6ac !important; }
 
 .teal.lighten-1 {
@@ -812,13 +808,13 @@ h5.nav-group-title {
 .teal-text.text-darken-2 {
   color: #00796b !important; }
 
-.teal.darken-3 {
+.teal.darken-3, .teal.sidenav, .sidenav li.teal.active {
   background-color: #00695c !important; }
 
 .teal-text.text-darken-3 {
   color: #00695c !important; }
 
-.teal.darken-4, .teal.window, .teal.sidebar, .teal.active, .teal.nav-group-item:active, tbody.teal {
+.teal.darken-4, .teal.window, tbody.teal {
   background-color: #004d40 !important; }
 
 .teal-text.text-darken-4 {
@@ -869,13 +865,13 @@ h5.nav-group-title {
 .green.lighten-3 {
   background-color: #A5D6A7 !important; }
 
-.green-text.text-lighten-3, .green-text.window, .green-text.sidebar, .green-text.active, .green-text.nav-group-item:active {
+.green-text.text-lighten-3 {
   color: #A5D6A7 !important; }
 
 .green.lighten-2 {
   background-color: #81C784 !important; }
 
-.green-text.text-lighten-2 {
+.green-text.text-lighten-2, .green-text.window, .green-text.sidenav, .sidenav li.green-text.active, .green-text.form-control, .green-text.btn-default {
   color: #81C784 !important; }
 
 .green.lighten-1 {
@@ -896,13 +892,13 @@ h5.nav-group-title {
 .green-text.text-darken-2 {
   color: #388E3C !important; }
 
-.green.darken-3 {
+.green.darken-3, .green.sidenav, .sidenav li.green.active {
   background-color: #2E7D32 !important; }
 
 .green-text.text-darken-3 {
   color: #2E7D32 !important; }
 
-.green.darken-4, .green.window, .green.sidebar, .green.active, .green.nav-group-item:active, tbody.green {
+.green.darken-4, .green.window, tbody.green {
   background-color: #1B5E20 !important; }
 
 .green-text.text-darken-4 {
@@ -953,13 +949,13 @@ h5.nav-group-title {
 .light-green.lighten-3 {
   background-color: #c5e1a5 !important; }
 
-.light-green-text.text-lighten-3, .light-green-text.window, .light-green-text.sidebar, .light-green-text.active, .light-green-text.nav-group-item:active {
+.light-green-text.text-lighten-3 {
   color: #c5e1a5 !important; }
 
 .light-green.lighten-2 {
   background-color: #aed581 !important; }
 
-.light-green-text.text-lighten-2 {
+.light-green-text.text-lighten-2, .light-green-text.window, .light-green-text.sidenav, .sidenav li.light-green-text.active, .light-green-text.form-control, .light-green-text.btn-default {
   color: #aed581 !important; }
 
 .light-green.lighten-1 {
@@ -980,13 +976,13 @@ h5.nav-group-title {
 .light-green-text.text-darken-2 {
   color: #689f38 !important; }
 
-.light-green.darken-3 {
+.light-green.darken-3, .light-green.sidenav, .sidenav li.light-green.active {
   background-color: #558b2f !important; }
 
 .light-green-text.text-darken-3 {
   color: #558b2f !important; }
 
-.light-green.darken-4, .light-green.window, .light-green.sidebar, .light-green.active, .light-green.nav-group-item:active, tbody.light-green {
+.light-green.darken-4, .light-green.window, tbody.light-green {
   background-color: #33691e !important; }
 
 .light-green-text.text-darken-4 {
@@ -1037,13 +1033,13 @@ h5.nav-group-title {
 .lime.lighten-3 {
   background-color: #e6ee9c !important; }
 
-.lime-text.text-lighten-3, .lime-text.window, .lime-text.sidebar, .lime-text.active, .lime-text.nav-group-item:active {
+.lime-text.text-lighten-3 {
   color: #e6ee9c !important; }
 
 .lime.lighten-2 {
   background-color: #dce775 !important; }
 
-.lime-text.text-lighten-2 {
+.lime-text.text-lighten-2, .lime-text.window, .lime-text.sidenav, .sidenav li.lime-text.active, .lime-text.form-control, .lime-text.btn-default {
   color: #dce775 !important; }
 
 .lime.lighten-1 {
@@ -1064,13 +1060,13 @@ h5.nav-group-title {
 .lime-text.text-darken-2 {
   color: #afb42b !important; }
 
-.lime.darken-3 {
+.lime.darken-3, .lime.sidenav, .sidenav li.lime.active {
   background-color: #9e9d24 !important; }
 
 .lime-text.text-darken-3 {
   color: #9e9d24 !important; }
 
-.lime.darken-4, .lime.window, .lime.sidebar, .lime.active, .lime.nav-group-item:active, tbody.lime {
+.lime.darken-4, .lime.window, tbody.lime {
   background-color: #827717 !important; }
 
 .lime-text.text-darken-4 {
@@ -1121,13 +1117,13 @@ h5.nav-group-title {
 .yellow.lighten-3 {
   background-color: #fff59d !important; }
 
-.yellow-text.text-lighten-3, .yellow-text.window, .yellow-text.sidebar, .yellow-text.active, .yellow-text.nav-group-item:active {
+.yellow-text.text-lighten-3 {
   color: #fff59d !important; }
 
 .yellow.lighten-2 {
   background-color: #fff176 !important; }
 
-.yellow-text.text-lighten-2 {
+.yellow-text.text-lighten-2, .yellow-text.window, .yellow-text.sidenav, .sidenav li.yellow-text.active, .yellow-text.form-control, .yellow-text.btn-default {
   color: #fff176 !important; }
 
 .yellow.lighten-1 {
@@ -1148,13 +1144,13 @@ h5.nav-group-title {
 .yellow-text.text-darken-2 {
   color: #fbc02d !important; }
 
-.yellow.darken-3 {
+.yellow.darken-3, .yellow.sidenav, .sidenav li.yellow.active {
   background-color: #f9a825 !important; }
 
 .yellow-text.text-darken-3 {
   color: #f9a825 !important; }
 
-.yellow.darken-4, .yellow.window, .yellow.sidebar, .yellow.active, .yellow.nav-group-item:active, tbody.yellow {
+.yellow.darken-4, .yellow.window, tbody.yellow {
   background-color: #f57f17 !important; }
 
 .yellow-text.text-darken-4 {
@@ -1205,13 +1201,13 @@ h5.nav-group-title {
 .amber.lighten-3 {
   background-color: #ffe082 !important; }
 
-.amber-text.text-lighten-3, .amber-text.window, .amber-text.sidebar, .amber-text.active, .amber-text.nav-group-item:active {
+.amber-text.text-lighten-3 {
   color: #ffe082 !important; }
 
 .amber.lighten-2 {
   background-color: #ffd54f !important; }
 
-.amber-text.text-lighten-2 {
+.amber-text.text-lighten-2, .amber-text.window, .amber-text.sidenav, .sidenav li.amber-text.active, .amber-text.form-control, .amber-text.btn-default {
   color: #ffd54f !important; }
 
 .amber.lighten-1 {
@@ -1232,13 +1228,13 @@ h5.nav-group-title {
 .amber-text.text-darken-2 {
   color: #ffa000 !important; }
 
-.amber.darken-3 {
+.amber.darken-3, .amber.sidenav, .sidenav li.amber.active {
   background-color: #ff8f00 !important; }
 
 .amber-text.text-darken-3 {
   color: #ff8f00 !important; }
 
-.amber.darken-4, .amber.window, .amber.sidebar, .amber.active, .amber.nav-group-item:active, tbody.amber {
+.amber.darken-4, .amber.window, tbody.amber {
   background-color: #ff6f00 !important; }
 
 .amber-text.text-darken-4 {
@@ -1289,13 +1285,13 @@ h5.nav-group-title {
 .orange.lighten-3 {
   background-color: #ffcc80 !important; }
 
-.orange-text.text-lighten-3, .orange-text.window, .orange-text.sidebar, .orange-text.active, .orange-text.nav-group-item:active {
+.orange-text.text-lighten-3 {
   color: #ffcc80 !important; }
 
 .orange.lighten-2 {
   background-color: #ffb74d !important; }
 
-.orange-text.text-lighten-2 {
+.orange-text.text-lighten-2, .orange-text.window, .orange-text.sidenav, .sidenav li.orange-text.active, .orange-text.form-control, .orange-text.btn-default {
   color: #ffb74d !important; }
 
 .orange.lighten-1 {
@@ -1316,13 +1312,13 @@ h5.nav-group-title {
 .orange-text.text-darken-2 {
   color: #f57c00 !important; }
 
-.orange.darken-3 {
+.orange.darken-3, .orange.sidenav, .sidenav li.orange.active {
   background-color: #ef6c00 !important; }
 
 .orange-text.text-darken-3 {
   color: #ef6c00 !important; }
 
-.orange.darken-4, .orange.window, .orange.sidebar, .orange.active, .orange.nav-group-item:active, tbody.orange {
+.orange.darken-4, .orange.window, tbody.orange {
   background-color: #e65100 !important; }
 
 .orange-text.text-darken-4 {
@@ -1373,13 +1369,13 @@ h5.nav-group-title {
 .deep-orange.lighten-3 {
   background-color: #ffab91 !important; }
 
-.deep-orange-text.text-lighten-3, .deep-orange-text.window, .deep-orange-text.sidebar, .deep-orange-text.active, .deep-orange-text.nav-group-item:active {
+.deep-orange-text.text-lighten-3 {
   color: #ffab91 !important; }
 
 .deep-orange.lighten-2 {
   background-color: #ff8a65 !important; }
 
-.deep-orange-text.text-lighten-2 {
+.deep-orange-text.text-lighten-2, .deep-orange-text.window, .deep-orange-text.sidenav, .sidenav li.deep-orange-text.active, .deep-orange-text.form-control, .deep-orange-text.btn-default {
   color: #ff8a65 !important; }
 
 .deep-orange.lighten-1 {
@@ -1400,13 +1396,13 @@ h5.nav-group-title {
 .deep-orange-text.text-darken-2 {
   color: #e64a19 !important; }
 
-.deep-orange.darken-3 {
+.deep-orange.darken-3, .deep-orange.sidenav, .sidenav li.deep-orange.active {
   background-color: #d84315 !important; }
 
 .deep-orange-text.text-darken-3 {
   color: #d84315 !important; }
 
-.deep-orange.darken-4, .deep-orange.window, .deep-orange.sidebar, .deep-orange.active, .deep-orange.nav-group-item:active, tbody.deep-orange {
+.deep-orange.darken-4, .deep-orange.window, tbody.deep-orange {
   background-color: #bf360c !important; }
 
 .deep-orange-text.text-darken-4 {
@@ -1457,13 +1453,13 @@ h5.nav-group-title {
 .brown.lighten-3 {
   background-color: #bcaaa4 !important; }
 
-.brown-text.text-lighten-3, .brown-text.window, .brown-text.sidebar, .brown-text.active, .brown-text.nav-group-item:active {
+.brown-text.text-lighten-3 {
   color: #bcaaa4 !important; }
 
 .brown.lighten-2 {
   background-color: #a1887f !important; }
 
-.brown-text.text-lighten-2 {
+.brown-text.text-lighten-2, .brown-text.window, .brown-text.sidenav, .sidenav li.brown-text.active, .brown-text.form-control, .brown-text.btn-default {
   color: #a1887f !important; }
 
 .brown.lighten-1 {
@@ -1484,13 +1480,13 @@ h5.nav-group-title {
 .brown-text.text-darken-2 {
   color: #5d4037 !important; }
 
-.brown.darken-3 {
+.brown.darken-3, .brown.sidenav, .sidenav li.brown.active {
   background-color: #4e342e !important; }
 
 .brown-text.text-darken-3 {
   color: #4e342e !important; }
 
-.brown.darken-4, .brown.window, .brown.sidebar, .brown.active, .brown.nav-group-item:active, tbody.brown {
+.brown.darken-4, .brown.window, tbody.brown {
   background-color: #3e2723 !important; }
 
 .brown-text.text-darken-4 {
@@ -1517,13 +1513,13 @@ h5.nav-group-title {
 .blue-grey.lighten-3 {
   background-color: #b0bec5 !important; }
 
-.blue-grey-text.text-lighten-3, .blue-grey-text.window, .blue-grey-text.sidebar, .blue-grey-text.active, .blue-grey-text.nav-group-item:active {
+.blue-grey-text.text-lighten-3 {
   color: #b0bec5 !important; }
 
 .blue-grey.lighten-2 {
   background-color: #90a4ae !important; }
 
-.blue-grey-text.text-lighten-2 {
+.blue-grey-text.text-lighten-2, .blue-grey-text.window, .blue-grey-text.sidenav, .sidenav li.blue-grey-text.active, .blue-grey-text.form-control, .blue-grey-text.btn-default {
   color: #90a4ae !important; }
 
 .blue-grey.lighten-1 {
@@ -1544,76 +1540,76 @@ h5.nav-group-title {
 .blue-grey-text.text-darken-2 {
   color: #455a64 !important; }
 
-.blue-grey.darken-3 {
+.blue-grey.darken-3, .blue-grey.sidenav, .sidenav li.blue-grey.active {
   background-color: #37474f !important; }
 
 .blue-grey-text.text-darken-3 {
   color: #37474f !important; }
 
-.blue-grey.darken-4, .blue-grey.window, .blue-grey.sidebar, .blue-grey.active, .blue-grey.nav-group-item:active, tbody.blue-grey {
+.blue-grey.darken-4, .blue-grey.window, tbody.blue-grey {
   background-color: #263238 !important; }
 
 .blue-grey-text.text-darken-4 {
   color: #263238 !important; }
 
-.grey, .window, .sidebar, .active, .nav-group-item:active, tbody {
+.grey, .window, .sidenav, .sidenav li.active, tbody {
   background-color: #9e9e9e !important; }
 
-.grey-text, .window, .sidebar, .active, .nav-group-item:active {
+.grey-text, .window, .sidenav, .sidenav li.active, .form-control, .btn-default {
   color: #9e9e9e !important; }
 
-.grey.lighten-5, .lighten-5.window, .lighten-5.sidebar, .lighten-5.active, .lighten-5.nav-group-item:active, tbody.lighten-5 {
+.grey.lighten-5, .lighten-5.window, .lighten-5.sidenav, .sidenav li.lighten-5.active, tbody.lighten-5 {
   background-color: #fafafa !important; }
 
-.grey-text.text-lighten-5, .text-lighten-5.window, .text-lighten-5.sidebar, .text-lighten-5.active, .text-lighten-5.nav-group-item:active {
+.grey-text.text-lighten-5, .text-lighten-5.window, .text-lighten-5.sidenav, .sidenav li.text-lighten-5.active, .text-lighten-5.form-control, .text-lighten-5.btn-default {
   color: #fafafa !important; }
 
-.grey.lighten-4, .lighten-4.window, .lighten-4.sidebar, .lighten-4.active, .lighten-4.nav-group-item:active, tbody.lighten-4 {
+.grey.lighten-4, .lighten-4.window, .lighten-4.sidenav, .sidenav li.lighten-4.active, tbody.lighten-4 {
   background-color: #f5f5f5 !important; }
 
-.grey-text.text-lighten-4, .text-lighten-4.window, .text-lighten-4.sidebar, .text-lighten-4.active, .text-lighten-4.nav-group-item:active {
+.grey-text.text-lighten-4, .text-lighten-4.window, .text-lighten-4.sidenav, .sidenav li.text-lighten-4.active, .text-lighten-4.form-control, .text-lighten-4.btn-default {
   color: #f5f5f5 !important; }
 
-.grey.lighten-3, .lighten-3.window, .lighten-3.sidebar, .lighten-3.active, .lighten-3.nav-group-item:active, tbody.lighten-3 {
+.grey.lighten-3, .lighten-3.window, .lighten-3.sidenav, .sidenav li.lighten-3.active, tbody.lighten-3 {
   background-color: #eeeeee !important; }
 
-.grey-text.text-lighten-3, .window, .sidebar, .active, .nav-group-item:active {
+.grey-text.text-lighten-3, .text-lighten-3.window, .text-lighten-3.sidenav, .sidenav li.text-lighten-3.active, .text-lighten-3.form-control, .text-lighten-3.btn-default {
   color: #eeeeee !important; }
 
-.grey.lighten-2, .lighten-2.window, .lighten-2.sidebar, .lighten-2.active, .lighten-2.nav-group-item:active, tbody.lighten-2 {
+.grey.lighten-2, .lighten-2.window, .lighten-2.sidenav, .sidenav li.lighten-2.active, tbody.lighten-2 {
   background-color: #e0e0e0 !important; }
 
-.grey-text.text-lighten-2, .text-lighten-2.window, .text-lighten-2.sidebar, .text-lighten-2.active, .text-lighten-2.nav-group-item:active {
+.grey-text.text-lighten-2, .window, .sidenav, .sidenav li.active, .form-control, .btn-default {
   color: #e0e0e0 !important; }
 
-.grey.lighten-1, .lighten-1.window, .lighten-1.sidebar, .lighten-1.active, .lighten-1.nav-group-item:active, tbody.lighten-1 {
+.grey.lighten-1, .lighten-1.window, .lighten-1.sidenav, .sidenav li.lighten-1.active, tbody.lighten-1 {
   background-color: #bdbdbd !important; }
 
-.grey-text.text-lighten-1, .text-lighten-1.window, .text-lighten-1.sidebar, .text-lighten-1.active, .text-lighten-1.nav-group-item:active {
+.grey-text.text-lighten-1, .text-lighten-1.window, .text-lighten-1.sidenav, .sidenav li.text-lighten-1.active, .text-lighten-1.form-control, .text-lighten-1.btn-default {
   color: #bdbdbd !important; }
 
-.grey.darken-1, .darken-1.window, .darken-1.sidebar, .darken-1.active, .darken-1.nav-group-item:active, tbody.darken-1 {
+.grey.darken-1, .darken-1.window, .darken-1.sidenav, .sidenav li.darken-1.active, tbody.darken-1 {
   background-color: #757575 !important; }
 
-.grey-text.text-darken-1, .text-darken-1.window, .text-darken-1.sidebar, .text-darken-1.active, .text-darken-1.nav-group-item:active {
+.grey-text.text-darken-1, .text-darken-1.window, .text-darken-1.sidenav, .sidenav li.text-darken-1.active, .text-darken-1.form-control, .text-darken-1.btn-default {
   color: #757575 !important; }
 
-.grey.darken-2, .darken-2.window, .darken-2.sidebar, .darken-2.active, .darken-2.nav-group-item:active, tbody.darken-2 {
+.grey.darken-2, .darken-2.window, .darken-2.sidenav, .sidenav li.darken-2.active, tbody.darken-2 {
   background-color: #616161 !important; }
 
-.grey-text.text-darken-2, .text-darken-2.window, .text-darken-2.sidebar, .text-darken-2.active, .text-darken-2.nav-group-item:active {
+.grey-text.text-darken-2, .text-darken-2.window, .text-darken-2.sidenav, .sidenav li.text-darken-2.active, .text-darken-2.form-control, .text-darken-2.btn-default {
   color: #616161 !important; }
 
-.grey.darken-3, .darken-3.window, .darken-3.sidebar, .darken-3.active, .darken-3.nav-group-item:active, tbody.darken-3 {
+.grey.darken-3, .darken-3.window, .sidenav, .sidenav li.active, tbody.darken-3 {
   background-color: #424242 !important; }
 
-.grey-text.text-darken-3, .text-darken-3.window, .text-darken-3.sidebar, .text-darken-3.active, .text-darken-3.nav-group-item:active {
+.grey-text.text-darken-3, .text-darken-3.window, .text-darken-3.sidenav, .sidenav li.text-darken-3.active, .text-darken-3.form-control, .text-darken-3.btn-default {
   color: #424242 !important; }
 
-.grey.darken-4, .window, .sidebar, .active, .nav-group-item:active, tbody {
+.grey.darken-4, .window, .darken-4.sidenav, tbody.sidenav, .sidenav li.darken-4.active, .sidenav li.active.window, tbody {
   background-color: #212121 !important; }
 
-.grey-text.text-darken-4, .text-darken-4.window, .text-darken-4.sidebar, .text-darken-4.active, .text-darken-4.nav-group-item:active {
+.grey-text.text-darken-4, .text-darken-4.window, .text-darken-4.sidenav, .sidenav li.text-darken-4.active, .text-darken-4.form-control, .text-darken-4.btn-default {
   color: #212121 !important; }
 
 .black {

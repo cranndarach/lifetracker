@@ -1,11 +1,19 @@
-body, label,
-.btn-large, h5.nav-group-title {
-    color: #cccccc;
+@charset 'UTF-8';
+
+// The main is loaded at the end.
+@import "../../_base/_config";
+
+// body, label,
+// .btn-large, h5.nav-group-title {
+//     color: #cccccc;
+// }
+.window {
+    // background-color: #232326;
+    @extend .grey, .darken-4, .grey-text, .text-lighten-1;
 }
 
-.window, .sidebar, .active, .nav-group-item:active {
-    // background-color: #232326;
-    @extend .grey, .darken-4, .grey-text, .text-lighten-3;
+.sidenav, .sidenav li.active {
+  @extend .grey, .darken-3, .grey-text, .text-lighten-1;
 }
 
 // .sidebar .active, .nav-group-item:active {
@@ -17,7 +25,8 @@ body, label,
 /* } */
 
 .form-control, .btn-default {
-    background-color: #36363b;
+    background-color: color("grey", "darken-3");
+    @extend .grey-text, .text-lighten-1;
 }
 // .form-control:focus {
 //     /*border-color: #f00;*/
@@ -56,7 +65,8 @@ h5.nav-group-title {
 }
 
 #submit-message {
-    color: #ac3939;
+    // color: #ac3939;
+    color: $submit-message-color;
 }
 
 @import "../../application";
