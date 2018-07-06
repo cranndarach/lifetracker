@@ -1,9 +1,3 @@
-@charset "UTF-8";
-
-@import "../lib/materialize-src/sass/materialize";
-
-@import "_base/_config.scss";
-
 html, body {
   padding: 0;
   margin: 0;
@@ -19,10 +13,6 @@ h5.nav-group-title {
 .window {
   height: 100%;
   overflow-y: scroll;
-}
-
-.btn {
-  @extend .waves-effect, .waves-light;
 }
 
 .nav-group-item a {
@@ -94,7 +84,7 @@ a.nav-group-subitem {
 
 #main {
   /* border: 0; */
-  width: 80%;
+  width 80%;
   padding-left: 20%;
 }
 
@@ -125,8 +115,7 @@ p {
 
 #submit-message {
   /* visibility: hidden; */
-  // color: #c90000;
-  color: $submit-message-color;
+  color: #c90000;
   font-weight: bold;
 }
 
@@ -162,7 +151,8 @@ p {
 
 .form-group p {
   margin-top: 1em;
-  margin-left: 0;
+  margin
+  -left: 0;
 }
 
 #data-display {

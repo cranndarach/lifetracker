@@ -3,14 +3,20 @@ body, label,
     color: #cccccc;
 }
 
-.window, .sidebar, .active, .nav-group-item:active {
-    // background-color: #232326;
-    @extend .grey, .darken-4, .grey-text, .text-lighten-3;
+.window {
+    background-color: #232326;
 }
 
-// .sidebar .active, .nav-group-item:active {
-    // background-color: #282826;
-// }
+.sidebar {
+    background-color: #131312;
+    color: #bbbbbb;
+}
+.sidebar a {
+    color: #bbbbbb;
+}
+.sidebar .active, .nav-group-item:active {
+    background-color: #282826;
+}
 
 /* .nav-group-subitem { */
 /*   color: */
@@ -19,15 +25,14 @@ body, label,
 .form-control, .btn-default {
     background-color: #36363b;
 }
-// .form-control:focus {
-//     /*border-color: #f00;*/
-//     box-shadow: 3px 3px 0 #3d6898, -3px -3px 0 #3d6898, -3px 3px 0 #3d6898, 3px -3px 0 #3d6898;
-//     border-color: #3d6898;
-// }
+.form-control:focus {
+    /*border-color: #f00;*/
+    box-shadow: 3px 3px 0 #3d6898, -3px -3px 0 #3d6898, -3px 3px 0 #3d6898, 3px -3px 0 #3d6898;
+    border-color: #3d6898;
+}
 
 tbody {
-    // background-color: #232326;
-    @extend .grey, .darken-4;
+    background-color: #232326;
 }
 
 .btn-primary {
@@ -58,5 +63,3 @@ h5.nav-group-title {
 #submit-message {
     color: #ac3939;
 }
-
-@import "../../application";
