@@ -22,7 +22,8 @@ main:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 			valence:
 				label: "Mood"
 				type: "range"
@@ -57,7 +58,8 @@ main:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 			valence:
 				label: "Mood"
 				type: "range"
@@ -127,7 +129,8 @@ main:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 adventureLogs:
 	pageTitle: "Adventure Logs"
 	dragonFights:
@@ -496,7 +499,8 @@ influences:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 	sleep:
 		formTitle: "Log Sleep"
 		fields:
@@ -511,7 +515,8 @@ influences:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 			quality:
 				label: "Quality"
 				type: "range"
@@ -540,7 +545,8 @@ influences:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 			valence:
 				label: "Mood"
 				type: "range"
