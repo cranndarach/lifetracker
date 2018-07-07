@@ -1,17 +1,24 @@
 @charset "UTF-8";
 
+/*******************
+ * Import modules. *
+ *******************/
+// Import materialize.
 @import "../lib/materialize-src/sass/materialize";
+// Import custom variables.
+@import "_base/_config";
 
-@import "_base/_config.scss";
 
+/*******************
+ * Actual styling. *
+ *******************/
 html, body {
   padding: 0;
   margin: 0;
   height: 100%;
 }
 
-body, label,
-h5.nav-group-title {
+body, label, h5.nav-group-title {
   font-family: -apple-system, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1em;
 }
@@ -19,36 +26,41 @@ h5.nav-group-title {
 .window {
   height: 100%;
   overflow-y: scroll;
+  color: $text-color;
+  background-color: $body-bg-color;
 }
 
 .btn {
   @extend .waves-effect, .waves-light;
+  background-color: $accent-color;
+  color: $accent-text-color;
 }
 
 .sidenav li > a {
   padding: 0 16px;
 }
 
-// .nav-group-item a {
-//   display: block;
-//   padding: 2px 10px 2px 25px;
-// }
+label {
+  font-size: 1.2em;
+}
 
-// a.nav-group-subitem {
-//   padding: 2px 10px 2px 50px;
-//   /* visibility: hidden; */
-//   display: none;
-//   /* color: #333; */
-//   text-decoration: none;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-// }
-// .nav-group-subitem:active, .active .nav-group-subitem {
-//   /* visibility: visible; */
-//   display: block;
-//   /* background-color: #dcdfe1; */
-// }
+label.active {
+  font-size: 1.2rem;
+}
+
+.form-group {
+  margin-top: 2em;
+}
+
+input[type=range] {
+  display: block;
+  width: 80%;
+  margin: 1em auto 1.5em;
+}
+
+#submit-message {
+  color: $submit-message-color;
+}
 
 @keyframes fadein {
   from {opacity: 0;}

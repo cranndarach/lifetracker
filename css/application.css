@@ -1,3 +1,6 @@
+/*******************
+ * Import modules. *
+ *******************/
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6428,22 +6431,50 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
+/******************
+ * Set variables. *
+ ******************/
+/*******************
+ * Actual styling. *
+ *******************/
 html, body {
   padding: 0;
   margin: 0;
   height: 100%; }
 
-body, label,
-h5.nav-group-title {
+body, label, h5.nav-group-title {
   font-family: -apple-system, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1em; }
 
 .window {
   height: 100%;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  color: #bdbdbd;
+  background-color: #424242; }
+
+.btn, .btn-large, .btn-small {
+  background-color: #26a69a;
+  color: #bdbdbd; }
 
 .sidenav li > a {
   padding: 0 16px; }
+
+label {
+  font-size: 1.2em; }
+
+label.active {
+  font-size: 1.2rem; }
+
+.form-group {
+  margin-top: 2em; }
+
+input[type=range] {
+  display: block;
+  width: 80%;
+  margin: 1em auto 1.5em; }
+
+#submit-message {
+  color: #C62828; }
 
 @keyframes fadein {
   from {

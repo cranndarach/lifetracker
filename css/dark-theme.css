@@ -1,33 +1,21 @@
-/* .nav-group-subitem { */
-/*   color: */
-/* } */
+/******************
+ * Set variables. *
+ ******************/
+/******************
+ * Set variables. *
+ ******************/
+/**************************************************************************
+ * Custom (s)css, mostly setting colors by extending materialize classes. *
+ **************************************************************************/
 .form-control, .btn-default {
   background-color: color("grey", "darken-3"); }
 
-.btn-primary {
-  border-color: #1d4980;
-  border-bottom-color: #0c4081;
-  background-color: #406a91;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #406a91), color-stop(100%, #104c93));
-  background-image: -webkit-linear-gradient(top, #406a91 0%, #104c93 100%);
-  background-image: linear-gradient(to bottom, #406a91 0%, #104c93 100%); }
-
-/*.btn-large {
-    font-size: 1em;
-}
-
-h5.nav-group-title {
-    font-size: 1em;
-}*/
-/* .pane { */
-/*     border-left: 1px solid #0a0a0a; */
-/* } */
 .window-content {
   border-top: 1px solid #0a0a0a; }
 
-#submit-message {
-  color: color("red", "darken-3"); }
-
+/*******************
+ * Import modules. *
+ *******************/
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6458,22 +6446,50 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
+/******************
+ * Set variables. *
+ ******************/
+/*******************
+ * Actual styling. *
+ *******************/
 html, body {
   padding: 0;
   margin: 0;
   height: 100%; }
 
-body, label,
-h5.nav-group-title {
+body, label, h5.nav-group-title {
   font-family: -apple-system, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1em; }
 
 .window {
   height: 100%;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  color: color("grey", "lighten-1");
+  background-color: color("grey", "darken-3"); }
+
+.btn, .btn-large, .btn-small {
+  background-color: color("teal", "lighten-1");
+  color: color("grey", "lighten-1"); }
 
 .sidenav li > a {
   padding: 0 16px; }
+
+label {
+  font-size: 1.2em; }
+
+label.active {
+  font-size: 1.2rem; }
+
+.form-group {
+  margin-top: 2em; }
+
+input[type=range] {
+  display: block;
+  width: 80%;
+  margin: 1em auto 1.5em; }
+
+#submit-message {
+  color: color("red", "darken-3"); }
 
 @keyframes fadein {
   from {
