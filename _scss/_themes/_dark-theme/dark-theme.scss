@@ -3,10 +3,22 @@
 // The main is loaded at the end.
 @import "../../_base/_config";
 
-// body, label,
-// .btn-large, h5.nav-group-title {
-//     color: #cccccc;
-// }
+/******************
+ * Set variables. *
+ ******************/
+// Background colors
+$body-bg-color: color("grey", "darken-3");
+$accent-color: color("teal", "lighten-1");
+$positive-color: color("green", "darken-1");
+$alert-color: color("amber", "darken-3");
+
+// Text colors
+$text-color: color("grey", "lighten-1");
+$accent-text-color: $text-color;
+
+/**************************************************************************
+ * Custom (s)css, mostly setting colors by extending materialize classes. *
+ **************************************************************************/
 .window {
     // background-color: #232326;
     @extend .grey, .darken-4, .grey-text, .text-lighten-1;
@@ -16,57 +28,17 @@
   @extend .grey, .darken-3, .grey-text, .text-lighten-1;
 }
 
-// .sidebar .active, .nav-group-item:active {
-    // background-color: #282826;
-// }
-
-/* .nav-group-subitem { */
-/*   color: */
-/* } */
-
 .form-control, .btn-default {
     background-color: color("grey", "darken-3");
     @extend .grey-text, .text-lighten-1;
 }
-// .form-control:focus {
-//     /*border-color: #f00;*/
-//     box-shadow: 3px 3px 0 #3d6898, -3px -3px 0 #3d6898, -3px 3px 0 #3d6898, 3px -3px 0 #3d6898;
-//     border-color: #3d6898;
-// }
-
 tbody {
-    // background-color: #232326;
     @extend .grey, .darken-4;
 }
-
-.btn-primary {
-  border-color: #1d4980;
-  border-bottom-color: #0c4081;
-  background-color: #406a91;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #406a91), color-stop(100%, #104c93));
-  background-image: -webkit-linear-gradient(top, #406a91 0%, #104c93 100%);
-  background-image: linear-gradient(to bottom, #406a91 0%, #104c93 100%);
-}
-
-/*.btn-large {
-    font-size: 1em;
-}
-
-h5.nav-group-title {
-    font-size: 1em;
-}*/
-
-/* .pane { */
-/*     border-left: 1px solid #0a0a0a; */
-/* } */
 
 .window-content {
     border-top: 1px solid #0a0a0a;
 }
 
-#submit-message {
-    // color: #ac3939;
-    color: $submit-message-color;
-}
 
 @import "../../application";
