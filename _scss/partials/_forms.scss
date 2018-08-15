@@ -1,0 +1,59 @@
+@import "partials/config";
+
+.btn {
+  @extend .waves-effect, .waves-light;
+  background-color: $accent-color;
+  color: $accent-text-color;
+}
+
+label, label.active, .input-field > label {
+  font-size: 1.2rem;
+}
+
+.form-group {
+  margin-top: 2em;
+}
+
+input[type=range] {
+  display: block;
+  width: 80%;
+  margin: 1em auto 1.5em;
+}
+
+#submit-message {
+  color: $submit-message-color;
+}
+
+#submit-message {
+  color: $submit-message-color;
+  font-weight: bold;
+}
+
+#submit-message .hide {
+  animation: fadeout 0.4s linear;
+  -webkit-animation: fadeout 0.4s;
+}
+
+#submit-message .hidden {
+  visibility: hidden;
+}
+
+#submit-message .show {
+  animation: fadein 0.8s linear;
+  -webkit-animation: fadein 0.8s;
+}
+
+#submit-message .shown {
+  visibility: visible;
+}
+
+
+.form-group p {
+  margin-top: 1em;
+  margin-left: 0;
+}
+
+fieldset {
+  border-radius: 5px;
+}
+
