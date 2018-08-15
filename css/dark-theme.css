@@ -6474,10 +6474,7 @@ body, label, h5.nav-group-title {
 .sidenav li > a {
   padding: 0 16px; }
 
-label {
-  font-size: 1.2em; }
-
-label.active {
+label, label.active, .input-field > label {
   font-size: 1.2rem; }
 
 .form-group {

@@ -10,7 +10,7 @@ const windowStateKeeper = require('electron-window-state');
 
 try {
   require('electron-reloader')(module, {
-    ignore: ["config.cson", "_scss/*"],
+    ignore: ["*.cson", "_scss/*"],
     debug: true
   });
 } catch (err) {}
