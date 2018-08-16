@@ -2,12 +2,18 @@
 
 .btn {
   @extend .waves-effect, .waves-light;
-  background-color: $accent-color;
-  color: $accent-text-color;
+  background-color: $button-color;
+  color: $button-text-color;
+  font-size: $button-font-size;
 }
 
 label, label.active, .input-field > label {
   font-size: 1.2rem;
+}
+
+.form-control {
+  background-color: $body-bg-color;
+  color: $text-color;
 }
 
 .form-group {

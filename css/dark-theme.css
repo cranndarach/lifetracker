@@ -1,3 +1,6 @@
+/******************
+ * Set variables. *
+ ******************/
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -31,7 +34,7 @@
 .materialize-red.lighten-1 {
   background-color: #ea454b !important; }
 
-.materialize-red-text.text-lighten-1, .materialize-red-text.window, .materialize-red-text.sidenav, .sidenav li.materialize-red-text.active, .materialize-red-text.form-control, .materialize-red-text.btn-default {
+.materialize-red-text.text-lighten-1 {
   color: #ea454b !important; }
 
 .materialize-red.darken-1 {
@@ -46,13 +49,13 @@
 .materialize-red-text.text-darken-2 {
   color: #b9151b !important; }
 
-.materialize-red.darken-3, .materialize-red.sidenav, .sidenav li.materialize-red.active {
+.materialize-red.darken-3 {
   background-color: #a21318 !important; }
 
 .materialize-red-text.text-darken-3 {
   color: #a21318 !important; }
 
-.materialize-red.darken-4, .materialize-red.window, tbody.materialize-red {
+.materialize-red.darken-4 {
   background-color: #8b1014 !important; }
 
 .materialize-red-text.text-darken-4 {
@@ -91,7 +94,7 @@
 .red.lighten-1 {
   background-color: #EF5350 !important; }
 
-.red-text.text-lighten-1, .red-text.window, .red-text.sidenav, .sidenav li.red-text.active, .red-text.form-control, .red-text.btn-default {
+.red-text.text-lighten-1 {
   color: #EF5350 !important; }
 
 .red.darken-1 {
@@ -106,13 +109,13 @@
 .red-text.text-darken-2 {
   color: #D32F2F !important; }
 
-.red.darken-3, .red.sidenav, .sidenav li.red.active {
+.red.darken-3 {
   background-color: #C62828 !important; }
 
 .red-text.text-darken-3 {
   color: #C62828 !important; }
 
-.red.darken-4, .red.window, tbody.red {
+.red.darken-4 {
   background-color: #B71C1C !important; }
 
 .red-text.text-darken-4 {
@@ -175,7 +178,7 @@
 .pink.lighten-1 {
   background-color: #ec407a !important; }
 
-.pink-text.text-lighten-1, .pink-text.window, .pink-text.sidenav, .sidenav li.pink-text.active, .pink-text.form-control, .pink-text.btn-default {
+.pink-text.text-lighten-1 {
   color: #ec407a !important; }
 
 .pink.darken-1 {
@@ -190,13 +193,13 @@
 .pink-text.text-darken-2 {
   color: #c2185b !important; }
 
-.pink.darken-3, .pink.sidenav, .sidenav li.pink.active {
+.pink.darken-3 {
   background-color: #ad1457 !important; }
 
 .pink-text.text-darken-3 {
   color: #ad1457 !important; }
 
-.pink.darken-4, .pink.window, tbody.pink {
+.pink.darken-4 {
   background-color: #880e4f !important; }
 
 .pink-text.text-darken-4 {
@@ -259,7 +262,7 @@
 .purple.lighten-1 {
   background-color: #ab47bc !important; }
 
-.purple-text.text-lighten-1, .purple-text.window, .purple-text.sidenav, .sidenav li.purple-text.active, .purple-text.form-control, .purple-text.btn-default {
+.purple-text.text-lighten-1 {
   color: #ab47bc !important; }
 
 .purple.darken-1 {
@@ -274,13 +277,13 @@
 .purple-text.text-darken-2 {
   color: #7b1fa2 !important; }
 
-.purple.darken-3, .purple.sidenav, .sidenav li.purple.active {
+.purple.darken-3 {
   background-color: #6a1b9a !important; }
 
 .purple-text.text-darken-3 {
   color: #6a1b9a !important; }
 
-.purple.darken-4, .purple.window, tbody.purple {
+.purple.darken-4 {
   background-color: #4a148c !important; }
 
 .purple-text.text-darken-4 {
@@ -343,7 +346,7 @@
 .deep-purple.lighten-1 {
   background-color: #7e57c2 !important; }
 
-.deep-purple-text.text-lighten-1, .deep-purple-text.window, .deep-purple-text.sidenav, .sidenav li.deep-purple-text.active, .deep-purple-text.form-control, .deep-purple-text.btn-default {
+.deep-purple-text.text-lighten-1 {
   color: #7e57c2 !important; }
 
 .deep-purple.darken-1 {
@@ -358,13 +361,13 @@
 .deep-purple-text.text-darken-2 {
   color: #512da8 !important; }
 
-.deep-purple.darken-3, .deep-purple.sidenav, .sidenav li.deep-purple.active {
+.deep-purple.darken-3 {
   background-color: #4527a0 !important; }
 
 .deep-purple-text.text-darken-3 {
   color: #4527a0 !important; }
 
-.deep-purple.darken-4, .deep-purple.window, tbody.deep-purple {
+.deep-purple.darken-4 {
   background-color: #311b92 !important; }
 
 .deep-purple-text.text-darken-4 {
@@ -427,7 +430,7 @@
 .indigo.lighten-1 {
   background-color: #5c6bc0 !important; }
 
-.indigo-text.text-lighten-1, .indigo-text.window, .indigo-text.sidenav, .sidenav li.indigo-text.active, .indigo-text.form-control, .indigo-text.btn-default {
+.indigo-text.text-lighten-1 {
   color: #5c6bc0 !important; }
 
 .indigo.darken-1 {
@@ -442,13 +445,13 @@
 .indigo-text.text-darken-2 {
   color: #303f9f !important; }
 
-.indigo.darken-3, .indigo.sidenav, .sidenav li.indigo.active {
+.indigo.darken-3 {
   background-color: #283593 !important; }
 
 .indigo-text.text-darken-3 {
   color: #283593 !important; }
 
-.indigo.darken-4, .indigo.window, tbody.indigo {
+.indigo.darken-4 {
   background-color: #1a237e !important; }
 
 .indigo-text.text-darken-4 {
@@ -511,7 +514,7 @@
 .blue.lighten-1 {
   background-color: #42A5F5 !important; }
 
-.blue-text.text-lighten-1, .blue-text.window, .blue-text.sidenav, .sidenav li.blue-text.active, .blue-text.form-control, .blue-text.btn-default {
+.blue-text.text-lighten-1 {
   color: #42A5F5 !important; }
 
 .blue.darken-1 {
@@ -526,13 +529,13 @@
 .blue-text.text-darken-2 {
   color: #1976D2 !important; }
 
-.blue.darken-3, .blue.sidenav, .sidenav li.blue.active {
+.blue.darken-3 {
   background-color: #1565C0 !important; }
 
 .blue-text.text-darken-3 {
   color: #1565C0 !important; }
 
-.blue.darken-4, .blue.window, tbody.blue {
+.blue.darken-4 {
   background-color: #0D47A1 !important; }
 
 .blue-text.text-darken-4 {
@@ -595,7 +598,7 @@
 .light-blue.lighten-1 {
   background-color: #29b6f6 !important; }
 
-.light-blue-text.text-lighten-1, .light-blue-text.window, .light-blue-text.sidenav, .sidenav li.light-blue-text.active, .light-blue-text.form-control, .light-blue-text.btn-default {
+.light-blue-text.text-lighten-1 {
   color: #29b6f6 !important; }
 
 .light-blue.darken-1 {
@@ -610,13 +613,13 @@
 .light-blue-text.text-darken-2 {
   color: #0288d1 !important; }
 
-.light-blue.darken-3, .light-blue.sidenav, .sidenav li.light-blue.active {
+.light-blue.darken-3 {
   background-color: #0277bd !important; }
 
 .light-blue-text.text-darken-3 {
   color: #0277bd !important; }
 
-.light-blue.darken-4, .light-blue.window, tbody.light-blue {
+.light-blue.darken-4 {
   background-color: #01579b !important; }
 
 .light-blue-text.text-darken-4 {
@@ -679,7 +682,7 @@
 .cyan.lighten-1 {
   background-color: #26c6da !important; }
 
-.cyan-text.text-lighten-1, .cyan-text.window, .cyan-text.sidenav, .sidenav li.cyan-text.active, .cyan-text.form-control, .cyan-text.btn-default {
+.cyan-text.text-lighten-1 {
   color: #26c6da !important; }
 
 .cyan.darken-1 {
@@ -694,13 +697,13 @@
 .cyan-text.text-darken-2 {
   color: #0097a7 !important; }
 
-.cyan.darken-3, .cyan.sidenav, .sidenav li.cyan.active {
+.cyan.darken-3 {
   background-color: #00838f !important; }
 
 .cyan-text.text-darken-3 {
   color: #00838f !important; }
 
-.cyan.darken-4, .cyan.window, tbody.cyan {
+.cyan.darken-4 {
   background-color: #006064 !important; }
 
 .cyan-text.text-darken-4 {
@@ -763,7 +766,7 @@
 .teal.lighten-1 {
   background-color: #26a69a !important; }
 
-.teal-text.text-lighten-1, .teal-text.window, .teal-text.sidenav, .sidenav li.teal-text.active, .teal-text.form-control, .teal-text.btn-default {
+.teal-text.text-lighten-1 {
   color: #26a69a !important; }
 
 .teal.darken-1 {
@@ -778,13 +781,13 @@
 .teal-text.text-darken-2 {
   color: #00796b !important; }
 
-.teal.darken-3, .teal.sidenav, .sidenav li.teal.active {
+.teal.darken-3 {
   background-color: #00695c !important; }
 
 .teal-text.text-darken-3 {
   color: #00695c !important; }
 
-.teal.darken-4, .teal.window, tbody.teal {
+.teal.darken-4 {
   background-color: #004d40 !important; }
 
 .teal-text.text-darken-4 {
@@ -847,7 +850,7 @@
 .green.lighten-1 {
   background-color: #66BB6A !important; }
 
-.green-text.text-lighten-1, .green-text.window, .green-text.sidenav, .sidenav li.green-text.active, .green-text.form-control, .green-text.btn-default {
+.green-text.text-lighten-1 {
   color: #66BB6A !important; }
 
 .green.darken-1 {
@@ -862,13 +865,13 @@
 .green-text.text-darken-2 {
   color: #388E3C !important; }
 
-.green.darken-3, .green.sidenav, .sidenav li.green.active {
+.green.darken-3 {
   background-color: #2E7D32 !important; }
 
 .green-text.text-darken-3 {
   color: #2E7D32 !important; }
 
-.green.darken-4, .green.window, tbody.green {
+.green.darken-4 {
   background-color: #1B5E20 !important; }
 
 .green-text.text-darken-4 {
@@ -931,7 +934,7 @@
 .light-green.lighten-1 {
   background-color: #9ccc65 !important; }
 
-.light-green-text.text-lighten-1, .light-green-text.window, .light-green-text.sidenav, .sidenav li.light-green-text.active, .light-green-text.form-control, .light-green-text.btn-default {
+.light-green-text.text-lighten-1 {
   color: #9ccc65 !important; }
 
 .light-green.darken-1 {
@@ -946,13 +949,13 @@
 .light-green-text.text-darken-2 {
   color: #689f38 !important; }
 
-.light-green.darken-3, .light-green.sidenav, .sidenav li.light-green.active {
+.light-green.darken-3 {
   background-color: #558b2f !important; }
 
 .light-green-text.text-darken-3 {
   color: #558b2f !important; }
 
-.light-green.darken-4, .light-green.window, tbody.light-green {
+.light-green.darken-4 {
   background-color: #33691e !important; }
 
 .light-green-text.text-darken-4 {
@@ -1015,7 +1018,7 @@
 .lime.lighten-1 {
   background-color: #d4e157 !important; }
 
-.lime-text.text-lighten-1, .lime-text.window, .lime-text.sidenav, .sidenav li.lime-text.active, .lime-text.form-control, .lime-text.btn-default {
+.lime-text.text-lighten-1 {
   color: #d4e157 !important; }
 
 .lime.darken-1 {
@@ -1030,13 +1033,13 @@
 .lime-text.text-darken-2 {
   color: #afb42b !important; }
 
-.lime.darken-3, .lime.sidenav, .sidenav li.lime.active {
+.lime.darken-3 {
   background-color: #9e9d24 !important; }
 
 .lime-text.text-darken-3 {
   color: #9e9d24 !important; }
 
-.lime.darken-4, .lime.window, tbody.lime {
+.lime.darken-4 {
   background-color: #827717 !important; }
 
 .lime-text.text-darken-4 {
@@ -1099,7 +1102,7 @@
 .yellow.lighten-1 {
   background-color: #ffee58 !important; }
 
-.yellow-text.text-lighten-1, .yellow-text.window, .yellow-text.sidenav, .sidenav li.yellow-text.active, .yellow-text.form-control, .yellow-text.btn-default {
+.yellow-text.text-lighten-1 {
   color: #ffee58 !important; }
 
 .yellow.darken-1 {
@@ -1114,13 +1117,13 @@
 .yellow-text.text-darken-2 {
   color: #fbc02d !important; }
 
-.yellow.darken-3, .yellow.sidenav, .sidenav li.yellow.active {
+.yellow.darken-3 {
   background-color: #f9a825 !important; }
 
 .yellow-text.text-darken-3 {
   color: #f9a825 !important; }
 
-.yellow.darken-4, .yellow.window, tbody.yellow {
+.yellow.darken-4 {
   background-color: #f57f17 !important; }
 
 .yellow-text.text-darken-4 {
@@ -1183,7 +1186,7 @@
 .amber.lighten-1 {
   background-color: #ffca28 !important; }
 
-.amber-text.text-lighten-1, .amber-text.window, .amber-text.sidenav, .sidenav li.amber-text.active, .amber-text.form-control, .amber-text.btn-default {
+.amber-text.text-lighten-1 {
   color: #ffca28 !important; }
 
 .amber.darken-1 {
@@ -1198,13 +1201,13 @@
 .amber-text.text-darken-2 {
   color: #ffa000 !important; }
 
-.amber.darken-3, .amber.sidenav, .sidenav li.amber.active {
+.amber.darken-3 {
   background-color: #ff8f00 !important; }
 
 .amber-text.text-darken-3 {
   color: #ff8f00 !important; }
 
-.amber.darken-4, .amber.window, tbody.amber {
+.amber.darken-4 {
   background-color: #ff6f00 !important; }
 
 .amber-text.text-darken-4 {
@@ -1267,7 +1270,7 @@
 .orange.lighten-1 {
   background-color: #ffa726 !important; }
 
-.orange-text.text-lighten-1, .orange-text.window, .orange-text.sidenav, .sidenav li.orange-text.active, .orange-text.form-control, .orange-text.btn-default {
+.orange-text.text-lighten-1 {
   color: #ffa726 !important; }
 
 .orange.darken-1 {
@@ -1282,13 +1285,13 @@
 .orange-text.text-darken-2 {
   color: #f57c00 !important; }
 
-.orange.darken-3, .orange.sidenav, .sidenav li.orange.active {
+.orange.darken-3 {
   background-color: #ef6c00 !important; }
 
 .orange-text.text-darken-3 {
   color: #ef6c00 !important; }
 
-.orange.darken-4, .orange.window, tbody.orange {
+.orange.darken-4 {
   background-color: #e65100 !important; }
 
 .orange-text.text-darken-4 {
@@ -1351,7 +1354,7 @@
 .deep-orange.lighten-1 {
   background-color: #ff7043 !important; }
 
-.deep-orange-text.text-lighten-1, .deep-orange-text.window, .deep-orange-text.sidenav, .sidenav li.deep-orange-text.active, .deep-orange-text.form-control, .deep-orange-text.btn-default {
+.deep-orange-text.text-lighten-1 {
   color: #ff7043 !important; }
 
 .deep-orange.darken-1 {
@@ -1366,13 +1369,13 @@
 .deep-orange-text.text-darken-2 {
   color: #e64a19 !important; }
 
-.deep-orange.darken-3, .deep-orange.sidenav, .sidenav li.deep-orange.active {
+.deep-orange.darken-3 {
   background-color: #d84315 !important; }
 
 .deep-orange-text.text-darken-3 {
   color: #d84315 !important; }
 
-.deep-orange.darken-4, .deep-orange.window, tbody.deep-orange {
+.deep-orange.darken-4 {
   background-color: #bf360c !important; }
 
 .deep-orange-text.text-darken-4 {
@@ -1435,7 +1438,7 @@
 .brown.lighten-1 {
   background-color: #8d6e63 !important; }
 
-.brown-text.text-lighten-1, .brown-text.window, .brown-text.sidenav, .sidenav li.brown-text.active, .brown-text.form-control, .brown-text.btn-default {
+.brown-text.text-lighten-1 {
   color: #8d6e63 !important; }
 
 .brown.darken-1 {
@@ -1450,13 +1453,13 @@
 .brown-text.text-darken-2 {
   color: #5d4037 !important; }
 
-.brown.darken-3, .brown.sidenav, .sidenav li.brown.active {
+.brown.darken-3 {
   background-color: #4e342e !important; }
 
 .brown-text.text-darken-3 {
   color: #4e342e !important; }
 
-.brown.darken-4, .brown.window, tbody.brown {
+.brown.darken-4 {
   background-color: #3e2723 !important; }
 
 .brown-text.text-darken-4 {
@@ -1495,7 +1498,7 @@
 .blue-grey.lighten-1 {
   background-color: #78909c !important; }
 
-.blue-grey-text.text-lighten-1, .blue-grey-text.window, .blue-grey-text.sidenav, .sidenav li.blue-grey-text.active, .blue-grey-text.form-control, .blue-grey-text.btn-default {
+.blue-grey-text.text-lighten-1 {
   color: #78909c !important; }
 
 .blue-grey.darken-1 {
@@ -1510,76 +1513,76 @@
 .blue-grey-text.text-darken-2 {
   color: #455a64 !important; }
 
-.blue-grey.darken-3, .blue-grey.sidenav, .sidenav li.blue-grey.active {
+.blue-grey.darken-3 {
   background-color: #37474f !important; }
 
 .blue-grey-text.text-darken-3 {
   color: #37474f !important; }
 
-.blue-grey.darken-4, .blue-grey.window, tbody.blue-grey {
+.blue-grey.darken-4 {
   background-color: #263238 !important; }
 
 .blue-grey-text.text-darken-4 {
   color: #263238 !important; }
 
-.grey, .window, .sidenav, .sidenav li.active, tbody {
+.grey {
   background-color: #9e9e9e !important; }
 
-.grey-text, .window, .sidenav, .sidenav li.active, .form-control, .btn-default {
+.grey-text {
   color: #9e9e9e !important; }
 
-.grey.lighten-5, .lighten-5.window, .lighten-5.sidenav, .sidenav li.lighten-5.active, tbody.lighten-5 {
+.grey.lighten-5 {
   background-color: #fafafa !important; }
 
-.grey-text.text-lighten-5, .text-lighten-5.window, .text-lighten-5.sidenav, .sidenav li.text-lighten-5.active, .text-lighten-5.form-control, .text-lighten-5.btn-default {
+.grey-text.text-lighten-5 {
   color: #fafafa !important; }
 
-.grey.lighten-4, .lighten-4.window, .lighten-4.sidenav, .sidenav li.lighten-4.active, tbody.lighten-4 {
+.grey.lighten-4 {
   background-color: #f5f5f5 !important; }
 
-.grey-text.text-lighten-4, .text-lighten-4.window, .text-lighten-4.sidenav, .sidenav li.text-lighten-4.active, .text-lighten-4.form-control, .text-lighten-4.btn-default {
+.grey-text.text-lighten-4 {
   color: #f5f5f5 !important; }
 
-.grey.lighten-3, .lighten-3.window, .lighten-3.sidenav, .sidenav li.lighten-3.active, tbody.lighten-3 {
+.grey.lighten-3 {
   background-color: #eeeeee !important; }
 
-.grey-text.text-lighten-3, .text-lighten-3.window, .text-lighten-3.sidenav, .sidenav li.text-lighten-3.active, .text-lighten-3.form-control, .text-lighten-3.btn-default {
+.grey-text.text-lighten-3 {
   color: #eeeeee !important; }
 
-.grey.lighten-2, .lighten-2.window, .lighten-2.sidenav, .sidenav li.lighten-2.active, tbody.lighten-2 {
+.grey.lighten-2 {
   background-color: #e0e0e0 !important; }
 
-.grey-text.text-lighten-2, .text-lighten-2.window, .text-lighten-2.sidenav, .sidenav li.text-lighten-2.active, .text-lighten-2.form-control, .text-lighten-2.btn-default {
+.grey-text.text-lighten-2 {
   color: #e0e0e0 !important; }
 
-.grey.lighten-1, .lighten-1.window, .lighten-1.sidenav, .sidenav li.lighten-1.active, tbody.lighten-1 {
+.grey.lighten-1 {
   background-color: #bdbdbd !important; }
 
-.grey-text.text-lighten-1, .window, .sidenav, .sidenav li.active, .form-control, .btn-default {
+.grey-text.text-lighten-1 {
   color: #bdbdbd !important; }
 
-.grey.darken-1, .darken-1.window, .darken-1.sidenav, .sidenav li.darken-1.active, tbody.darken-1 {
+.grey.darken-1 {
   background-color: #757575 !important; }
 
-.grey-text.text-darken-1, .text-darken-1.window, .text-darken-1.sidenav, .sidenav li.text-darken-1.active, .text-darken-1.form-control, .text-darken-1.btn-default {
+.grey-text.text-darken-1 {
   color: #757575 !important; }
 
-.grey.darken-2, .darken-2.window, .darken-2.sidenav, .sidenav li.darken-2.active, tbody.darken-2 {
+.grey.darken-2 {
   background-color: #616161 !important; }
 
-.grey-text.text-darken-2, .text-darken-2.window, .text-darken-2.sidenav, .sidenav li.text-darken-2.active, .text-darken-2.form-control, .text-darken-2.btn-default {
+.grey-text.text-darken-2 {
   color: #616161 !important; }
 
-.grey.darken-3, .darken-3.window, .sidenav, .sidenav li.active, tbody.darken-3 {
+.grey.darken-3 {
   background-color: #424242 !important; }
 
-.grey-text.text-darken-3, .text-darken-3.window, .text-darken-3.sidenav, .sidenav li.text-darken-3.active, .text-darken-3.form-control, .text-darken-3.btn-default {
+.grey-text.text-darken-3 {
   color: #424242 !important; }
 
-.grey.darken-4, .window, .darken-4.sidenav, tbody.sidenav, .sidenav li.darken-4.active, .sidenav li.active.window, tbody {
+.grey.darken-4 {
   background-color: #212121 !important; }
 
-.grey-text.text-darken-4, .text-darken-4.window, .text-darken-4.sidenav, .sidenav li.text-darken-4.active, .text-darken-4.form-control, .text-darken-4.btn-default {
+.grey-text.text-darken-4 {
   color: #212121 !important; }
 
 .black {
@@ -3744,7 +3747,7 @@ small {
 .btn-large,
 .btn-small,
 .btn-flat {
-  font-size: 14px;
+  font-size: 1.2rem;
   outline: 0; }
   .btn i, .btn-large i, .btn-small i,
   .btn-floating i,
@@ -6443,54 +6446,30 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 /******************
  * Set variables. *
  ******************/
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%; }
-
-body, label, h5.nav-group-title {
-  font-size: 1em; }
-
-h1 {
-  margin-left: 12%; }
-
-p {
-  margin-left: 15%; }
-
-.window {
-  height: 100%;
-  overflow-y: scroll;
-  color: #bdbdbd;
-  background-color: #424242; }
-
-#main {
+table {
   width: 80%;
-  padding-left: 20%; }
+  margin: auto; }
 
-.main p {
-  width: 80%; }
+td {
+  width: 30%; }
 
-@media only screen and (min-width: 650px) {
-  .form {
-    width: 65%; }
+td .btn, td .btn-large, td .btn-small {
+  width: 100%; }
 
-  table {
-    width: 70%; } }
-@media only screen and (min-width: 850px) {
-  .form {
-    width: 55%; }
-
-  table {
-    width: 60%; } }
 /******************
  * Set variables. *
  ******************/
 .btn, .btn-large, .btn-small {
-  background-color: #26a69a;
-  color: #bdbdbd; }
+  background-color: color("cyan", "darken-1");
+  color: color("grey", "darken-4");
+  font-size: 1.2rem; }
 
 label, label.active, .input-field > label {
   font-size: 1.2rem; }
+
+.form-control {
+  background-color: color("grey", "darken-3");
+  color: color("grey", "lighten-1"); }
 
 .form-group {
   margin-top: 2em; }
@@ -6501,10 +6480,10 @@ input[type=range] {
   margin: 1em auto 1.5em; }
 
 #submit-message {
-  color: #C62828; }
+  color: color("red", "darken-3"); }
 
 #submit-message {
-  color: #C62828;
+  color: color("red", "darken-3");
   font-weight: bold; }
 
 #submit-message .hide {
@@ -6531,16 +6510,6 @@ fieldset {
 /******************
  * Set variables. *
  ******************/
-table {
-  width: 80%;
-  margin: auto; }
-
-td {
-  width: 30%; }
-
-td .btn, td .btn-large, td .btn-small {
-  width: 100%; }
-
 #data-display {
   margin: 1em;
   overflow-x: scroll; }
@@ -6548,8 +6517,54 @@ td .btn, td .btn-large, td .btn-small {
 #data-display td {
   position: relative; }
 
-.form-control, .btn-default {
-  background-color: #424242; }
+/******************
+ * Set variables. *
+ ******************/
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+body, label, h5.nav-group-title {
+  font-size: 1em; }
+
+h1 {
+  margin-left: 15%; }
+
+p {
+  margin-left: 16%; }
+
+.window {
+  height: 100%;
+  overflow-y: scroll;
+  color: color("grey", "lighten-1");
+  background-color: color("grey", "darken-3"); }
+
+#main {
+  width: 80%;
+  margin-left: 20%; }
+
+.main p {
+  width: 80%; }
+
+@media only screen and (min-width: 650px) {
+  .form {
+    width: 65%; }
+
+  table {
+    width: 70%; } }
+@media only screen and (min-width: 850px) {
+  .form {
+    width: 55%; }
+
+  table {
+    width: 60%; } }
+.window, .sidenav, .sidenav li.active {
+  background-color: color("grey", "darken-3");
+  color: color("grey", "lighten-1"); }
+
+tbody {
+  background-color: color("grey", "darken-4"); }
 
 .window-content {
   border-top: 1px solid #0a0a0a; }

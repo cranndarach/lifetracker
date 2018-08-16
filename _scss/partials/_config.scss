@@ -4,12 +4,18 @@
  * Set variables. *
  ******************/
 // Background colors
-$body-bg-color: color("grey", "darken-3"), !default;
-$accent-color: color("teal", "lighten-1"), !default;
-$positive-color: color("green", "darken-1"), !default;
-$alert-color: color("amber", "darken-3"), !default;
+$body-bg-color: color("grey", "darken-3") !default;
+$accent-color: color("teal", "lighten-1") !default;
+$positive-color: color("green", "darken-1") !default;
+$alert-color: color("amber", "darken-3") !default;
 
 // Text colors
-$text-color: color("grey", "lighten-1"), !default;
-$accent-text-color: $text-color, !default;
-$submit-message-color: color("red", "darken-3"), !default;
+$text-color: color("grey", "lighten-1") !default;
+$accent-text-color: $text-color !default;
+$dim-text-color: color("grey", "base") !default;
+$submit-message-color: color("red", "darken-3") !default;
+
+// Specifics
+$button-color: $accent-color !default;
+$button-text-color: $accent-text-color !default;
+$button-font-size: 1.2rem !default;

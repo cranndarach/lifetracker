@@ -6443,54 +6443,30 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 /******************
  * Set variables. *
  ******************/
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%; }
-
-body, label, h5.nav-group-title {
-  font-size: 1em; }
-
-h1 {
-  margin-left: 12%; }
-
-p {
-  margin-left: 15%; }
-
-.window {
-  height: 100%;
-  overflow-y: scroll;
-  color: #bdbdbd;
-  background-color: #424242; }
-
-#main {
+table {
   width: 80%;
-  padding-left: 20%; }
+  margin: auto; }
 
-.main p {
-  width: 80%; }
+td {
+  width: 30%; }
 
-@media only screen and (min-width: 650px) {
-  .form {
-    width: 65%; }
+td .btn, td .btn-large, td .btn-small {
+  width: 100%; }
 
-  table {
-    width: 70%; } }
-@media only screen and (min-width: 850px) {
-  .form {
-    width: 55%; }
-
-  table {
-    width: 60%; } }
 /******************
  * Set variables. *
  ******************/
 .btn, .btn-large, .btn-small {
   background-color: #26a69a;
-  color: #bdbdbd; }
+  color: #bdbdbd;
+  font-size: 14px; }
 
 label, label.active, .input-field > label {
   font-size: 1.2rem; }
+
+.form-control {
+  background-color: #424242;
+  color: #bdbdbd; }
 
 .form-group {
   margin-top: 2em; }
@@ -6531,21 +6507,54 @@ fieldset {
 /******************
  * Set variables. *
  ******************/
-table {
-  width: 80%;
-  margin: auto; }
-
-td {
-  width: 30%; }
-
-td .btn, td .btn-large, td .btn-small {
-  width: 100%; }
-
 #data-display {
   margin: 1em;
   overflow-x: scroll; }
 
 #data-display td {
   position: relative; }
+
+/******************
+ * Set variables. *
+ ******************/
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+body, label, h5.nav-group-title {
+  font-size: 1em; }
+
+h1 {
+  margin-left: 15%; }
+
+p {
+  margin-left: 16%; }
+
+.window {
+  height: 100%;
+  overflow-y: scroll;
+  color: #bdbdbd;
+  background-color: #424242; }
+
+#main {
+  width: 80%;
+  margin-left: 20%; }
+
+.main p {
+  width: 80%; }
+
+@media only screen and (min-width: 650px) {
+  .form {
+    width: 65%; }
+
+  table {
+    width: 70%; } }
+@media only screen and (min-width: 850px) {
+  .form {
+    width: 55%; }
+
+  table {
+    width: 60%; } }
 
 /*# sourceMappingURL=light-theme.css.map */

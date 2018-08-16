@@ -1,0 +1,21 @@
+@import "partials/config";
+
+// Background colors
+$body-bg-color: color("grey", "darken-3");
+// $accent-color: color("teal", "lighten-1");
+$accent-color: color("cyan", "darken-1");
+$positive-color: color("green", "darken-1");
+$alert-color: color("amber", "darken-3");
+$neutral-color: $body-bg-color;
+
+// Text colors
+$text-color: color("grey", "lighten-1");
+$accent-text-color: color("grey", "darken-4");
+$dim-text-color: color("grey", "base");
+$neutral-text-color: $text-color;
+
+// Some specifics
+$button-color: $accent-color;
+$button-hover-color: color("cyan", "lighten-1");
+$button-text-color: color("grey", "darken-4");
+$table-bg-color: color("grey", "darken-4");

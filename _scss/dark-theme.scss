@@ -1,33 +1,27 @@
 @charset 'UTF-8';
 
+@import "themes/dark_theme_variables";
 @import "partials/base";
 
-// Background colors
-$body-bg-color: color("grey", "darken-3");
-$accent-color: color("teal", "lighten-1");
-$positive-color: color("green", "darken-1");
-$alert-color: color("amber", "darken-3");
-
-// Text colors
-$text-color: color("grey", "lighten-1");
-$accent-text-color: $text-color;
-
- // Custom (s)css, mostly setting colors by extending materialize classes.
-.window {
-  @extend .grey, .darken-4, .grey-text, .text-lighten-1;
+// Style
+.window, .sidenav, .sidenav li.active  {
+  // @extend .grey, .darken-4, .grey-text, .text-lighten-1;
+  background-color: $body-bg-color;
+  color: $text-color;
 }
 
-.sidenav, .sidenav li.active {
-  @extend .grey, .darken-3, .grey-text, .text-lighten-1;
-}
-
-.form-control, .btn-default {
-  background-color: color("grey", "darken-3");
-  @extend .grey-text, .text-lighten-1;
-}
+// .btn {
+//   background-color: $button-color;
+//   color: $button-text-color;
+//
+//   &:hover {
+//     background-color: $button-hover-color;
+//   }
+// }
 
 tbody {
-  @extend .grey, .darken-4;
+  background-color: $table-bg-color;
+  // @extend .grey, .darken-4;
 }
 
 .window-content {
