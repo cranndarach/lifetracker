@@ -1,1 +1,7 @@
-@import "partials/base";
+@charset 'UTF-8';
+
+@import "vendor/variables";
+@import "partials/variables";
+
+@import "vendor/manifest";
+@import "partials/manifest";

@@ -1,8 +1,5 @@
 @charset 'UTF-8';
 
-/******************
- * Set variables. *
- ******************/
 // Background colors
 $body-bg-color: color("grey", "darken-3") !default;
 $accent-color: color("teal", "lighten-1") !default;
@@ -16,6 +13,13 @@ $dim-text-color: color("grey", "base") !default;
 $submit-message-color: color("red", "darken-3") !default;
 
 // Specifics
+// Buttons
 $button-color: $accent-color !default;
 $button-text-color: $accent-text-color !default;
 $button-font-size: 1.2rem !default;
+
+// Sidenav
+$active-dropdown-color: color("grey", "darken-3");
+
+// Window
+$window-border-color: #0a0a0a;

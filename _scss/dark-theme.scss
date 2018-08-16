@@ -1,9 +1,13 @@
 @charset 'UTF-8';
 
+@import "vendor/variables";
+@import "partials/variables";
 @import "themes/dark_theme_variables";
-@import "partials/base";
 
-// Style
+@import "vendor/manifest";
+@import "partials/manifest";
+
+// Theme style
 .window, .sidenav, .sidenav li.active  {
   // @extend .grey, .darken-4, .grey-text, .text-lighten-1;
   background-color: $body-bg-color;
