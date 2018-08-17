@@ -8047,7 +8047,11 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   color: #bdbdbd; }
 
 .sidenav li > a, .sidenav .collapsible-header {
-  padding: 0 16px 0 20px; }
+  padding: 0 16px 0 20px;
+  font-size: 1.1rem; }
+
+.sidenav .nav-btn a {
+  padding-left: 20px; }
 
 #home-menu {
   background-color: #424242; }

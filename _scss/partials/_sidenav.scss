@@ -5,6 +5,11 @@
 
 .sidenav li > a, .sidenav .collapsible-header {
   padding: 0 16px 0 20px;
+  font-size: $font-size;
+}
+
+.sidenav .nav-btn a {
+  padding-left: 20px;
 }
 
 #home-menu {
