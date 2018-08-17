@@ -25,9 +25,9 @@ label, label.active, .input-field > label {
   font-size: 1.2rem;
 }
 
-.form-control::active {
-  border-color: $accent-color;
-}
+// .input-field .form-control:focus {
+//   border-bottom-color: $accent-color;
+// }
 
 .form-control {
   background-color: $body-bg-color;
@@ -70,26 +70,22 @@ input[type=range] {
 
 #submit-message {
   color: $submit-message-color;
-}
-
-#submit-message {
-  color: $submit-message-color;
   font-weight: bold;
 }
 
-#submit-message .hide {
-  animation: fadeout 0.4s linear;
-  -webkit-animation: fadeout 0.4s;
-}
+// #submit-message .hide {
+//   animation: fadeout 0.4s linear;
+//   -webkit-animation: fadeout 0.4s;
+// }
 
 #submit-message .hidden {
   visibility: hidden;
 }
 
-#submit-message .show {
-  animation: fadein 0.8s linear;
-  -webkit-animation: fadein 0.8s;
-}
+// #submit-message .show {
+//   animation: fadein 0.8s linear;
+//   -webkit-animation: fadein 0.8s;
+// }
 
 #submit-message .shown {
   visibility: visible;

@@ -6045,8 +6045,8 @@ textarea.materialize-textarea {
   input[type=number]:not(.browser-default):focus:not([readonly]),
   input[type=search]:not(.browser-default):focus:not([readonly]),
   textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #26a69a;
-    box-shadow: 0 1px 0 0 #26a69a; }
+    border-bottom: 1px solid #00acc1;
+    box-shadow: 0 1px 0 0 #00acc1; }
   input:not([type]):focus:not([readonly]) + label,
   input[type=text]:not(.browser-default):focus:not([readonly]) + label,
   input[type=password]:not(.browser-default):focus:not([readonly]) + label,
@@ -6060,7 +6060,7 @@ textarea.materialize-textarea {
   input[type=number]:not(.browser-default):focus:not([readonly]) + label,
   input[type=search]:not(.browser-default):focus:not([readonly]) + label,
   textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #26a69a; }
+    color: #00acc1; }
   input:not([type]):focus.valid ~ label,
   input[type=text]:not(.browser-default):focus.valid ~ label,
   input[type=password]:not(.browser-default):focus.valid ~ label,
@@ -6342,7 +6342,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
     transition: color .2s;
     top: 0.5rem; }
     .input-field .prefix.active {
-      color: #26a69a; }
+      color: #00acc1; }
   .input-field .prefix ~ input,
   .input-field .prefix ~ textarea,
   .input-field .prefix ~ label,
@@ -6777,7 +6777,7 @@ select {
     user-select: none;
     z-index: 1; }
     .select-wrapper input.select-dropdown:focus {
-      border-bottom: 1px solid #26a69a; }
+      border-bottom: 1px solid #00acc1; }
   .select-wrapper .caret {
     position: absolute;
     right: 0;
@@ -8085,9 +8085,6 @@ td .btn, td .btn-large, td .btn-small, td .submit-btn, td .page-btn {
 label, label.active, .input-field > label {
   font-size: 1.2rem; }
 
-.form-control::active {
-  border-color: #00acc1; }
-
 .form-control {
   background-color: #212121;
   color: #bdbdbd; }
@@ -8114,22 +8111,11 @@ input[type=range] {
     margin-top: -8px; }
 
 #submit-message {
-  color: #C62828; }
-
-#submit-message {
   color: #C62828;
   font-weight: bold; }
 
-#submit-message .hide {
-  animation: fadeout 0.4s linear;
-  -webkit-animation: fadeout 0.4s; }
-
 #submit-message .hidden {
   visibility: hidden; }
-
-#submit-message .show {
-  animation: fadein 0.8s linear;
-  -webkit-animation: fadein 0.8s; }
 
 #submit-message .shown {
   visibility: visible; }

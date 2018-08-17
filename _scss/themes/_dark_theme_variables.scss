@@ -36,6 +36,9 @@ $button-side-padding: 1.5rem;
 $button-top-bottom-padding: 0.2rem;
 $button-hover-color: color("cyan", "lighten-1");
 
+// Text input
+$input-focus-color: $accent-color;
+
 // Range
 $range-track-color: color("grey", "darken-2");;
 $range-border-color: $contrast-bg-color;
