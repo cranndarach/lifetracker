@@ -3,8 +3,8 @@
   color: $text-color;
 }
 
-.sidenav li > a {
-  padding: 0 16px;
+.sidenav li > a, .sidenav .collapsible-header {
+  padding: 0 16px 0 20px;
 }
 
 #sidebar {

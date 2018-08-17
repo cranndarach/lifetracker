@@ -1,8 +1,9 @@
-%btn {
+.btn {
   @extend .waves-effect, .waves-light;
   background-color: $button-color;
   color: $button-text-color;
   font-size: $button-font-size;
+  line-height: 1;
 
   &:hover {
     background-color: $button-hover-color;
@@ -10,11 +11,22 @@
 }
 
 .submit-btn {
-  @extend %btn, .right;
+  @extend .btn, .right;
+  padding: $button-top-bottom-padding $button-side-padding;
+}
+
+.page-btn {
+  @extend .btn;
+  padding: $button-top-bottom-padding $button-side-padding;
+  text-transform: none;
 }
 
 label, label.active, .input-field > label {
   font-size: 1.2rem;
+}
+
+.form-control::active {
+  border-color: $accent-color;
 }
 
 .form-control {
@@ -34,10 +46,12 @@ input[type=range] {
   display: block;
   width: 80%;
   margin: 1em auto 1.5em;
+  border-color: $range-border-color;
+  border-radius: 6px;
 
-  .value {
-    color: $accent-color;
-  }
+  // .value {
+  //   color: $accent-color;
+  // }
 
   &::-webkit-slider-runnable-track {
     background-color: $range-track-color;
@@ -48,6 +62,9 @@ input[type=range] {
     background-color: $range-thumb-color;
     height: $range-thumb-height;
     width: $range-thumb-width;
+    // This will probably need some adjusting...
+    margin-top: $range-thumb-height * -0.5 + 2;
+    // transform-origin: 50% 50%;
   }
 }
 

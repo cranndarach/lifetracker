@@ -1,3 +1,6 @@
+// Some named colors
+$off-black: #0a0a0a;
+
 // Background colors
 $body-bg-color: color("grey", "darken-4");
 $accent-color: color("cyan", "darken-1");
@@ -8,14 +11,15 @@ $neutral-color: $body-bg-color;
 
 // Text colors
 $text-color: color("grey", "lighten-1");
-$accent-text-color: $text-color;
+$accent-text-color: $off-black;
 $dim-text-color: color("grey", "darken-2");
 $submit-message-color: color("red", "darken-3");
 $neutral-text-color: $text-color;
 
 // Specifics
 // Window
-$window-border-color: #0a0a0a;
+$window-border-color: $off-black;
+$font-size: 1.1rem;
 
 // Sidenav
 $active-dropdown-color: $contrast-bg-color;
@@ -27,12 +31,15 @@ $table-bg-color: color("grey", "darken-4");
 // Buttons
 $button-color: $accent-color;
 $button-text-color: $accent-text-color;
-$button-font-size: 1.2rem;
+$button-font-size: 1.4rem;
+$button-side-padding: 1.5rem;
+$button-top-bottom-padding: 0.2rem;
 $button-hover-color: color("cyan", "lighten-1");
 
 // Range
 $range-track-color: $contrast-bg-color;
+$range-border-color: $contrast-bg-color;
 $range-thumb-color: $accent-color;
 $range-track-height: 3px;
-$range-thumb-height: 14px;
+$range-thumb-height: 20px;
 $range-thumb-width: $range-thumb-height;
