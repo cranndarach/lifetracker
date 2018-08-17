@@ -1,6 +1,12 @@
 /****************
  * Layout style *
  ****************/
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/roboto/Roboto-Regular.woff") format("woff"),
+       url("fonts/roboto/Roboto-Regular.woff2") format("woff2");
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -8,7 +14,7 @@ html, body {
 }
 
 body, h5.nav-group-title {
-  // font-family: -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: $font-family;
   font-size: $font-size;
 }
 
