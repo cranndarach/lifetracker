@@ -13,11 +13,13 @@ body, h5.nav-group-title {
 }
 
 h1 {
-  margin-left: 15%;
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 p {
-  margin-left: 16%;
+  margin-left: 4rem;
 }
 
 .window {
@@ -32,8 +34,21 @@ p {
 }
 
 #main {
+  // width: 80%;
+  // margin-left: 20%;
+  margin-left: 300px;
+  // overflow-y: scroll;
+  // padding-left: 10%;
+  padding-bottom: 10%;
+}
+
+.content {
   width: 80%;
-  margin-left: 20%;
+  // margin: auto;
+}
+
+.form {
+  margin: auto;
 }
 
 .main p {

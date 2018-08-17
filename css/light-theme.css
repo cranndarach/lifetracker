@@ -8046,7 +8046,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   padding: 0 16px 0 20px; }
 
 #sidebar {
-  width: 20%; }
+  width: 300px; }
 
 .sidenav li.active {
   background-color: #424242; }
@@ -8146,10 +8146,12 @@ body, h5.nav-group-title {
   font-size: 1.1rem; }
 
 h1 {
-  margin-left: 15%; }
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem; }
 
 p {
-  margin-left: 16%; }
+  margin-left: 4rem; }
 
 .window {
   height: 100%;
@@ -8161,8 +8163,14 @@ p {
   border-top: 1px solid #0a0a0a; }
 
 #main {
-  width: 80%;
-  margin-left: 20%; }
+  margin-left: 300px;
+  padding-bottom: 10%; }
+
+.content {
+  width: 80%; }
+
+.form {
+  margin: auto; }
 
 .main p {
   width: 80%; }
