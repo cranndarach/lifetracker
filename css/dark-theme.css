@@ -8045,6 +8045,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .sidenav li > a, .sidenav .collapsible-header {
   padding: 0 16px 0 20px; }
 
+#home-menu {
+  background-color: #424242; }
+
 #sidebar {
   width: 300px; }
 
