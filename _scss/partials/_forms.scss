@@ -3,6 +3,7 @@
   background-color: $button-color;
   color: $button-text-color;
   font-size: $button-font-size;
+  padding: $button-top-bottom-padding $button-side-padding;
   line-height: 1;
 
   &:hover {
@@ -12,13 +13,15 @@
 
 .submit-btn {
   @extend .btn, .right;
-  padding: $button-top-bottom-padding $button-side-padding;
 }
 
-.page-btn {
+.page-btn, .browse-btn {
   @extend .btn;
-  padding: $button-top-bottom-padding $button-side-padding;
   text-transform: none;
+}
+
+.browse-btn {
+  font-size: 1.1rem;
 }
 
 label, label.active, .input-field > label {

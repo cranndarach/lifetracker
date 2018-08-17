@@ -20,6 +20,14 @@
   background-color: $active-dropdown-color;
 }
 
-div.colapsible-body {
+.sidenav .collapsible-body {
   background-color: $body-bg-color;
+}
+
+.sidenav li.current {
+  background-color: $current-sidenav-bg-color;
+  
+  a {
+    color: $current-sidenav-text-color;
+  }
 }
