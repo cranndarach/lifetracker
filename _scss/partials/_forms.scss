@@ -1,8 +1,16 @@
-.btn {
+%btn {
   @extend .waves-effect, .waves-light;
   background-color: $button-color;
   color: $button-text-color;
   font-size: $button-font-size;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
+
+.submit-btn {
+  @extend %btn, .right;
 }
 
 label, label.active, .input-field > label {
@@ -18,10 +26,29 @@ label, label.active, .input-field > label {
   margin-top: 2em;
 }
 
+input::placeholder {
+  color: $dim-text-color;
+}
+
 input[type=range] {
   display: block;
   width: 80%;
   margin: 1em auto 1.5em;
+
+  .value {
+    color: $accent-color;
+  }
+
+  &::-webkit-slider-runnable-track {
+    background-color: $range-track-color;
+    height: $range-track-height;
+  }
+
+  &::-webkit-slider-thumb {
+    background-color: $range-thumb-color;
+    height: $range-thumb-height;
+    width: $range-thumb-width;
+  }
 }
 
 #submit-message {

@@ -3670,7 +3670,7 @@ i {
   i.left {
     float: left;
     margin-right: 15px; }
-  i.right {
+  i.right, i.submit-btn {
     float: right;
     margin-left: 15px; }
   i.tiny {
@@ -4087,7 +4087,7 @@ td, th {
 .left {
   float: left !important; }
 
-.right {
+.right, .submit-btn {
   float: right !important; }
 
 .no-select, input[type=range],
@@ -4783,15 +4783,15 @@ nav {
       nav .brand-logo {
         left: 50%;
         transform: translateX(-50%); }
-        nav .brand-logo.left, nav .brand-logo.right {
+        nav .brand-logo.left, nav .brand-logo.right, nav .brand-logo.submit-btn {
           padding: 0;
           transform: none; }
         nav .brand-logo.left {
           left: 0.5rem; }
-        nav .brand-logo.right {
+        nav .brand-logo.right, nav .brand-logo.submit-btn {
           right: 0.5rem;
           left: auto; } }
-    nav .brand-logo.right {
+    nav .brand-logo.right, nav .brand-logo.submit-btn {
       right: 0.5rem;
       padding: 0; }
     nav .brand-logo i,
@@ -5346,7 +5346,7 @@ small {
 .btn-large,
 .btn-small,
 .btn-flat {
-  font-size: 14px;
+  font-size: 1.2rem;
   outline: 0; }
   .btn i, .btn-large i, .btn-small i,
   .btn-floating i,
@@ -5610,7 +5610,7 @@ button.btn-floating {
  * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
-.waves-effect, .btn, .btn-large, .btn-small {
+.waves-effect, .submit-btn {
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -5620,7 +5620,7 @@ button.btn-floating {
   vertical-align: middle;
   z-index: 1;
   transition: .3s ease-out; }
-  .waves-effect .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple {
+  .waves-effect .waves-ripple, .submit-btn .waves-ripple {
     position: absolute;
     border-radius: 50%;
     width: 20px;
@@ -5633,27 +5633,27 @@ button.btn-floating {
     transition-property: transform, opacity;
     transform: scale(0);
     pointer-events: none; }
-  .waves-effect.waves-light .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple {
+  .waves-effect.waves-light .waves-ripple, .submit-btn .waves-ripple {
     background-color: rgba(255, 255, 255, 0.45); }
-  .waves-effect.waves-red .waves-ripple, .waves-red.btn .waves-ripple, .waves-red.btn-large .waves-ripple, .waves-red.btn-small .waves-ripple {
+  .waves-effect.waves-red .waves-ripple, .waves-red.submit-btn .waves-ripple {
     background-color: rgba(244, 67, 54, 0.7); }
-  .waves-effect.waves-yellow .waves-ripple, .waves-yellow.btn .waves-ripple, .waves-yellow.btn-large .waves-ripple, .waves-yellow.btn-small .waves-ripple {
+  .waves-effect.waves-yellow .waves-ripple, .waves-yellow.submit-btn .waves-ripple {
     background-color: rgba(255, 235, 59, 0.7); }
-  .waves-effect.waves-orange .waves-ripple, .waves-orange.btn .waves-ripple, .waves-orange.btn-large .waves-ripple, .waves-orange.btn-small .waves-ripple {
+  .waves-effect.waves-orange .waves-ripple, .waves-orange.submit-btn .waves-ripple {
     background-color: rgba(255, 152, 0, 0.7); }
-  .waves-effect.waves-purple .waves-ripple, .waves-purple.btn .waves-ripple, .waves-purple.btn-large .waves-ripple, .waves-purple.btn-small .waves-ripple {
+  .waves-effect.waves-purple .waves-ripple, .waves-purple.submit-btn .waves-ripple {
     background-color: rgba(156, 39, 176, 0.7); }
-  .waves-effect.waves-green .waves-ripple, .waves-green.btn .waves-ripple, .waves-green.btn-large .waves-ripple, .waves-green.btn-small .waves-ripple {
+  .waves-effect.waves-green .waves-ripple, .waves-green.submit-btn .waves-ripple {
     background-color: rgba(76, 175, 80, 0.7); }
-  .waves-effect.waves-teal .waves-ripple, .waves-teal.btn .waves-ripple, .waves-teal.btn-large .waves-ripple, .waves-teal.btn-small .waves-ripple {
+  .waves-effect.waves-teal .waves-ripple, .waves-teal.submit-btn .waves-ripple {
     background-color: rgba(0, 150, 136, 0.7); }
-  .waves-effect input[type="button"], .btn input[type="button"], .btn-large input[type="button"], .btn-small input[type="button"], .waves-effect input[type="reset"], .btn input[type="reset"], .btn-large input[type="reset"], .btn-small input[type="reset"], .waves-effect input[type="submit"], .btn input[type="submit"], .btn-large input[type="submit"], .btn-small input[type="submit"] {
+  .waves-effect input[type="button"], .submit-btn input[type="button"], .waves-effect input[type="reset"], .submit-btn input[type="reset"], .waves-effect input[type="submit"], .submit-btn input[type="submit"] {
     border: 0;
     font-style: normal;
     font-size: inherit;
     text-transform: inherit;
     background: none; }
-  .waves-effect img, .btn img, .btn-large img, .btn-small img {
+  .waves-effect img, .submit-btn img {
     position: relative;
     z-index: -1; }
 
@@ -5685,7 +5685,7 @@ button.btn-floating {
   display: block; }
 
 /* Firefox Bug: link not triggered */
-.waves-effect .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple {
+.waves-effect .waves-ripple, .submit-btn .waves-ripple {
   z-index: -1; }
 
 .modal {
@@ -7461,7 +7461,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     border-right-color: transparent !important;
     -webkit-transform: rotate(129deg);
     transform: rotate(129deg); }
-  .circle-clipper.right .circle {
+  .circle-clipper.right .circle, .circle-clipper.submit-btn .circle {
     left: -100%;
     border-left-color: transparent !important;
     -webkit-transform: rotate(-129deg);
@@ -7472,7 +7472,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   -webkit-animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
 
-.active .circle-clipper.right .circle {
+.active .circle-clipper.right .circle, .active .circle-clipper.submit-btn .circle {
   /* duration: ARCTIME */
   -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
@@ -8059,10 +8059,12 @@ td {
 td .btn, td .btn-large, td .btn-small {
   width: 100%; }
 
-.btn, .btn-large, .btn-small {
+.submit-btn {
   background-color: #00acc1;
   color: #212121;
-  font-size: 14px; }
+  font-size: 1.2rem; }
+  .submit-btn:hover {
+    background-color: #26c6da; }
 
 label, label.active, .input-field > label {
   font-size: 1.2rem; }
@@ -8074,10 +8076,22 @@ label, label.active, .input-field > label {
 .form-group {
   margin-top: 2em; }
 
+input::placeholder {
+  color: #9e9e9e; }
+
 input[type=range] {
   display: block;
   width: 80%;
   margin: 1em auto 1.5em; }
+  input[type=range] .value {
+    color: #00acc1; }
+  input[type=range]::-webkit-slider-runnable-track {
+    background-color: #424242;
+    height: 3px; }
+  input[type=range]::-webkit-slider-thumb {
+    background-color: #00acc1;
+    height: 14px;
+    width: 14px; }
 
 #submit-message {
   color: #C62828; }
@@ -8122,7 +8136,7 @@ html, body {
   margin: 0;
   height: 100%; }
 
-body, label, h5.nav-group-title {
+body, h5.nav-group-title {
   font-size: 1em; }
 
 h1 {
@@ -8159,14 +8173,5 @@ p {
 
   table {
     width: 60%; } }
-.window, .sidenav, .sidenav li.active {
-  background-color: #212121;
-  color: #bdbdbd; }
-
-tbody {
-  background-color: #212121; }
-
-.window-content {
-  border-top: 1px solid #0a0a0a; }
 
 /*# sourceMappingURL=dark-theme.css.map */

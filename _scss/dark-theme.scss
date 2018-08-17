@@ -7,27 +7,4 @@
 @import "vendor/manifest";
 @import "partials/manifest";
 
-// Theme style
-.window, .sidenav, .sidenav li.active  {
-  // @extend .grey, .darken-4, .grey-text, .text-lighten-1;
-  background-color: $body-bg-color;
-  color: $text-color;
-}
-
-// .btn {
-//   background-color: $button-color;
-//   color: $button-text-color;
-//
-//   &:hover {
-//     background-color: $button-hover-color;
-//   }
-// }
-
-tbody {
-  background-color: $table-bg-color;
-  // @extend .grey, .darken-4;
-}
-
-.window-content {
-  border-top: 1px solid #0a0a0a;
-}
+// Theme specifics go here, if applicable.
