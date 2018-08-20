@@ -6,8 +6,9 @@
   padding: $button-top-bottom-padding $button-side-padding;
   line-height: 1;
 
-  &:hover {
-    background-color: $button-hover-color;
+  &:hover, &:focus {
+    // background-color: $button-hover-color;
+    background-color: lighten($button-color, 10%);
   }
 }
 
@@ -21,6 +22,10 @@
 
   &:hover {
     color: $button-text-color;
+  }
+
+  &:focus {
+    background-color: darken($btn-no-accent-bg-color, 10%);
   }
 }
 
