@@ -50,9 +50,11 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
       return dataProc.loadData();
     })
     .then(() => {
-      return Promise.join(dataProc.getFields(), dataProc.getCategories(), () => {
-        populate.populate("home");
-      });
+      // return Promise.join(dataProc.getFields(), dataProc.getCategories(), () => {
+      return dataProc.getCategories();
+    })
+    .then(() => {
+      populate.populate("home");
     })
     .catch((err) => {
       console.log(err.stack);
