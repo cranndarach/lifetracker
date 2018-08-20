@@ -1,9 +1,9 @@
 .sidenav {
   background-color: $body-bg-color;
-  color: $text-color;
 }
 
 .sidenav li > a, .sidenav .collapsible-header {
+  color: $sidenav-text-color;
   padding: 0 16px 0 20px;
   font-size: $font-size;
 }

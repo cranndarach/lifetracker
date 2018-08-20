@@ -8043,10 +8043,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 .sidenav {
-  background-color: #212121;
-  color: #bdbdbd; }
+  background-color: #212121; }
 
 .sidenav li > a, .sidenav .collapsible-header {
+  color: #e0e0e0;
   padding: 0 16px 0 20px;
   font-size: 1.1rem; }
 
@@ -8103,7 +8103,7 @@ label, label.active, .input-field > label {
 
 .form-control {
   background-color: #212121;
-  color: #bdbdbd; }
+  color: #e0e0e0; }
 
 .form-group {
   margin-top: 2em; }
@@ -8180,7 +8180,7 @@ p {
 .window {
   height: 100%;
   overflow-y: scroll;
-  color: #bdbdbd;
+  color: #e0e0e0;
   background-color: #212121; }
 
 .window-content {

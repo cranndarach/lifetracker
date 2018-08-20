@@ -10,7 +10,7 @@ $alert-color: color("amber", "darken-3");
 $neutral-color: $body-bg-color;
 
 // Text colors
-$text-color: color("grey", "lighten-1");
+$text-color: color("grey", "lighten-2");
 $accent-text-color: $off-black;
 $dim-text-color: color("grey", "base");
 $submit-message-color: color("red", "darken-3");
@@ -23,6 +23,7 @@ $window-border-color: $off-black;
 $font-size: 1.1rem;
 
 // Sidenav
+$sidenav-text-color: $text-color;
 $active-dropdown-color: $contrast-bg-color;
 $current-sidenav-bg-color: $accent-color;
 $current-sidenav-text-color: $accent-text-color;
