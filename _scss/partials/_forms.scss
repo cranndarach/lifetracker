@@ -12,7 +12,8 @@
   }
 }
 
-.search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent {
+.search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
+  .export-results-btn {
   @extend .btn;
 }
 

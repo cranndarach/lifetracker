@@ -3641,10 +3641,12 @@ a {
   box-shadow: none !important; }
 
 /* 2dp elevation modified*/
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
+.export-results-btn, .btn-floating, .dropdown-content, .collapsible, .sidenav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
 
-.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover, .btn-floating:hover {
+.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover,
+.export-results-btn:hover, .btn-floating:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
 
 /* 6dp elevation modified*/
@@ -4831,11 +4833,13 @@ nav {
       display: block;
       padding: 0 15px;
       cursor: pointer; }
-      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.search-btn, nav ul a.export-btn, nav ul a.submit-btn, nav ul a.page-btn, nav ul a.browse-btn, nav ul a.btn-no-accent, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
+      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.search-btn, nav ul a.export-btn, nav ul a.submit-btn, nav ul a.page-btn, nav ul a.browse-btn, nav ul a.btn-no-accent,
+      nav ul a.export-results-btn, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
         margin-top: -2px;
         margin-left: 15px;
         margin-right: 15px; }
-        nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-small > .material-icons, nav ul a.search-btn > .material-icons, nav ul a.export-btn > .material-icons, nav ul a.submit-btn > .material-icons, nav ul a.page-btn > .material-icons, nav ul a.browse-btn > .material-icons, nav ul a.btn-no-accent > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-flat > .material-icons, nav ul a.btn-floating > .material-icons {
+        nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-small > .material-icons, nav ul a.search-btn > .material-icons, nav ul a.export-btn > .material-icons, nav ul a.submit-btn > .material-icons, nav ul a.page-btn > .material-icons, nav ul a.browse-btn > .material-icons, nav ul a.btn-no-accent > .material-icons,
+        nav ul a.export-results-btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-flat > .material-icons, nav ul a.btn-floating > .material-icons {
           height: inherit;
           line-height: inherit; }
       nav ul a:hover {
@@ -5297,6 +5301,7 @@ small {
   visibility: hidden; }
 
 .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
+.export-results-btn,
 .btn-flat {
   border: none;
   border-radius: 2px;
@@ -5309,6 +5314,7 @@ small {
   -webkit-tap-highlight-color: transparent; }
 
 .btn.disabled, .disabled.btn-large, .disabled.btn-small, .disabled.search-btn, .disabled.export-btn, .disabled.submit-btn, .disabled.page-btn, .disabled.browse-btn, .disabled.btn-no-accent,
+.disabled.export-results-btn,
 .btn-floating.disabled,
 .btn-large.disabled,
 .btn-small.disabled,
@@ -5322,6 +5328,7 @@ small {
 .page-btn:disabled,
 .browse-btn:disabled,
 .btn-no-accent:disabled,
+.export-results-btn:disabled,
 .btn-floating:disabled,
 .btn-large:disabled,
 .btn-small:disabled,
@@ -5335,6 +5342,7 @@ small {
 [disabled].page-btn,
 [disabled].browse-btn,
 [disabled].btn-no-accent,
+[disabled].export-results-btn,
 .btn-floating[disabled],
 .btn-large[disabled],
 .btn-small[disabled],
@@ -5345,6 +5353,7 @@ small {
   color: #9F9F9F !important;
   cursor: default; }
   .btn.disabled:hover, .disabled.btn-large:hover, .disabled.btn-small:hover, .disabled.search-btn:hover, .disabled.export-btn:hover, .disabled.submit-btn:hover, .disabled.page-btn:hover, .disabled.browse-btn:hover, .disabled.btn-no-accent:hover,
+  .disabled.export-results-btn:hover,
   .btn-floating.disabled:hover,
   .btn-large.disabled:hover,
   .btn-small.disabled:hover,
@@ -5358,6 +5367,7 @@ small {
   .page-btn:disabled:hover,
   .browse-btn:disabled:hover,
   .btn-no-accent:disabled:hover,
+  .export-results-btn:disabled:hover,
   .btn-floating:disabled:hover,
   .btn-large:disabled:hover,
   .btn-small:disabled:hover,
@@ -5371,6 +5381,7 @@ small {
   [disabled].page-btn:hover,
   [disabled].browse-btn:hover,
   [disabled].btn-no-accent:hover,
+  [disabled].export-results-btn:hover,
   .btn-floating[disabled]:hover,
   .btn-large[disabled]:hover,
   .btn-small[disabled]:hover,
@@ -5379,6 +5390,7 @@ small {
     color: #9F9F9F !important; }
 
 .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
+.export-results-btn,
 .btn-floating,
 .btn-large,
 .btn-small,
@@ -5386,6 +5398,7 @@ small {
   font-size: 1.3rem;
   outline: 0; }
   .btn i, .btn-large i, .btn-small i, .search-btn i, .export-btn i, .submit-btn i, .page-btn i, .browse-btn i, .btn-no-accent i,
+  .export-results-btn i,
   .btn-floating i,
   .btn-large i,
   .btn-small i,
@@ -5394,10 +5407,12 @@ small {
     line-height: inherit; }
 
 .btn:focus, .btn-large:focus, .btn-small:focus, .search-btn:focus, .export-btn:focus, .submit-btn:focus, .page-btn:focus, .browse-btn:focus, .btn-no-accent:focus,
+.export-results-btn:focus,
 .btn-floating:focus {
   background-color: #1d7d74; }
 
-.btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent {
+.btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
+.export-results-btn {
   text-decoration: none;
   color: #fff;
   background-color: #26a69a;
@@ -5405,7 +5420,8 @@ small {
   letter-spacing: .5px;
   transition: background-color .2s ease-out;
   cursor: pointer; }
-  .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover {
+  .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover,
+  .export-results-btn:hover {
     background-color: #2bbbad; }
 
 .btn-floating {
@@ -5647,7 +5663,8 @@ button.btn-floating {
  * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
-.waves-effect, .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent {
+.waves-effect, .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
+.export-results-btn {
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -5657,7 +5674,8 @@ button.btn-floating {
   vertical-align: middle;
   z-index: 1;
   transition: .3s ease-out; }
-  .waves-effect .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple, .search-btn .waves-ripple, .export-btn .waves-ripple, .submit-btn .waves-ripple, .page-btn .waves-ripple, .browse-btn .waves-ripple, .btn-no-accent .waves-ripple {
+  .waves-effect .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple, .search-btn .waves-ripple, .export-btn .waves-ripple, .submit-btn .waves-ripple, .page-btn .waves-ripple, .browse-btn .waves-ripple, .btn-no-accent .waves-ripple,
+  .export-results-btn .waves-ripple {
     position: absolute;
     border-radius: 50%;
     width: 20px;
@@ -5670,27 +5688,38 @@ button.btn-floating {
     transition-property: transform, opacity;
     transform: scale(0);
     pointer-events: none; }
-  .waves-effect.waves-light .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple, .search-btn .waves-ripple, .export-btn .waves-ripple, .submit-btn .waves-ripple, .page-btn .waves-ripple, .browse-btn .waves-ripple, .btn-no-accent .waves-ripple {
+  .waves-effect.waves-light .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple, .search-btn .waves-ripple, .export-btn .waves-ripple, .submit-btn .waves-ripple, .page-btn .waves-ripple, .browse-btn .waves-ripple, .btn-no-accent .waves-ripple,
+  .export-results-btn .waves-ripple {
     background-color: rgba(255, 255, 255, 0.45); }
-  .waves-effect.waves-red .waves-ripple, .waves-red.btn .waves-ripple, .waves-red.btn-large .waves-ripple, .waves-red.btn-small .waves-ripple, .waves-red.search-btn .waves-ripple, .waves-red.export-btn .waves-ripple, .waves-red.submit-btn .waves-ripple, .waves-red.page-btn .waves-ripple, .waves-red.browse-btn .waves-ripple, .waves-red.btn-no-accent .waves-ripple {
+  .waves-effect.waves-red .waves-ripple, .waves-red.btn .waves-ripple, .waves-red.btn-large .waves-ripple, .waves-red.btn-small .waves-ripple, .waves-red.search-btn .waves-ripple, .waves-red.export-btn .waves-ripple, .waves-red.submit-btn .waves-ripple, .waves-red.page-btn .waves-ripple, .waves-red.browse-btn .waves-ripple, .waves-red.btn-no-accent .waves-ripple,
+  .waves-red.export-results-btn .waves-ripple {
     background-color: rgba(244, 67, 54, 0.7); }
-  .waves-effect.waves-yellow .waves-ripple, .waves-yellow.btn .waves-ripple, .waves-yellow.btn-large .waves-ripple, .waves-yellow.btn-small .waves-ripple, .waves-yellow.search-btn .waves-ripple, .waves-yellow.export-btn .waves-ripple, .waves-yellow.submit-btn .waves-ripple, .waves-yellow.page-btn .waves-ripple, .waves-yellow.browse-btn .waves-ripple, .waves-yellow.btn-no-accent .waves-ripple {
+  .waves-effect.waves-yellow .waves-ripple, .waves-yellow.btn .waves-ripple, .waves-yellow.btn-large .waves-ripple, .waves-yellow.btn-small .waves-ripple, .waves-yellow.search-btn .waves-ripple, .waves-yellow.export-btn .waves-ripple, .waves-yellow.submit-btn .waves-ripple, .waves-yellow.page-btn .waves-ripple, .waves-yellow.browse-btn .waves-ripple, .waves-yellow.btn-no-accent .waves-ripple,
+  .waves-yellow.export-results-btn .waves-ripple {
     background-color: rgba(255, 235, 59, 0.7); }
-  .waves-effect.waves-orange .waves-ripple, .waves-orange.btn .waves-ripple, .waves-orange.btn-large .waves-ripple, .waves-orange.btn-small .waves-ripple, .waves-orange.search-btn .waves-ripple, .waves-orange.export-btn .waves-ripple, .waves-orange.submit-btn .waves-ripple, .waves-orange.page-btn .waves-ripple, .waves-orange.browse-btn .waves-ripple, .waves-orange.btn-no-accent .waves-ripple {
+  .waves-effect.waves-orange .waves-ripple, .waves-orange.btn .waves-ripple, .waves-orange.btn-large .waves-ripple, .waves-orange.btn-small .waves-ripple, .waves-orange.search-btn .waves-ripple, .waves-orange.export-btn .waves-ripple, .waves-orange.submit-btn .waves-ripple, .waves-orange.page-btn .waves-ripple, .waves-orange.browse-btn .waves-ripple, .waves-orange.btn-no-accent .waves-ripple,
+  .waves-orange.export-results-btn .waves-ripple {
     background-color: rgba(255, 152, 0, 0.7); }
-  .waves-effect.waves-purple .waves-ripple, .waves-purple.btn .waves-ripple, .waves-purple.btn-large .waves-ripple, .waves-purple.btn-small .waves-ripple, .waves-purple.search-btn .waves-ripple, .waves-purple.export-btn .waves-ripple, .waves-purple.submit-btn .waves-ripple, .waves-purple.page-btn .waves-ripple, .waves-purple.browse-btn .waves-ripple, .waves-purple.btn-no-accent .waves-ripple {
+  .waves-effect.waves-purple .waves-ripple, .waves-purple.btn .waves-ripple, .waves-purple.btn-large .waves-ripple, .waves-purple.btn-small .waves-ripple, .waves-purple.search-btn .waves-ripple, .waves-purple.export-btn .waves-ripple, .waves-purple.submit-btn .waves-ripple, .waves-purple.page-btn .waves-ripple, .waves-purple.browse-btn .waves-ripple, .waves-purple.btn-no-accent .waves-ripple,
+  .waves-purple.export-results-btn .waves-ripple {
     background-color: rgba(156, 39, 176, 0.7); }
-  .waves-effect.waves-green .waves-ripple, .waves-green.btn .waves-ripple, .waves-green.btn-large .waves-ripple, .waves-green.btn-small .waves-ripple, .waves-green.search-btn .waves-ripple, .waves-green.export-btn .waves-ripple, .waves-green.submit-btn .waves-ripple, .waves-green.page-btn .waves-ripple, .waves-green.browse-btn .waves-ripple, .waves-green.btn-no-accent .waves-ripple {
+  .waves-effect.waves-green .waves-ripple, .waves-green.btn .waves-ripple, .waves-green.btn-large .waves-ripple, .waves-green.btn-small .waves-ripple, .waves-green.search-btn .waves-ripple, .waves-green.export-btn .waves-ripple, .waves-green.submit-btn .waves-ripple, .waves-green.page-btn .waves-ripple, .waves-green.browse-btn .waves-ripple, .waves-green.btn-no-accent .waves-ripple,
+  .waves-green.export-results-btn .waves-ripple {
     background-color: rgba(76, 175, 80, 0.7); }
-  .waves-effect.waves-teal .waves-ripple, .waves-teal.btn .waves-ripple, .waves-teal.btn-large .waves-ripple, .waves-teal.btn-small .waves-ripple, .waves-teal.search-btn .waves-ripple, .waves-teal.export-btn .waves-ripple, .waves-teal.submit-btn .waves-ripple, .waves-teal.page-btn .waves-ripple, .waves-teal.browse-btn .waves-ripple, .waves-teal.btn-no-accent .waves-ripple {
+  .waves-effect.waves-teal .waves-ripple, .waves-teal.btn .waves-ripple, .waves-teal.btn-large .waves-ripple, .waves-teal.btn-small .waves-ripple, .waves-teal.search-btn .waves-ripple, .waves-teal.export-btn .waves-ripple, .waves-teal.submit-btn .waves-ripple, .waves-teal.page-btn .waves-ripple, .waves-teal.browse-btn .waves-ripple, .waves-teal.btn-no-accent .waves-ripple,
+  .waves-teal.export-results-btn .waves-ripple {
     background-color: rgba(0, 150, 136, 0.7); }
-  .waves-effect input[type="button"], .btn input[type="button"], .btn-large input[type="button"], .btn-small input[type="button"], .search-btn input[type="button"], .export-btn input[type="button"], .submit-btn input[type="button"], .page-btn input[type="button"], .browse-btn input[type="button"], .btn-no-accent input[type="button"], .waves-effect input[type="reset"], .btn input[type="reset"], .btn-large input[type="reset"], .btn-small input[type="reset"], .search-btn input[type="reset"], .export-btn input[type="reset"], .submit-btn input[type="reset"], .page-btn input[type="reset"], .browse-btn input[type="reset"], .btn-no-accent input[type="reset"], .waves-effect input[type="submit"], .btn input[type="submit"], .btn-large input[type="submit"], .btn-small input[type="submit"], .search-btn input[type="submit"], .export-btn input[type="submit"], .submit-btn input[type="submit"], .page-btn input[type="submit"], .browse-btn input[type="submit"], .btn-no-accent input[type="submit"] {
+  .waves-effect input[type="button"], .btn input[type="button"], .btn-large input[type="button"], .btn-small input[type="button"], .search-btn input[type="button"], .export-btn input[type="button"], .submit-btn input[type="button"], .page-btn input[type="button"], .browse-btn input[type="button"], .btn-no-accent input[type="button"],
+  .export-results-btn input[type="button"], .waves-effect input[type="reset"], .btn input[type="reset"], .btn-large input[type="reset"], .btn-small input[type="reset"], .search-btn input[type="reset"], .export-btn input[type="reset"], .submit-btn input[type="reset"], .page-btn input[type="reset"], .browse-btn input[type="reset"], .btn-no-accent input[type="reset"],
+  .export-results-btn input[type="reset"], .waves-effect input[type="submit"], .btn input[type="submit"], .btn-large input[type="submit"], .btn-small input[type="submit"], .search-btn input[type="submit"], .export-btn input[type="submit"], .submit-btn input[type="submit"], .page-btn input[type="submit"], .browse-btn input[type="submit"], .btn-no-accent input[type="submit"],
+  .export-results-btn input[type="submit"] {
     border: 0;
     font-style: normal;
     font-size: inherit;
     text-transform: inherit;
     background: none; }
-  .waves-effect img, .btn img, .btn-large img, .btn-small img, .search-btn img, .export-btn img, .submit-btn img, .page-btn img, .browse-btn img, .btn-no-accent img {
+  .waves-effect img, .btn img, .btn-large img, .btn-small img, .search-btn img, .export-btn img, .submit-btn img, .page-btn img, .browse-btn img, .btn-no-accent img,
+  .export-results-btn img {
     position: relative;
     z-index: -1; }
 
@@ -5722,7 +5751,8 @@ button.btn-floating {
   display: block; }
 
 /* Firefox Bug: link not triggered */
-.waves-effect .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple, .search-btn .waves-ripple, .export-btn .waves-ripple, .submit-btn .waves-ripple, .page-btn .waves-ripple, .browse-btn .waves-ripple, .btn-no-accent .waves-ripple {
+.waves-effect .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple, .search-btn .waves-ripple, .export-btn .waves-ripple, .submit-btn .waves-ripple, .page-btn .waves-ripple, .browse-btn .waves-ripple, .btn-no-accent .waves-ripple,
+.export-results-btn .waves-ripple {
   z-index: -1; }
 
 .modal {
@@ -5754,7 +5784,8 @@ button.btn-floating {
     height: 56px;
     width: 100%;
     text-align: right; }
-    .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-small, .modal .modal-footer .search-btn, .modal .modal-footer .export-btn, .modal .modal-footer .submit-btn, .modal .modal-footer .page-btn, .modal .modal-footer .browse-btn, .modal .modal-footer .btn-no-accent, .modal .modal-footer .btn-flat {
+    .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-small, .modal .modal-footer .search-btn, .modal .modal-footer .export-btn, .modal .modal-footer .submit-btn, .modal .modal-footer .page-btn, .modal .modal-footer .browse-btn, .modal .modal-footer .btn-no-accent,
+    .modal .modal-footer .export-results-btn, .modal .modal-footer .btn-flat {
       margin: 6px 0; }
 
 .modal-overlay {
@@ -6881,7 +6912,8 @@ select:disabled {
     padding-left: 10px; }
   .file-field input.file-path {
     width: 100%; }
-  .file-field .btn, .file-field .btn-large, .file-field .btn-small, .file-field .search-btn, .file-field .export-btn, .file-field .submit-btn, .file-field .page-btn, .file-field .browse-btn, .file-field .btn-no-accent {
+  .file-field .btn, .file-field .btn-large, .file-field .btn-small, .file-field .search-btn, .file-field .export-btn, .file-field .submit-btn, .file-field .page-btn, .file-field .browse-btn, .file-field .btn-no-accent,
+  .file-field .export-results-btn {
     float: left;
     height: 3rem;
     line-height: 3rem; }
@@ -7091,13 +7123,16 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     padding: 0 32px; }
     .sidenav li > a:hover {
       background-color: rgba(0, 0, 0, 0.05); }
-    .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.search-btn, .sidenav li > a.export-btn, .sidenav li > a.submit-btn, .sidenav li > a.page-btn, .sidenav li > a.browse-btn, .sidenav li > a.btn-no-accent, .sidenav li > a.btn-large, .sidenav li > a.btn-flat, .sidenav li > a.btn-floating {
+    .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.search-btn, .sidenav li > a.export-btn, .sidenav li > a.submit-btn, .sidenav li > a.page-btn, .sidenav li > a.browse-btn, .sidenav li > a.btn-no-accent,
+    .sidenav li > a.export-results-btn, .sidenav li > a.btn-large, .sidenav li > a.btn-flat, .sidenav li > a.btn-floating {
       margin: 10px 15px; }
-    .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.search-btn, .sidenav li > a.export-btn, .sidenav li > a.submit-btn, .sidenav li > a.page-btn, .sidenav li > a.browse-btn, .sidenav li > a.btn-no-accent, .sidenav li > a.btn-large, .sidenav li > a.btn-floating {
+    .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.search-btn, .sidenav li > a.export-btn, .sidenav li > a.submit-btn, .sidenav li > a.page-btn, .sidenav li > a.browse-btn, .sidenav li > a.btn-no-accent,
+    .sidenav li > a.export-results-btn, .sidenav li > a.btn-large, .sidenav li > a.btn-floating {
       color: #fff; }
     .sidenav li > a.btn-flat {
       color: #343434; }
-    .sidenav li > a.btn:hover, .sidenav li > a.btn-large:hover, .sidenav li > a.btn-small:hover, .sidenav li > a.search-btn:hover, .sidenav li > a.export-btn:hover, .sidenav li > a.submit-btn:hover, .sidenav li > a.page-btn:hover, .sidenav li > a.browse-btn:hover, .sidenav li > a.btn-no-accent:hover, .sidenav li > a.btn-large:hover {
+    .sidenav li > a.btn:hover, .sidenav li > a.btn-large:hover, .sidenav li > a.btn-small:hover, .sidenav li > a.search-btn:hover, .sidenav li > a.export-btn:hover, .sidenav li > a.submit-btn:hover, .sidenav li > a.page-btn:hover, .sidenav li > a.browse-btn:hover, .sidenav li > a.btn-no-accent:hover,
+    .sidenav li > a.export-results-btn:hover, .sidenav li > a.btn-large:hover {
       background-color: #2bbbad; }
     .sidenav li > a.btn-floating:hover {
       background-color: #26a69a; }
@@ -8105,16 +8140,20 @@ tbody {
 td {
   width: 30%; }
 
-td .btn, td .btn-large, td .btn-small, td .search-btn, td .export-btn, td .submit-btn, td .page-btn, td .browse-btn, td .btn-no-accent {
+td .btn, td .btn-large, td .btn-small, td .search-btn, td .export-btn, td .submit-btn, td .page-btn, td .browse-btn, td .btn-no-accent,
+td .export-results-btn {
   width: 100%; }
 
-.btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent {
+.btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
+.export-results-btn {
   background-color: #00acc1;
   color: #0a0a0a;
   font-size: 1.3rem;
   padding: 0.3rem 1.5rem;
   line-height: 1; }
-  .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover, .btn:focus, .btn-large:focus, .btn-small:focus, .search-btn:focus, .export-btn:focus, .submit-btn:focus, .page-btn:focus, .browse-btn:focus, .btn-no-accent:focus {
+  .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover,
+  .export-results-btn:hover, .btn:focus, .btn-large:focus, .btn-small:focus, .search-btn:focus, .export-btn:focus, .submit-btn:focus, .page-btn:focus, .browse-btn:focus, .btn-no-accent:focus,
+  .export-results-btn:focus {
     background-color: #00d9f4; }
 
 .btn-no-accent {
