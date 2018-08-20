@@ -1,0 +1,59 @@
+/* 1. Generic variables.                                         *
+ * Things like your color palette that you will reference later. */
+/* a. Some named colors */
+$off-black: #0a0a0a;
+
+/* b. Background colors */
+$body-bg-color: #fff;
+$accent-color: color("teal", "lighten-1");
+$contrast-bg-color: color("grey", "lighten-3");
+$neutral-color: $body-bg-color;
+
+/* c. Text colors */
+$text-color: #000;
+$accent-text-color: $text-color;
+$dim-text-color: color("grey", "darken-2");
+// $dim-text-color: #000;
+$submit-message-color: color("red", "darken-1");
+$neutral-text-color: $text-color;
+
+/* 2. Window                                                     */
+$font-family: "Roboto", "Arial", sans-serif;
+$window-border-color: color("grey", "lighten-4");
+$font-size: 1.1rem;
+
+/* 3. Sidenav                                                    */
+$sidenav-text-color: $text-color;
+$active-dropdown-color: $contrast-bg-color;
+$current-sidenav-bg-color: $accent-color;
+$current-sidenav-text-color: $accent-text-color;
+
+/* 4. Tables                                                     */
+$table-bg-color: $body-bg-color;
+
+/* 5. Forms                                                      */
+/* a. Buttons */
+$button-color: $accent-color;
+$button-text-color: $accent-text-color;
+$button-font-size: 1.3rem;
+// $save-prefs-btn-font-size: 1.3rem;
+$button-side-padding: 1.5rem;
+$button-top-bottom-padding: 0.3rem;
+// $button-hover-color: color("cyan", "lighten-1");
+$btn-no-accent-bg-color: $contrast-bg-color;
+$btn-no-accent-text-color: $accent-color;
+
+/* b. Text input */
+$input-focus-color: $accent-color;
+
+/* c. Range */
+$range-track-color: color("grey", "base");
+$range-border-color: $contrast-bg-color;
+$range-thumb-color: $accent-color;
+$range-track-height: 3px;
+$range-thumb-height: 20px;
+$range-thumb-width: $range-thumb-height;
+
+/* 6. Data                                                       */
+$card-bg: $contrast-bg-color;
+$card-text-color: $text-color;

@@ -56,13 +56,18 @@
   font-size: 1.1rem;
 }
 
-label, label.active, .input-field > label {
+.form-group > label, label.active, .input-field > label {
+  color: $text-color;
   font-size: 1.2rem;
 }
 
 // .input-field .form-control:focus {
 //   border-bottom-color: $accent-color;
 // }
+
+.dropdown-content li {
+  background-color: $body-bg-color;
+}
 
 .form-control, .select-dropdown {
   background-color: $body-bg-color;
