@@ -8138,7 +8138,7 @@ td .btn, td .btn-large, td .btn-small, td .search-btn, td .export-btn, td .submi
 label, label.active, .input-field > label {
   font-size: 1.2rem; }
 
-.form-control {
+.form-control, .select-dropdown {
   background-color: #212121;
   color: #bdbdbd; }
 

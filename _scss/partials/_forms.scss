@@ -58,7 +58,7 @@ label, label.active, .input-field > label {
 //   border-bottom-color: $accent-color;
 // }
 
-.form-control {
+.form-control, .select-dropdown {
   background-color: $body-bg-color;
   color: $text-color;
 }
