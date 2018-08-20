@@ -18,6 +18,10 @@
 .btn-no-accent {
   background-color: $btn-no-accent-bg-color;
   color: $btn-no-accent-text-color;
+
+  &:hover {
+    color: $button-text-color;
+  }
 }
 
 .search-btn {

@@ -8107,6 +8107,8 @@ td .btn, td .btn-large, td .btn-small, td .search-btn, td .export-btn, td .submi
 .btn-no-accent {
   background-color: #424242;
   color: #00acc1; }
+  .btn-no-accent:hover {
+    color: #0a0a0a; }
 
 .search-btn {
   margin-left: 0.5rem; }
