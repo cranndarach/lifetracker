@@ -5358,7 +5358,7 @@ small {
 .btn-large,
 .btn-small,
 .btn-flat {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   outline: 0; }
   .btn i, .btn-large i, .btn-small i, .submit-btn i, .page-btn i, .browse-btn i,
   .btn-floating i,
@@ -8086,7 +8086,7 @@ td .btn, td .btn-large, td .btn-small, td .submit-btn, td .page-btn, td .browse-
 .btn, .btn-large, .btn-small, .submit-btn, .page-btn, .browse-btn {
   background-color: #00acc1;
   color: #0a0a0a;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding: 0.2rem 1.5rem;
   line-height: 1; }
   .btn:hover, .btn-large:hover, .btn-small:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover {
