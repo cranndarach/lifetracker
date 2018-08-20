@@ -11,12 +11,26 @@
   }
 }
 
+.search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent {
+  @extend .btn;
+}
+
+.btn-no-accent {
+  background-color: $btn-no-accent-bg-color;
+  color: $btn-no-accent-text-color;
+}
+
+.search-btn {
+  margin-left: 0.5rem;
+}
+
 .submit-btn {
-  @extend .btn, .right;
+  // @extend .btn, .right;
+  @extend .right;
 }
 
 .page-btn, .browse-btn {
-  @extend .btn;
+  // @extend .btn;
   text-transform: none;
 }
 
