@@ -22,14 +22,19 @@ main:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 			valence:
 				label: "Mood"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			spoons:
 				label: "Spoons"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 	task:
 		formTitle: "Log a Task"
@@ -53,30 +58,43 @@ main:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 			valence:
 				label: "Mood"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			spoons:
 				label: "Spoons"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			size:
 				label: "Size of task"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			difficulty:
 				label: "Difficulty of task"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			progress:
 				label: "Progress/completion"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			quality:
 				label: "Satisfaction/quality"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			experience:
 				label: "EXP Gained"
@@ -111,7 +129,8 @@ main:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 adventureLogs:
 	pageTitle: "Adventure Logs"
 	dragonFights:
@@ -135,7 +154,9 @@ adventureLogs:
 				value: ""
 			difficulty:
 				label: "Difficulty"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			experience:
 				label: "EXP gained"
@@ -148,7 +169,9 @@ status:
 		fields:
 			spoons:
 				label: "Spoons"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			when:
 				label: "When"
@@ -159,31 +182,45 @@ status:
 		fields:
 			valence:
 				label: "Mood"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			anxiety:
 				label: "Worry/Anxiety"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			tension:
 				label: "Tension (emotional or physical)"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			focus:
 				label: "Focus"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			intensity:
 				label: "Intensity of mood"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			energy:
 				label: "Energy"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			spoons:
 				label: "Spoons"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			when:
 				label: "When"
@@ -214,7 +251,9 @@ status:
 				value: ""
 			intensity:
 				label: "Intensity"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			loc:
 				label: "Your location"
@@ -225,7 +264,9 @@ status:
 		fields:
 			hunger:
 				label: "Hunger"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			when:
 				label: "When"
@@ -252,7 +293,9 @@ status:
 				value: ""
 			intensity:
 				label: "Intensity"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			loc:
 				label: "Your location"
@@ -263,19 +306,27 @@ status:
 		fields:
 			shakiness:
 				label: "Shakiness"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			dyspraxiaFine:
 				label: "Dyspraxia (fine)"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			dyspraxiaGross:
 				label: "Dyspraxia (gross)"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			weakness:
 				label: "Weakness"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			when:
 				label: "When"
@@ -290,87 +341,129 @@ status:
 		fields:
 			leftShoulderPain:
 				label: "Left shoulder pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			leftNeckPain:
 				label: "Left neck pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			leftUpperNeckPain:
 				label: "Left head/upper neck pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			leftJawPain:
 				label: "Left jaw pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			leftHighBackPain:
 				label: "Left upper back pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			leftMidBackPain:
 				label: "Left mid back pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			leftLowBackPain:
 				label: "Left low back pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			leftWristPain:
 				label: "Left wrist pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			leftKneePain:
 				label: "Left knee pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			rightShoulderPain:
 				label: "Right shoulder pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			rightNeckPain:
 				label: "Right neck pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			rightUpperNeckPain:
 				label: "Right head/upper neck pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			rightJawPain:
 				label: "Right jaw pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			rightHighBackPain:
 				label: "Right upper back pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			rightMidBackPain:
 				label: "Right mid back pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			rightLowBackPain:
 				label: "Right low back pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			rightWristPain:
 				label: "Right wrist pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			rightKneePain:
 				label: "Right knee pain"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			tension:
 				label: "Tension (emotional or physical)"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			focus:
 				label: "Focus"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			spoons:
 				label: "Spoons"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			when:
 				label: "When"
@@ -399,12 +492,15 @@ influences:
 				value: ""
 			intensity:
 				label: "Intensity"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 	sleep:
 		formTitle: "Log Sleep"
 		fields:
@@ -419,10 +515,13 @@ influences:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 			quality:
 				label: "Quality"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 	coping:
 		formTitle: "Log Coping Mechanism"
@@ -446,18 +545,25 @@ influences:
 			loc:
 				label: "Location"
 				type: "text"
-				value: "e.g., home, work"
+				placeholder: "e.g., home, work"
+				value: ""
 			valence:
 				label: "Mood"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			spoons:
 				label: "Spoons"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			benefit:
 				label: "Benefit/Improvement"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0
 			experience:
 				label: "EXP Gained"
@@ -492,5 +598,7 @@ influences:
 				value: ""
 			benefit:
 				label: "Benefit/Improvement (if known)"
-				type: "range min=0 max=100"
+				type: "range"
+				min: 0
+				max: 100
 				value: 0

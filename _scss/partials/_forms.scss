@@ -1,0 +1,151 @@
+.btn {
+  @extend .waves-effect, .waves-light;
+  background-color: $button-color;
+  color: $button-text-color;
+  font-size: $button-font-size;
+  padding: $button-top-bottom-padding $button-side-padding;
+  line-height: 1;
+
+  &:hover, &:focus {
+    // background-color: $button-hover-color;
+    background-color: lighten($button-color, 10%);
+  }
+}
+
+.search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
+  .export-results-btn {
+  @extend .btn;
+}
+
+.btn-no-accent {
+  background-color: $btn-no-accent-bg-color;
+  color: $btn-no-accent-text-color;
+
+  &:hover {
+    color: $button-text-color;
+  }
+
+  &:focus {
+    background-color: darken($btn-no-accent-bg-color, 10%);
+  }
+}
+
+.search-btn {
+  margin-left: 0.5rem;
+}
+
+.submit-btn {
+  // @extend .btn, .right;
+  @extend .right;
+}
+
+.page-btn, .browse-btn {
+  // @extend .btn;
+  text-transform: none;
+}
+
+.export-btn {
+  margin-top: 0.5rem;
+}
+
+// .page-btn {
+//   max-width: 300px;
+// }
+
+.browse-btn {
+  font-size: 1.1rem;
+}
+
+.form-group > label, label.active, .input-field > label {
+  color: $text-color;
+  font-size: 1.2rem;
+}
+
+// .input-field .form-control:focus {
+//   border-bottom-color: $accent-color;
+// }
+
+.dropdown-content li {
+  background-color: $body-bg-color;
+}
+
+.form-control, .select-dropdown {
+  background-color: $body-bg-color;
+  color: $text-color;
+}
+
+.form-group {
+  margin-top: 2em;
+}
+
+input::placeholder {
+  color: $dim-text-color;
+}
+
+input[type=range] {
+  display: block;
+  width: 80%;
+  margin: 1em auto 1.5em;
+  border-color: $range-border-color;
+  border-radius: 6px;
+
+  // .value {
+  //   color: $accent-color;
+  // }
+
+  &::-webkit-slider-runnable-track {
+    background-color: $range-track-color;
+    height: $range-track-height;
+  }
+
+  &::-webkit-slider-thumb {
+    background-color: $range-thumb-color;
+    height: $range-thumb-height;
+    width: $range-thumb-width;
+    // This will probably need some adjusting...
+    margin-top: $range-thumb-height * -0.5 + 2;
+    // transform-origin: 50% 50%;
+  }
+}
+
+#submit-message {
+  color: $submit-message-color;
+  font-weight: bold;
+}
+
+// #submit-message .hide {
+//   animation: fadeout 0.4s linear;
+//   -webkit-animation: fadeout 0.4s;
+// }
+
+#submit-message .hidden {
+  visibility: hidden;
+}
+
+// #submit-message .show {
+//   animation: fadein 0.8s linear;
+//   -webkit-animation: fadein 0.8s;
+// }
+
+#submit-message .shown {
+  visibility: visible;
+}
+
+
+.form-group p {
+  margin-top: 1em;
+  margin-left: 0;
+}
+
+fieldset {
+  border-radius: 5px;
+}
+
+#savedir {
+  display: inline-block;
+  width: 85%;
+}
+
+// #save-prefs {
+//   margin-top: 4rem;
+// }

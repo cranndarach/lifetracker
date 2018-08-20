@@ -1,0 +1,18 @@
+table {
+  width: 80%;
+  margin: auto;
+}
+
+tbody {
+  background-color: $table-bg-color;
+  // @extend .grey, .darken-4;
+}
+
+td {
+  width: 30%;
+}
+
+td .btn {
+  width: 100%;
+}
+
