@@ -6,3 +6,9 @@
 #data-display td {
   position: relative;
 }
+
+#filter .card {
+  background-color: $card-bg;
+  color: $card-text-color;
+  padding: 5px;
+}

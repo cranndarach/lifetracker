@@ -1,7 +1,9 @@
-// Some named colors
+/* 1. Generic variables.                                         *
+ * Things like your color palette that you will reference later. */
+/* a. Some named colors */
 $off-black: #0a0a0a;
 
-// Background colors
+/* b. Background colors */
 $body-bg-color: color("grey", "darken-4");
 $accent-color: color("cyan", "darken-1");
 $contrast-bg-color: color("grey", "darken-3");
@@ -9,30 +11,29 @@ $positive-color: color("green", "darken-1");
 $alert-color: color("amber", "darken-3");
 $neutral-color: $body-bg-color;
 
-// Text colors
+/* c. Text colors */
 $text-color: color("grey", "lighten-1");
 $accent-text-color: $off-black;
 $dim-text-color: color("grey", "darken-2");
 $submit-message-color: color("red", "darken-3");
 $neutral-text-color: $text-color;
 
-// Specifics
-// Window
+/* 2. Window                                                     */
 $font-family: "Roboto", "Arial", sans-serif;
 $window-border-color: $off-black;
 $font-size: 1.1rem;
 
-// Sidenav
+/* 3. Sidenav                                                    */
 $sidenav-text-color: color("grey", "lighten-2");
 $active-dropdown-color: $contrast-bg-color;
 $current-sidenav-bg-color: $accent-color;
 $current-sidenav-text-color: $accent-text-color;
 
-// Tables
+/* 4. Tables                                                     */
 $table-bg-color: color("grey", "darken-4");
 
-// Forms
-// Buttons
+/* 5. Forms                                                      */
+/* a. Buttons */
 $button-color: $accent-color;
 $button-text-color: $accent-text-color;
 $button-font-size: 1.3rem;
@@ -43,13 +44,17 @@ $button-hover-color: color("cyan", "lighten-1");
 $btn-no-accent-bg-color: $contrast-bg-color;
 $btn-no-accent-text-color: $accent-color;
 
-// Text input
+/* b. Text input */
 $input-focus-color: $accent-color;
 
-// Range
+/* c. Range */
 $range-track-color: $contrast-bg-color;
 $range-border-color: $contrast-bg-color;
 $range-thumb-color: $accent-color;
 $range-track-height: 3px;
 $range-thumb-height: 20px;
 $range-thumb-width: $range-thumb-height;
+
+/* 6. Data                                                       */
+$card-bg: $contrast-bg-color;
+$card-text-color: $text-color;

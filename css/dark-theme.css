@@ -1600,6 +1600,32 @@
 .transparent-text {
   color: transparent !important; }
 
+/* 1. Generic variables.                                         *
+ * Things like your color palette that you will reference later. */
+/* a. Some named colors */
+/* b. Background colors */
+/* c. Text colors */
+/* 2. Window                                                     */
+/* 3. Sidenav                                                    */
+/* 4. Tables                                                     */
+/* 5. Forms                                                      */
+/* a. Buttons */
+/* b. Text input */
+/* c. Range */
+/* 6. Data                                                       */
+/* 1. Generic variables.                                         *
+ * Things like your color palette that you will reference later. */
+/* a. Some named colors */
+/* b. Background colors */
+/* c. Text colors */
+/* 2. Window                                                     */
+/* 3. Sidenav                                                    */
+/* 4. Tables                                                     */
+/* 5. Forms                                                      */
+/* a. Buttons */
+/* b. Text input */
+/* c. Range */
+/* 6. Data                                                       */
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -8116,6 +8142,9 @@ td .btn, td .btn-large, td .btn-small, td .search-btn, td .export-btn, td .submi
 .page-btn, .browse-btn {
   text-transform: none; }
 
+.export-btn {
+  margin-top: 0.5rem; }
+
 .browse-btn {
   font-size: 1.1rem; }
 
@@ -8174,6 +8203,11 @@ fieldset {
 
 #data-display td {
   position: relative; }
+
+#filter .card {
+  background-color: #424242;
+  color: #e0e0e0;
+  padding: 5px; }
 
 /****************
  * Layout style *
