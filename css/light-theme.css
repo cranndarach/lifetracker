@@ -1613,6 +1613,19 @@
 /* b. Text input */
 /* c. Range */
 /* 6. Data                                                       */
+/* 1. Generic variables.                                         *
+ * Things like your color palette that you will reference later. */
+/* a. Some named colors */
+/* b. Background colors */
+/* c. Text colors */
+/* 2. Window                                                     */
+/* 3. Sidenav                                                    */
+/* 4. Tables                                                     */
+/* 5. Forms                                                      */
+/* a. Buttons */
+/* b. Text input */
+/* c. Range */
+/* 6. Data                                                       */
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6105,8 +6118,8 @@ textarea.materialize-textarea {
   input[type=number]:not(.browser-default):focus:not([readonly]),
   input[type=search]:not(.browser-default):focus:not([readonly]),
   textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #00acc1;
-    box-shadow: 0 1px 0 0 #00acc1; }
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a; }
   input:not([type]):focus:not([readonly]) + label,
   input[type=text]:not(.browser-default):focus:not([readonly]) + label,
   input[type=password]:not(.browser-default):focus:not([readonly]) + label,
@@ -6120,7 +6133,7 @@ textarea.materialize-textarea {
   input[type=number]:not(.browser-default):focus:not([readonly]) + label,
   input[type=search]:not(.browser-default):focus:not([readonly]) + label,
   textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #00acc1; }
+    color: #26a69a; }
   input:not([type]):focus.valid ~ label,
   input[type=text]:not(.browser-default):focus.valid ~ label,
   input[type=password]:not(.browser-default):focus.valid ~ label,
@@ -6402,7 +6415,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
     transition: color .2s;
     top: 0.5rem; }
     .input-field .prefix.active {
-      color: #00acc1; }
+      color: #26a69a; }
   .input-field .prefix ~ input,
   .input-field .prefix ~ textarea,
   .input-field .prefix ~ label,
@@ -6837,7 +6850,7 @@ select {
     user-select: none;
     z-index: 1; }
     .select-wrapper input.select-dropdown:focus {
-      border-bottom: 1px solid #00acc1; }
+      border-bottom: 1px solid #26a69a; }
   .select-wrapper .caret {
     position: absolute;
     right: 0;
@@ -8103,10 +8116,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 .sidenav {
-  background-color: #212121; }
+  background-color: #fff; }
 
 .sidenav li > a, .sidenav .collapsible-header {
-  color: #e0e0e0;
+  color: #000;
   padding: 0 16px 0 20px;
   font-size: 1.1rem; }
 
@@ -8114,28 +8127,28 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   padding-left: 20px; }
 
 #home-menu {
-  background-color: #424242; }
+  background-color: #eeeeee; }
 
 #sidebar {
   width: 300px; }
 
 .sidenav li.active {
-  background-color: #424242; }
+  background-color: #eeeeee; }
 
 .sidenav .collapsible-body {
-  background-color: #212121; }
+  background-color: #fff; }
 
 .sidenav li.current {
-  background-color: #00acc1; }
+  background-color: #26a69a; }
   .sidenav li.current a {
-    color: #0a0a0a; }
+    color: #000; }
 
 table {
   width: 80%;
   margin: auto; }
 
 tbody {
-  background-color: #212121; }
+  background-color: #fff; }
 
 td {
   width: 30%; }
@@ -8146,23 +8159,23 @@ td .export-results-btn {
 
 .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
 .export-results-btn {
-  background-color: #00acc1;
-  color: #0a0a0a;
+  background-color: #26a69a;
+  color: #000;
   font-size: 1.3rem;
   padding: 0.3rem 1.5rem;
   line-height: 1; }
   .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover,
   .export-results-btn:hover, .btn:focus, .btn-large:focus, .btn-small:focus, .search-btn:focus, .export-btn:focus, .submit-btn:focus, .page-btn:focus, .browse-btn:focus, .btn-no-accent:focus,
   .export-results-btn:focus {
-    background-color: #00d9f4; }
+    background-color: #30d0c1; }
 
 .btn-no-accent {
-  background-color: #424242;
-  color: #00acc1; }
+  background-color: #eeeeee;
+  color: #26a69a; }
   .btn-no-accent:hover {
-    color: #0a0a0a; }
+    color: #000; }
   .btn-no-accent:focus {
-    background-color: #292929; }
+    background-color: #d5d5d5; }
 
 .search-btn {
   margin-left: 0.5rem; }
@@ -8176,12 +8189,16 @@ td .export-results-btn {
 .browse-btn {
   font-size: 1.1rem; }
 
-label, label.active, .input-field > label {
+.form-group > label, label.active, .input-field > label {
+  color: #000;
   font-size: 1.2rem; }
 
+.dropdown-content li {
+  background-color: #fff; }
+
 .form-control, .select-dropdown {
-  background-color: #212121;
-  color: #bdbdbd; }
+  background-color: #fff;
+  color: #000; }
 
 .form-group {
   margin-top: 2em; }
@@ -8193,19 +8210,19 @@ input[type=range] {
   display: block;
   width: 80%;
   margin: 1em auto 1.5em;
-  border-color: #424242;
+  border-color: #eeeeee;
   border-radius: 6px; }
   input[type=range]::-webkit-slider-runnable-track {
-    background-color: #424242;
+    background-color: #9e9e9e;
     height: 3px; }
   input[type=range]::-webkit-slider-thumb {
-    background-color: #00acc1;
+    background-color: #26a69a;
     height: 20px;
     width: 20px;
     margin-top: -8px; }
 
 #submit-message {
-  color: #C62828;
+  color: #E53935;
   font-weight: bold; }
 
 #submit-message .hidden {
@@ -8233,8 +8250,8 @@ fieldset {
   position: relative; }
 
 #filter .card {
-  background-color: #424242;
-  color: #bdbdbd;
+  background-color: #eeeeee;
+  color: #000;
   padding: 5px; }
 
 /****************
@@ -8263,11 +8280,11 @@ p {
 .window {
   height: 100%;
   overflow-y: scroll;
-  color: #bdbdbd;
-  background-color: #212121; }
+  color: #000;
+  background-color: #fff; }
 
 .window-content {
-  border-top: 1px solid #0a0a0a; }
+  border-top: 1px solid #f5f5f5; }
 
 #main {
   margin-left: 300px;

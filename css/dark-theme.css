@@ -8189,8 +8189,12 @@ td .export-results-btn {
 .browse-btn {
   font-size: 1.1rem; }
 
-label, label.active, .input-field > label {
+.form-group > label, label.active, .input-field > label {
+  color: #e0e0e0;
   font-size: 1.2rem; }
+
+.dropdown-content li {
+  background-color: #212121; }
 
 .form-control, .select-dropdown {
   background-color: #212121;
