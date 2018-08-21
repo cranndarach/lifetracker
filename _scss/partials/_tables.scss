@@ -1,18 +1,34 @@
-table {
+.data-display-table {
+  td, th {
+    // width: 150px;
+    white-space: nowrap;
+    border: solid 1px $data-table-border-color;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  td {
+    text-align: left;
+  }
+}
+
+
+.button-table {
   width: 80%;
   margin: auto;
-}
+  
+  tbody {
+    background-color: $table-bg-color;
+    // @extend .grey, .darken-4;
+  }
 
-tbody {
-  background-color: $table-bg-color;
-  // @extend .grey, .darken-4;
-}
+  td {
+    width: 30%;
+  }
 
-td {
-  width: 30%;
+  td .btn {
+    width: 100%;
+  }
 }
-
-td .btn {
-  width: 100%;
-}
-
