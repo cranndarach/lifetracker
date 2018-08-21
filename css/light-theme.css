@@ -8143,6 +8143,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .sidenav li.current a {
     color: #000; }
 
+.data-display-table tr, .data-display-table th {
+  white-space: nowrap; }
+
 .button-table {
   width: 80%;
   margin: auto; }
@@ -8300,13 +8303,13 @@ p {
   .form {
     width: 65%; }
 
-  table {
+  .button-table {
     width: 70%; } }
 @media only screen and (min-width: 850px) {
   .form {
     width: 55%; }
 
-  table {
+  .button-table {
     width: 60%; } }
 
 /*# sourceMappingURL=light-theme.css.map */

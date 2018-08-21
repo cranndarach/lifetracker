@@ -1,3 +1,11 @@
+.data-display-table {
+  tr, th {
+    // width: 150px;
+    white-space: nowrap;
+  }
+}
+
+
 .button-table {
   width: 80%;
   margin: auto;
