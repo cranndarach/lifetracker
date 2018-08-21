@@ -8248,8 +8248,7 @@ fieldset {
   width: 85%; }
 
 #data-display {
-  margin: 1em;
-  overflow-x: scroll; }
+  margin: 1em; }
 
 #data-display td {
   position: relative; }
