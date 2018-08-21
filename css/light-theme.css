@@ -3892,13 +3892,13 @@ table {
   table.striped tr {
     border-bottom: none; }
   table.striped > tbody > tr:nth-child(odd) {
-    background-color: rgba(242, 242, 242, 0.5); }
+    background-color: #eeeeee; }
   table.striped > tbody > tr > td {
     border-radius: 0; }
   table.highlight > tbody > tr {
     transition: background-color .25s ease; }
     table.highlight > tbody > tr:hover {
-      background-color: rgba(242, 242, 242, 0.5); }
+      background-color: #eeeeee; }
   table.centered thead tr th, table.centered tbody tr td {
     text-align: center; }
 
@@ -8143,19 +8143,16 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .sidenav li.current a {
     color: #000; }
 
-table {
+.button-table {
   width: 80%;
   margin: auto; }
-
-tbody {
-  background-color: #fff; }
-
-td {
-  width: 30%; }
-
-td .btn, td .btn-large, td .btn-small, td .search-btn, td .export-btn, td .submit-btn, td .page-btn, td .browse-btn, td .btn-no-accent,
-td .export-results-btn {
-  width: 100%; }
+  .button-table tbody {
+    background-color: #fff; }
+  .button-table td {
+    width: 30%; }
+  .button-table td .btn, .button-table td .btn-large, .button-table td .btn-small, .button-table td .search-btn, .button-table td .export-btn, .button-table td .submit-btn, .button-table td .page-btn, .button-table td .browse-btn, .button-table td .btn-no-accent,
+  .button-table td .export-results-btn {
+    width: 100%; }
 
 .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
 .export-results-btn {
