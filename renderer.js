@@ -6,8 +6,7 @@ const glob = require('glob');
 const UUID = require('uuid-js');
 const jsonexport = require('jsonexport');
 const {dialog} = require('electron').remote;
-const arrMember = require('array-member');
-const tableify = require('tableify');
+const moment = require('moment');
 var Promise = require('bluebird');
 
 var CSON = Promise.promisifyAll(require('cson'));
