@@ -8143,8 +8143,13 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .sidenav li.current a {
     color: #0a0a0a; }
 
-.data-display-table tr, .data-display-table th {
-  white-space: nowrap; }
+.data-display-table td, .data-display-table th {
+  white-space: nowrap;
+  border: solid 1px #292929; }
+.data-display-table th {
+  text-align: center; }
+.data-display-table td {
+  text-align: left; }
 
 .button-table {
   width: 80%;

@@ -1,7 +1,16 @@
 .data-display-table {
-  tr, th {
+  td, th {
     // width: 150px;
     white-space: nowrap;
+    border: solid 1px $data-table-border-color;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  td {
+    text-align: left;
   }
 }
 

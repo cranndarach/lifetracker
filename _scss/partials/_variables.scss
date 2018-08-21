@@ -32,6 +32,7 @@ $current-sidenav-text-color: $accent-text-color;
 /* 4. Tables                                                     */
 $table-bg-color: color("grey", "darken-4");
 $table-striped-color: $contrast-bg-color;
+$data-table-border-color: darken($contrast-bg-color, 10%);
 
 /* 5. Forms                                                      */
 /* a. Buttons */
