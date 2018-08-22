@@ -22,9 +22,9 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/electron index.js",
-    "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --overwrite",
-    "build-win": "electron-packager . LifeTracker --platform=win32 --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --overwrite=true",
-    "build-mac": "electron-packager . LifeTracker --platform=darwin --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --overwrite"
+    "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --ignore='^config.cson$' --overwrite",
+    "build-win": "electron-packager . LifeTracker --platform=win32 --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --ignore='^config.cson$' --overwrite=true",
+    "build-mac": "electron-packager . LifeTracker --platform=darwin --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --ignore='^config.cson$' --overwrite"
   },
   "bin": {
     "lifetracker": "./bin/lifetracker"
