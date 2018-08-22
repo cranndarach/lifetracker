@@ -504,6 +504,10 @@ influences:
 	sleep:
 		formTitle: "Log Sleep"
 		fields:
+			category:
+				label: "Category"
+				type: "text"
+				value: "Sleep"
 			start:
 				label: "Went to bed"
 				type: "datetime-local"
