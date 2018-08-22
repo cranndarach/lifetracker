@@ -8127,7 +8127,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   padding-left: 20px; }
 
 #home-menu {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  color: #000; }
+  #home-menu.current a {
+    color: #000; }
 
 #sidebar {
   width: 300px; }
@@ -8269,7 +8272,7 @@ html, body {
   margin: 0;
   height: 100%; }
 
-body, h5.nav-group-title {
+body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 1.1rem; }
 

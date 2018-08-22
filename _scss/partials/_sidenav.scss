@@ -14,6 +14,11 @@
 
 #home-menu {
   background-color: $contrast-bg-color;
+  color: $sidenav-text-color;
+
+  &.current a {
+    color: $sidenav-text-color;
+  }
 }
 
 #sidebar {
