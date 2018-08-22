@@ -173,7 +173,7 @@ a pull request!).
 * The UI theme is evolving bit by bit. More themes are definitely needed.
 * Easier manipulation/creation of entry forms.
 * A way to edit past entries in-app.
-* A way to see all prevously-entered categories when writing an entry.
+* ~~A way to see all prevously-entered categories when writing an entry.~~
 
 ## Contributing
 
