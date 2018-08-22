@@ -34,48 +34,24 @@ the [wiki](https://github.com/cranndarach/lifetracker/wiki) for tips).
 
 First, pick which kind of entry you want to log.
 
-![Pick a page](screenshots/influences-page.png)
+![Pick a page](screenshots/main-page.png)
 
->Image of a window showing the "Infuences" page of LifeTracker. The page header
-says "LifeTracker," and below it are four blue buttons: three in the first row,
-and one in the second. The buttons are labeled "Log Misc. Influence," "Log
-Sleep," "Log Coping Mechanism," and "Log Medicine Taken." On the left is
-a naviagation bar. Its header says "Pages." Below it are links labeled "Home,"
-"Main," "Influences," "Status," "Data," and "Edit preferences." The
-"Influences" link is highlighted.
+>Image of a window showing the "Main" page of LifeTracker. The page header
+says "Main," and below it are four blue buttons: three in the first row, and one in the second. The buttons are labeled "Log an Event," "Log a Task," "Add EXP
+Gained," and "Log a Simple Entry."
 
-![Pick a form](screenshots/log-sleep-blank.png)
+![Fill in the form](screenshots/dragonFights.png)
 
->Image of the "Log Sleep" form. From top to bottom, the fields are: a date-time
-field labeled "Went to bed" showing the default time, a date-time field labeled
-"Woke up" showing the default time, a text field labeled "Location" showing the
-default hint "e.g., home, work," a slider labeled "Quality" set to zero,
-a blank text area labeled "Notes," and a blank text field labeled "Tags." At the
-bottom, there is a button that says "Submit."
+>Screenshot of the "Dragon Fights" entry, filled in.
 
 Then, fill in whatever fields you want. You can leave anything blank if you don't
 feel like answering it or don't think it would be helpful.
-
-![Fill in the form](screenshots/log-sleep-filled.png)
-
->An image of the same "Log Sleep" form, only with the user's data entered. The
-"Went to bed" field is set to "04/09/2017, 11:30 PM," the "Woke up" field is set
-to "04/10/2017, 07:25 AM," the "Location" field is set to "home," the "Quality"
-slider is set to about 85% full, and the "Notes" and "Tags" fields are blank.
 
 You can go explore or export your data whenever you want.
 
 ![Explore or export data](screenshots/data-export.png)
 
->An image of the "Data" page of LifeTracker. There is a rectangular box labeled
-"Filter data" containing two sets of fields. The first fieldset has
-a mult-select box labeled "In which fields?" with "med-taken title" selected.
-Underneath it is a text field labeled "Search for," and in the box the user has
-typed "Claritin." The second fieldset has the same inputs, and the same field
-selected. The "Search for" box says "Loratadine." Underneath it are two white
-buttons labeled "Add row" and "Search," and one green button labeled "Export
-all to CSV." Below that is a table showing the results of the search, with two
-green buttons labeled "Export to CSV..." and "Export to JSON..."
+>Screenshot of the "Data" page. The data from three entries are arranged in a table, one per row.
 
 ## Installation
 
@@ -109,7 +85,7 @@ into your terminal or command prompt.
 
 ### From source
 
-Requires node.js and npm. Other dependencies will be installed using npm.
+Requires node.js and npm.
 
 Download the repository from the green "Clone or Download" button, or clone via
 command line:
@@ -158,10 +134,7 @@ npm run-script build-[platform]
 
 where `[platform]` is one of `win`, `mac`, or `linux`. Then you'll find the
 executable in the `dist/` folder. (The executable will be called something like
-`Lifetracker` or `Lifetracker.exe`.) **Note: This has only been tested for
-Windows 10 and Linux Mint 18.** If it doesn't work for you, you may need to
-just run it from command line (or, if you fix the script, you could submit
-a pull request!).
+`Lifetracker` or `Lifetracker.exe`.)
 
 ## To-do
 
