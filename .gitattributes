@@ -1,1 +1,3 @@
 _scss/vendor/* linguist-vendored
+lib/vendor/* linguist-vendored
+css/* linguist-generated
