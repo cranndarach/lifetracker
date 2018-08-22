@@ -12,3 +12,8 @@
   color: $card-text-color;
   padding: 5px;
 }
+
+#data-table a.tag {
+  color: $text-color;
+  text-decoration: underline;
+}

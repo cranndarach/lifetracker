@@ -8261,6 +8261,10 @@ fieldset {
   color: #e0e0e0;
   padding: 5px; }
 
+#data-table a.tag {
+  color: #e0e0e0;
+  text-decoration: underline; }
+
 /****************
  * Layout style *
  ****************/
