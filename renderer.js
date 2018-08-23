@@ -22,13 +22,14 @@ function requirePromise(mod) {
 }
 
 var config, populate, gen, prefsBackend, prefs, submit, dataProc, forms,
-  usrConf, themes;
+  usrConf, themes, presets;
 // These ones are all either independent or probably won't cause problems
 // and can be loaded asynchronously.
 themes = require(__dirname + '/lib/themes.js');
 submit = require(__dirname + '/lib/submit.js');
 // forms = require(__dirname + '/forms.cson');
 forms = CSON.requireFile(__dirname + "/forms.cson");
+presets = require(__dirname + "/lib/presets.js");
 populate = require(__dirname + '/lib/populate.js');
 gen = require(__dirname + '/lib/makeForm.js');
 
