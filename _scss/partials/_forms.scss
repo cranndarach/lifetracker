@@ -131,10 +131,50 @@ input[type=range] {
   visibility: visible;
 }
 
-
 .form-group p {
   margin-top: 1em;
   margin-left: 0;
+}
+
+.modal {
+  background-color: $modal-main-bg-color;
+  color: $text-color;
+
+  .datepicker-date-display, .timepicker-digital-display {
+    background-color: $modal-display-bg-color;
+  }
+
+  .timepicker-plate {
+    background-color: $modal-clock-bg-color;
+  }
+
+  .timepicker-canvas line {
+    stroke: $accent-color;
+  }
+
+  .timepicker-canvas circle {
+    fill: $accent-color;
+  }
+
+  .timepicker-dial .timepicker-tick {
+    color: $text-color;
+  }
+
+  .month-next svg, .month-prev svg {
+    fill: $text-color;
+  }
+
+  .btn-flat {
+    color: $modal-btn-text-color;
+  }
+
+  .datepicker-clear, .timepicker-clear {
+    color: $modal-warn-btn-text-color;
+  }
+
+  .is-today .datepicker-day-button {
+    color: $modal-btn-text-color;
+  }
 }
 
 fieldset {

@@ -8,7 +8,8 @@ $body-bg-color: color("grey", "darken-4");
 $accent-color: color("cyan", "darken-1");
 $contrast-bg-color: color("grey", "darken-3");
 $positive-color: color("green", "darken-1");
-$alert-color: color("amber", "darken-3");
+$yellow-alert-color: color("amber", "darken-3");
+$red-alert-color: color("red", "darken-3");
 $neutral-color: $body-bg-color;
 
 /* c. Text colors */
@@ -56,6 +57,13 @@ $range-thumb-color: $accent-color;
 $range-track-height: 3px;
 $range-thumb-height: 20px;
 $range-thumb-width: $range-thumb-height;
+
+/* d. Pickers */
+$modal-main-bg-color: $body-bg-color;
+$modal-display-bg-color: $accent-color;
+$modal-clock-bg-color: $contrast-bg-color;
+$modal-btn-text-color: $accent-color;
+$modal-warn-btn-text-color: $red-alert-color;
 
 /* 6. Data                                                       */
 $card-bg: $contrast-bg-color;

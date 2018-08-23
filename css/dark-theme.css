@@ -1612,6 +1612,7 @@
 /* a. Buttons */
 /* b. Text input */
 /* c. Range */
+/* d. Pickers */
 /* 6. Data                                                       */
 /* 1. Generic variables.                                         *
  * Things like your color palette that you will reference later. */
@@ -1625,6 +1626,7 @@
 /* a. Buttons */
 /* b. Text input */
 /* c. Range */
+/* d. Pickers */
 /* 6. Data                                                       */
 .materialize-red {
   background-color: #e51c23 !important; }
@@ -8242,6 +8244,28 @@ input[type=range] {
 .form-group p {
   margin-top: 1em;
   margin-left: 0; }
+
+.modal {
+  background-color: #212121;
+  color: #e0e0e0; }
+  .modal .datepicker-date-display, .modal .timepicker-digital-display {
+    background-color: #0095a8; }
+  .modal .timepicker-plate {
+    background-color: #424242; }
+  .modal .timepicker-canvas line {
+    stroke: #00acc1; }
+  .modal .timepicker-canvas circle {
+    fill: #00acc1; }
+  .modal .timepicker-dial .timepicker-tick {
+    color: #e0e0e0; }
+  .modal .month-next svg, .modal .month-prev svg {
+    fill: #e0e0e0; }
+  .modal .btn-flat {
+    color: #00acc1; }
+  .modal .datepicker-clear, .modal .timepicker-clear {
+    color: #C62828; }
+  .modal .is-today .datepicker-day-button {
+    color: #00acc1; }
 
 fieldset {
   border-radius: 5px; }
