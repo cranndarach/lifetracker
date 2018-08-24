@@ -7,7 +7,6 @@
   line-height: 1;
 
   &:hover, &:focus {
-    // background-color: $button-hover-color;
     background-color: lighten($button-color, 10%);
   }
 }
@@ -35,22 +34,16 @@
 }
 
 .submit-btn {
-  // @extend .btn, .right;
   @extend .right;
 }
 
 .page-btn, .browse-btn {
-  // @extend .btn;
   text-transform: none;
 }
 
 .export-btn {
   margin-top: 0.5rem;
 }
-
-// .page-btn {
-//   max-width: 300px;
-// }
 
 .browse-btn {
   font-size: 1.1rem;
@@ -59,6 +52,11 @@
 .form-group > label, label.active, .input-field > label {
   color: $text-color;
   font-size: 1.2rem;
+}
+
+input[type=checkbox] + span {
+  color: $text-color;
+  font-size: 1.2rem !important;
 }
 
 // .input-field .form-control:focus {
@@ -134,6 +132,10 @@ input[type=range] {
 .form-group p {
   margin-top: 1em;
   margin-left: 0;
+}
+
+.modal-btn {
+  @extend .btn, .btn-flat, .waves-effect
 }
 
 .modal {
