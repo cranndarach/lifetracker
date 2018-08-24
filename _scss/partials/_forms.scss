@@ -12,9 +12,14 @@
 }
 
 .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
-  .export-results-btn {
+  .export-results-btn, .save-preset-btn {
   @extend .btn;
 }
+
+.btn-flat {
+  color: $accent-color;
+}
+
 
 .btn-no-accent {
   background-color: $btn-no-accent-bg-color;
@@ -37,6 +42,15 @@
   @extend .right;
 }
 
+.save-preset-btn {
+  background-color: $yellow-alert-color;
+  color: $body-bg-color;
+
+  &:hover {
+    background-color: lighten($yellow-alert-color, 10%);
+  }
+}
+
 .page-btn, .browse-btn {
   text-transform: none;
 }
@@ -57,6 +71,10 @@
 input[type=checkbox] + span {
   color: $text-color;
   font-size: 1.2rem !important;
+}
+
+input[type=checkbox]:checked + span::after {
+  background-color: $accent-color !important;
 }
 
 // .input-field .form-control:focus {
@@ -134,13 +152,18 @@ input[type=range] {
   margin-left: 0;
 }
 
-.modal-btn {
-  @extend .btn, .btn-flat, .waves-effect
-}
-
 .modal {
   background-color: $modal-main-bg-color;
   color: $text-color;
+
+  .modal-cancel {
+    color: $red-alert-color;
+  }
+
+  .modal-footer {
+    background-color: $modal-main-bg-color;
+    color: $text-color;
+  }
 
   .datepicker-date-display, .timepicker-digital-display {
     background-color: $modal-display-bg-color;
@@ -166,16 +189,12 @@ input[type=range] {
     fill: $text-color;
   }
 
-  .btn-flat {
-    color: $modal-btn-text-color;
-  }
-
   .datepicker-clear, .timepicker-clear {
     color: $modal-warn-btn-text-color;
   }
 
   .is-today .datepicker-day-button {
-    color: $modal-btn-text-color;
+    color: $accent-color;
   }
 }
 

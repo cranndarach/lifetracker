@@ -8,7 +8,7 @@ $body-bg-color: color("grey", "darken-4");
 $accent-color: color("cyan", "darken-1");
 $contrast-bg-color: color("grey", "darken-3");
 $positive-color: color("green", "darken-1");
-$yellow-alert-color: color("amber", "darken-3");
+$yellow-alert-color: color("amber", "accent-3");
 $red-alert-color: color("red", "darken-3");
 $neutral-color: $body-bg-color;
 
@@ -44,7 +44,7 @@ $button-font-size: 1.3rem;
 $button-side-padding: 1.5rem;
 $button-top-bottom-padding: 0.3rem;
 // $button-hover-color: color("cyan", "lighten-1");
-$btn-no-accent-bg-color: $contrast-bg-color;
+$btn-no-accent-bg-color: $body-bg-color;
 $btn-no-accent-text-color: $accent-color;
 
 /* b. Text input */
@@ -62,7 +62,7 @@ $range-thumb-width: $range-thumb-height;
 $modal-main-bg-color: $body-bg-color;
 $modal-display-bg-color: darken($accent-color, 5%);
 $modal-clock-bg-color: $contrast-bg-color;
-$modal-btn-text-color: $accent-color;
+// $modal-btn-text-color: $accent-color;
 $modal-warn-btn-text-color: $red-alert-color;
 
 /* 6. Data                                                       */

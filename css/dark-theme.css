@@ -3657,11 +3657,11 @@ a {
 
 /* 2dp elevation modified*/
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
-.export-results-btn, .modal-btn, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+.export-results-btn, .save-preset-btn, .btn-floating, .dropdown-content, .collapsible, .sidenav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover,
-.export-results-btn:hover, .modal-btn:hover, .btn-floating:hover {
+.export-results-btn:hover, .save-preset-btn:hover, .btn-floating:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
 
 /* 6dp elevation modified*/
@@ -4849,12 +4849,12 @@ nav {
       padding: 0 15px;
       cursor: pointer; }
       nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.search-btn, nav ul a.export-btn, nav ul a.submit-btn, nav ul a.page-btn, nav ul a.browse-btn, nav ul a.btn-no-accent,
-      nav ul a.export-results-btn, nav ul a.modal-btn, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.modal-btn, nav ul a.btn-floating {
+      nav ul a.export-results-btn, nav ul a.save-preset-btn, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
         margin-top: -2px;
         margin-left: 15px;
         margin-right: 15px; }
         nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-small > .material-icons, nav ul a.search-btn > .material-icons, nav ul a.export-btn > .material-icons, nav ul a.submit-btn > .material-icons, nav ul a.page-btn > .material-icons, nav ul a.browse-btn > .material-icons, nav ul a.btn-no-accent > .material-icons,
-        nav ul a.export-results-btn > .material-icons, nav ul a.modal-btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-flat > .material-icons, nav ul a.modal-btn > .material-icons, nav ul a.btn-floating > .material-icons {
+        nav ul a.export-results-btn > .material-icons, nav ul a.save-preset-btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-flat > .material-icons, nav ul a.btn-floating > .material-icons {
           height: inherit;
           line-height: inherit; }
       nav ul a:hover {
@@ -5146,12 +5146,12 @@ small {
     padding: 16px 24px; }
     .card .card-action:last-child {
       border-radius: 0 0 2px 2px; }
-    .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.search-btn):not(.export-btn):not(.submit-btn):not(.page-btn):not(.browse-btn):not(.btn-no-accent):not(.modal-btn):not(.btn-large):not(.btn-floating) {
+    .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.search-btn):not(.export-btn):not(.submit-btn):not(.page-btn):not(.browse-btn):not(.btn-no-accent):not(.save-preset-btn):not(.btn-large):not(.btn-floating) {
       color: #ffab40;
       margin-right: 24px;
       transition: color .3s ease;
       text-transform: uppercase; }
-      .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.search-btn):not(.export-btn):not(.submit-btn):not(.page-btn):not(.browse-btn):not(.btn-no-accent):not(.modal-btn):not(.btn-large):not(.btn-floating):hover {
+      .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.search-btn):not(.export-btn):not(.submit-btn):not(.page-btn):not(.browse-btn):not(.btn-no-accent):not(.save-preset-btn):not(.btn-large):not(.btn-floating):hover {
         color: #ffd8a6; }
   .card .card-reveal {
     padding: 24px;
@@ -5316,9 +5316,8 @@ small {
   visibility: hidden; }
 
 .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
-.export-results-btn, .modal-btn,
-.btn-flat,
-.modal-btn {
+.export-results-btn, .save-preset-btn,
+.btn-flat {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -5330,12 +5329,11 @@ small {
   -webkit-tap-highlight-color: transparent; }
 
 .btn.disabled, .disabled.btn-large, .disabled.btn-small, .disabled.search-btn, .disabled.export-btn, .disabled.submit-btn, .disabled.page-btn, .disabled.browse-btn, .disabled.btn-no-accent,
-.disabled.export-results-btn, .disabled.modal-btn,
+.disabled.export-results-btn, .disabled.save-preset-btn,
 .btn-floating.disabled,
 .btn-large.disabled,
 .btn-small.disabled,
 .btn-flat.disabled,
-.disabled.modal-btn,
 .btn:disabled,
 .btn-large:disabled,
 .btn-small:disabled,
@@ -5346,12 +5344,11 @@ small {
 .browse-btn:disabled,
 .btn-no-accent:disabled,
 .export-results-btn:disabled,
-.modal-btn:disabled,
+.save-preset-btn:disabled,
 .btn-floating:disabled,
 .btn-large:disabled,
 .btn-small:disabled,
 .btn-flat:disabled,
-.modal-btn:disabled,
 .btn[disabled],
 [disabled].btn-large,
 [disabled].btn-small,
@@ -5362,24 +5359,22 @@ small {
 [disabled].browse-btn,
 [disabled].btn-no-accent,
 [disabled].export-results-btn,
-[disabled].modal-btn,
+[disabled].save-preset-btn,
 .btn-floating[disabled],
 .btn-large[disabled],
 .btn-small[disabled],
-.btn-flat[disabled],
-[disabled].modal-btn {
+.btn-flat[disabled] {
   pointer-events: none;
   background-color: #DFDFDF !important;
   box-shadow: none;
   color: #9F9F9F !important;
   cursor: default; }
   .btn.disabled:hover, .disabled.btn-large:hover, .disabled.btn-small:hover, .disabled.search-btn:hover, .disabled.export-btn:hover, .disabled.submit-btn:hover, .disabled.page-btn:hover, .disabled.browse-btn:hover, .disabled.btn-no-accent:hover,
-  .disabled.export-results-btn:hover, .disabled.modal-btn:hover,
+  .disabled.export-results-btn:hover, .disabled.save-preset-btn:hover,
   .btn-floating.disabled:hover,
   .btn-large.disabled:hover,
   .btn-small.disabled:hover,
   .btn-flat.disabled:hover,
-  .disabled.modal-btn:hover,
   .btn:disabled:hover,
   .btn-large:disabled:hover,
   .btn-small:disabled:hover,
@@ -5390,12 +5385,11 @@ small {
   .browse-btn:disabled:hover,
   .btn-no-accent:disabled:hover,
   .export-results-btn:disabled:hover,
-  .modal-btn:disabled:hover,
+  .save-preset-btn:disabled:hover,
   .btn-floating:disabled:hover,
   .btn-large:disabled:hover,
   .btn-small:disabled:hover,
   .btn-flat:disabled:hover,
-  .modal-btn:disabled:hover,
   .btn[disabled]:hover,
   [disabled].btn-large:hover,
   [disabled].btn-small:hover,
@@ -5406,41 +5400,38 @@ small {
   [disabled].browse-btn:hover,
   [disabled].btn-no-accent:hover,
   [disabled].export-results-btn:hover,
-  [disabled].modal-btn:hover,
+  [disabled].save-preset-btn:hover,
   .btn-floating[disabled]:hover,
   .btn-large[disabled]:hover,
   .btn-small[disabled]:hover,
-  .btn-flat[disabled]:hover,
-  [disabled].modal-btn:hover {
+  .btn-flat[disabled]:hover {
     background-color: #DFDFDF !important;
     color: #9F9F9F !important; }
 
 .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
-.export-results-btn, .modal-btn,
+.export-results-btn, .save-preset-btn,
 .btn-floating,
 .btn-large,
 .btn-small,
-.btn-flat,
-.modal-btn {
+.btn-flat {
   font-size: 1.3rem;
   outline: 0; }
   .btn i, .btn-large i, .btn-small i, .search-btn i, .export-btn i, .submit-btn i, .page-btn i, .browse-btn i, .btn-no-accent i,
-  .export-results-btn i, .modal-btn i,
+  .export-results-btn i, .save-preset-btn i,
   .btn-floating i,
   .btn-large i,
   .btn-small i,
-  .btn-flat i,
-  .modal-btn i {
+  .btn-flat i {
     font-size: 1.3rem;
     line-height: inherit; }
 
 .btn:focus, .btn-large:focus, .btn-small:focus, .search-btn:focus, .export-btn:focus, .submit-btn:focus, .page-btn:focus, .browse-btn:focus, .btn-no-accent:focus,
-.export-results-btn:focus, .modal-btn:focus,
+.export-results-btn:focus, .save-preset-btn:focus,
 .btn-floating:focus {
   background-color: #1d7d74; }
 
 .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
-.export-results-btn, .modal-btn {
+.export-results-btn, .save-preset-btn {
   text-decoration: none;
   color: #fff;
   background-color: #26a69a;
@@ -5449,7 +5440,7 @@ small {
   transition: background-color .2s ease-out;
   cursor: pointer; }
   .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover,
-  .export-results-btn:hover, .modal-btn:hover {
+  .export-results-btn:hover, .save-preset-btn:hover {
     background-color: #2bbbad; }
 
 .btn-floating {
@@ -5597,17 +5588,17 @@ button.btn-floating {
     border-radius: 50%;
     transform: scale(0); }
 
-.btn-flat, .modal-btn {
+.btn-flat {
   box-shadow: none;
   background-color: transparent;
   color: #343434;
   cursor: pointer;
   transition: background-color .2s; }
-  .btn-flat:focus, .modal-btn:focus, .btn-flat:hover, .modal-btn:hover {
+  .btn-flat:focus, .btn-flat:hover {
     box-shadow: none; }
-  .btn-flat:focus, .modal-btn:focus {
+  .btn-flat:focus {
     background-color: rgba(0, 0, 0, 0.1); }
-  .btn-flat.disabled, .disabled.modal-btn {
+  .btn-flat.disabled {
     background-color: transparent !important;
     color: #b3b3b3 !important;
     cursor: default; }
@@ -5692,7 +5683,7 @@ button.btn-floating {
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
 .waves-effect, .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
-.export-results-btn, .modal-btn {
+.export-results-btn, .save-preset-btn {
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -5703,7 +5694,7 @@ button.btn-floating {
   z-index: 1;
   transition: .3s ease-out; }
   .waves-effect .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple, .search-btn .waves-ripple, .export-btn .waves-ripple, .submit-btn .waves-ripple, .page-btn .waves-ripple, .browse-btn .waves-ripple, .btn-no-accent .waves-ripple,
-  .export-results-btn .waves-ripple, .modal-btn .waves-ripple {
+  .export-results-btn .waves-ripple, .save-preset-btn .waves-ripple {
     position: absolute;
     border-radius: 50%;
     width: 20px;
@@ -5717,37 +5708,37 @@ button.btn-floating {
     transform: scale(0);
     pointer-events: none; }
   .waves-effect.waves-light .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple, .search-btn .waves-ripple, .export-btn .waves-ripple, .submit-btn .waves-ripple, .page-btn .waves-ripple, .browse-btn .waves-ripple, .btn-no-accent .waves-ripple,
-  .export-results-btn .waves-ripple, .modal-btn .waves-ripple {
+  .export-results-btn .waves-ripple, .save-preset-btn .waves-ripple {
     background-color: rgba(255, 255, 255, 0.45); }
   .waves-effect.waves-red .waves-ripple, .waves-red.btn .waves-ripple, .waves-red.btn-large .waves-ripple, .waves-red.btn-small .waves-ripple, .waves-red.search-btn .waves-ripple, .waves-red.export-btn .waves-ripple, .waves-red.submit-btn .waves-ripple, .waves-red.page-btn .waves-ripple, .waves-red.browse-btn .waves-ripple, .waves-red.btn-no-accent .waves-ripple,
-  .waves-red.export-results-btn .waves-ripple, .waves-red.modal-btn .waves-ripple {
+  .waves-red.export-results-btn .waves-ripple, .waves-red.save-preset-btn .waves-ripple {
     background-color: rgba(244, 67, 54, 0.7); }
   .waves-effect.waves-yellow .waves-ripple, .waves-yellow.btn .waves-ripple, .waves-yellow.btn-large .waves-ripple, .waves-yellow.btn-small .waves-ripple, .waves-yellow.search-btn .waves-ripple, .waves-yellow.export-btn .waves-ripple, .waves-yellow.submit-btn .waves-ripple, .waves-yellow.page-btn .waves-ripple, .waves-yellow.browse-btn .waves-ripple, .waves-yellow.btn-no-accent .waves-ripple,
-  .waves-yellow.export-results-btn .waves-ripple, .waves-yellow.modal-btn .waves-ripple {
+  .waves-yellow.export-results-btn .waves-ripple, .waves-yellow.save-preset-btn .waves-ripple {
     background-color: rgba(255, 235, 59, 0.7); }
   .waves-effect.waves-orange .waves-ripple, .waves-orange.btn .waves-ripple, .waves-orange.btn-large .waves-ripple, .waves-orange.btn-small .waves-ripple, .waves-orange.search-btn .waves-ripple, .waves-orange.export-btn .waves-ripple, .waves-orange.submit-btn .waves-ripple, .waves-orange.page-btn .waves-ripple, .waves-orange.browse-btn .waves-ripple, .waves-orange.btn-no-accent .waves-ripple,
-  .waves-orange.export-results-btn .waves-ripple, .waves-orange.modal-btn .waves-ripple {
+  .waves-orange.export-results-btn .waves-ripple, .waves-orange.save-preset-btn .waves-ripple {
     background-color: rgba(255, 152, 0, 0.7); }
   .waves-effect.waves-purple .waves-ripple, .waves-purple.btn .waves-ripple, .waves-purple.btn-large .waves-ripple, .waves-purple.btn-small .waves-ripple, .waves-purple.search-btn .waves-ripple, .waves-purple.export-btn .waves-ripple, .waves-purple.submit-btn .waves-ripple, .waves-purple.page-btn .waves-ripple, .waves-purple.browse-btn .waves-ripple, .waves-purple.btn-no-accent .waves-ripple,
-  .waves-purple.export-results-btn .waves-ripple, .waves-purple.modal-btn .waves-ripple {
+  .waves-purple.export-results-btn .waves-ripple, .waves-purple.save-preset-btn .waves-ripple {
     background-color: rgba(156, 39, 176, 0.7); }
   .waves-effect.waves-green .waves-ripple, .waves-green.btn .waves-ripple, .waves-green.btn-large .waves-ripple, .waves-green.btn-small .waves-ripple, .waves-green.search-btn .waves-ripple, .waves-green.export-btn .waves-ripple, .waves-green.submit-btn .waves-ripple, .waves-green.page-btn .waves-ripple, .waves-green.browse-btn .waves-ripple, .waves-green.btn-no-accent .waves-ripple,
-  .waves-green.export-results-btn .waves-ripple, .waves-green.modal-btn .waves-ripple {
+  .waves-green.export-results-btn .waves-ripple, .waves-green.save-preset-btn .waves-ripple {
     background-color: rgba(76, 175, 80, 0.7); }
   .waves-effect.waves-teal .waves-ripple, .waves-teal.btn .waves-ripple, .waves-teal.btn-large .waves-ripple, .waves-teal.btn-small .waves-ripple, .waves-teal.search-btn .waves-ripple, .waves-teal.export-btn .waves-ripple, .waves-teal.submit-btn .waves-ripple, .waves-teal.page-btn .waves-ripple, .waves-teal.browse-btn .waves-ripple, .waves-teal.btn-no-accent .waves-ripple,
-  .waves-teal.export-results-btn .waves-ripple, .waves-teal.modal-btn .waves-ripple {
+  .waves-teal.export-results-btn .waves-ripple, .waves-teal.save-preset-btn .waves-ripple {
     background-color: rgba(0, 150, 136, 0.7); }
   .waves-effect input[type="button"], .btn input[type="button"], .btn-large input[type="button"], .btn-small input[type="button"], .search-btn input[type="button"], .export-btn input[type="button"], .submit-btn input[type="button"], .page-btn input[type="button"], .browse-btn input[type="button"], .btn-no-accent input[type="button"],
-  .export-results-btn input[type="button"], .modal-btn input[type="button"], .waves-effect input[type="reset"], .btn input[type="reset"], .btn-large input[type="reset"], .btn-small input[type="reset"], .search-btn input[type="reset"], .export-btn input[type="reset"], .submit-btn input[type="reset"], .page-btn input[type="reset"], .browse-btn input[type="reset"], .btn-no-accent input[type="reset"],
-  .export-results-btn input[type="reset"], .modal-btn input[type="reset"], .waves-effect input[type="submit"], .btn input[type="submit"], .btn-large input[type="submit"], .btn-small input[type="submit"], .search-btn input[type="submit"], .export-btn input[type="submit"], .submit-btn input[type="submit"], .page-btn input[type="submit"], .browse-btn input[type="submit"], .btn-no-accent input[type="submit"],
-  .export-results-btn input[type="submit"], .modal-btn input[type="submit"] {
+  .export-results-btn input[type="button"], .save-preset-btn input[type="button"], .waves-effect input[type="reset"], .btn input[type="reset"], .btn-large input[type="reset"], .btn-small input[type="reset"], .search-btn input[type="reset"], .export-btn input[type="reset"], .submit-btn input[type="reset"], .page-btn input[type="reset"], .browse-btn input[type="reset"], .btn-no-accent input[type="reset"],
+  .export-results-btn input[type="reset"], .save-preset-btn input[type="reset"], .waves-effect input[type="submit"], .btn input[type="submit"], .btn-large input[type="submit"], .btn-small input[type="submit"], .search-btn input[type="submit"], .export-btn input[type="submit"], .submit-btn input[type="submit"], .page-btn input[type="submit"], .browse-btn input[type="submit"], .btn-no-accent input[type="submit"],
+  .export-results-btn input[type="submit"], .save-preset-btn input[type="submit"] {
     border: 0;
     font-style: normal;
     font-size: inherit;
     text-transform: inherit;
     background: none; }
   .waves-effect img, .btn img, .btn-large img, .btn-small img, .search-btn img, .export-btn img, .submit-btn img, .page-btn img, .browse-btn img, .btn-no-accent img,
-  .export-results-btn img, .modal-btn img {
+  .export-results-btn img, .save-preset-btn img {
     position: relative;
     z-index: -1; }
 
@@ -5780,7 +5771,7 @@ button.btn-floating {
 
 /* Firefox Bug: link not triggered */
 .waves-effect .waves-ripple, .btn .waves-ripple, .btn-large .waves-ripple, .btn-small .waves-ripple, .search-btn .waves-ripple, .export-btn .waves-ripple, .submit-btn .waves-ripple, .page-btn .waves-ripple, .browse-btn .waves-ripple, .btn-no-accent .waves-ripple,
-.export-results-btn .waves-ripple, .modal-btn .waves-ripple {
+.export-results-btn .waves-ripple, .save-preset-btn .waves-ripple {
   z-index: -1; }
 
 .modal {
@@ -5813,7 +5804,7 @@ button.btn-floating {
     width: 100%;
     text-align: right; }
     .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-small, .modal .modal-footer .search-btn, .modal .modal-footer .export-btn, .modal .modal-footer .submit-btn, .modal .modal-footer .page-btn, .modal .modal-footer .browse-btn, .modal .modal-footer .btn-no-accent,
-    .modal .modal-footer .export-results-btn, .modal .modal-footer .modal-btn, .modal .modal-footer .btn-flat, .modal .modal-footer .modal-btn {
+    .modal .modal-footer .export-results-btn, .modal .modal-footer .save-preset-btn, .modal .modal-footer .btn-flat {
       margin: 6px 0; }
 
 .modal-overlay {
@@ -6941,7 +6932,7 @@ select:disabled {
   .file-field input.file-path {
     width: 100%; }
   .file-field .btn, .file-field .btn-large, .file-field .btn-small, .file-field .search-btn, .file-field .export-btn, .file-field .submit-btn, .file-field .page-btn, .file-field .browse-btn, .file-field .btn-no-accent,
-  .file-field .export-results-btn, .file-field .modal-btn {
+  .file-field .export-results-btn, .file-field .save-preset-btn {
     float: left;
     height: 3rem;
     line-height: 3rem; }
@@ -7152,15 +7143,15 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     .sidenav li > a:hover {
       background-color: rgba(0, 0, 0, 0.05); }
     .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.search-btn, .sidenav li > a.export-btn, .sidenav li > a.submit-btn, .sidenav li > a.page-btn, .sidenav li > a.browse-btn, .sidenav li > a.btn-no-accent,
-    .sidenav li > a.export-results-btn, .sidenav li > a.modal-btn, .sidenav li > a.btn-large, .sidenav li > a.btn-flat, .sidenav li > a.modal-btn, .sidenav li > a.btn-floating {
+    .sidenav li > a.export-results-btn, .sidenav li > a.save-preset-btn, .sidenav li > a.btn-large, .sidenav li > a.btn-flat, .sidenav li > a.btn-floating {
       margin: 10px 15px; }
     .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.search-btn, .sidenav li > a.export-btn, .sidenav li > a.submit-btn, .sidenav li > a.page-btn, .sidenav li > a.browse-btn, .sidenav li > a.btn-no-accent,
-    .sidenav li > a.export-results-btn, .sidenav li > a.modal-btn, .sidenav li > a.btn-large, .sidenav li > a.btn-floating {
+    .sidenav li > a.export-results-btn, .sidenav li > a.save-preset-btn, .sidenav li > a.btn-large, .sidenav li > a.btn-floating {
       color: #fff; }
-    .sidenav li > a.btn-flat, .sidenav li > a.modal-btn {
+    .sidenav li > a.btn-flat {
       color: #343434; }
     .sidenav li > a.btn:hover, .sidenav li > a.btn-large:hover, .sidenav li > a.btn-small:hover, .sidenav li > a.search-btn:hover, .sidenav li > a.export-btn:hover, .sidenav li > a.submit-btn:hover, .sidenav li > a.page-btn:hover, .sidenav li > a.browse-btn:hover, .sidenav li > a.btn-no-accent:hover,
-    .sidenav li > a.export-results-btn:hover, .sidenav li > a.modal-btn:hover, .sidenav li > a.btn-large:hover {
+    .sidenav li > a.export-results-btn:hover, .sidenav li > a.save-preset-btn:hover, .sidenav li > a.btn-large:hover {
       background-color: #2bbbad; }
     .sidenav li > a.btn-floating:hover {
       background-color: #26a69a; }
@@ -7814,7 +7805,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   transform: translate(-50%, -50%);
   z-index: 10002;
   position: absolute !important; }
-  .tap-target-origin:not(.btn):not(.btn-large):not(.btn-small):not(.search-btn):not(.export-btn):not(.submit-btn):not(.page-btn):not(.browse-btn):not(.btn-no-accent):not(.modal-btn), .tap-target-origin:not(.btn):not(.btn-large):not(.btn-small):not(.search-btn):not(.export-btn):not(.submit-btn):not(.page-btn):not(.browse-btn):not(.btn-no-accent):not(.modal-btn):hover {
+  .tap-target-origin:not(.btn):not(.btn-large):not(.btn-small):not(.search-btn):not(.export-btn):not(.submit-btn):not(.page-btn):not(.browse-btn):not(.btn-no-accent):not(.save-preset-btn), .tap-target-origin:not(.btn):not(.btn-large):not(.btn-small):not(.search-btn):not(.export-btn):not(.submit-btn):not(.page-btn):not(.browse-btn):not(.btn-no-accent):not(.save-preset-btn):hover {
     background: none; }
 
 @media only screen and (max-width: 600px) {
@@ -8177,31 +8168,40 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .button-table td {
     width: 30%; }
   .button-table td .btn, .button-table td .btn-large, .button-table td .btn-small, .button-table td .search-btn, .button-table td .export-btn, .button-table td .submit-btn, .button-table td .page-btn, .button-table td .browse-btn, .button-table td .btn-no-accent,
-  .button-table td .export-results-btn, .button-table td .modal-btn {
+  .button-table td .export-results-btn, .button-table td .save-preset-btn {
     width: 100%; }
 
 .btn, .btn-large, .btn-small, .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
-.export-results-btn, .modal-btn {
+.export-results-btn, .save-preset-btn {
   background-color: #00acc1;
   color: #0a0a0a;
   font-size: 1.3rem;
   padding: 0.3rem 1.5rem;
   line-height: 1; }
   .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover,
-  .export-results-btn:hover, .modal-btn:hover, .btn:focus, .btn-large:focus, .btn-small:focus, .search-btn:focus, .export-btn:focus, .submit-btn:focus, .page-btn:focus, .browse-btn:focus, .btn-no-accent:focus,
-  .export-results-btn:focus, .modal-btn:focus {
+  .export-results-btn:hover, .save-preset-btn:hover, .btn:focus, .btn-large:focus, .btn-small:focus, .search-btn:focus, .export-btn:focus, .submit-btn:focus, .page-btn:focus, .browse-btn:focus, .btn-no-accent:focus,
+  .export-results-btn:focus, .save-preset-btn:focus {
     background-color: #00d9f4; }
 
+.btn-flat {
+  color: #00acc1; }
+
 .btn-no-accent {
-  background-color: #424242;
+  background-color: #212121;
   color: #00acc1; }
   .btn-no-accent:hover {
     color: #0a0a0a; }
   .btn-no-accent:focus {
-    background-color: #292929; }
+    background-color: #080808; }
 
 .search-btn {
   margin-left: 0.5rem; }
+
+.save-preset-btn {
+  background-color: #ffc400;
+  color: #212121; }
+  .save-preset-btn:hover {
+    background-color: #ffd033; }
 
 .page-btn, .browse-btn {
   text-transform: none; }
@@ -8219,6 +8219,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 input[type=checkbox] + span {
   color: #e0e0e0;
   font-size: 1.2rem !important; }
+
+input[type=checkbox]:checked + span::after {
+  background-color: #00acc1 !important; }
 
 .dropdown-content li {
   background-color: #212121; }
@@ -8265,6 +8268,11 @@ input[type=range] {
 .modal {
   background-color: #212121;
   color: #e0e0e0; }
+  .modal .modal-cancel {
+    color: #C62828; }
+  .modal .modal-footer {
+    background-color: #212121;
+    color: #e0e0e0; }
   .modal .datepicker-date-display, .modal .timepicker-digital-display {
     background-color: #0095a8; }
   .modal .timepicker-plate {
@@ -8277,8 +8285,6 @@ input[type=range] {
     color: #e0e0e0; }
   .modal .month-next svg, .modal .month-prev svg {
     fill: #e0e0e0; }
-  .modal .btn-flat, .modal .modal-btn {
-    color: #00acc1; }
   .modal .datepicker-clear, .modal .timepicker-clear {
     color: #C62828; }
   .modal .is-today .datepicker-day-button {
