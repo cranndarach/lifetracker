@@ -8147,12 +8147,6 @@ input[type=range]::-ms-thumb {
 .sidenav .nav-btn a {
   padding-left: 24px; }
 
-#home-menu {
-  background-color: #eeeeee;
-  color: #000; }
-  #home-menu.current a {
-    color: #000; }
-
 #sidebar {
   width: 300px; }
 
