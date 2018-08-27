@@ -7,6 +7,8 @@ $off-black: #0a0a0a;
 $body-bg-color: #fff;
 $accent-color: color("teal", "lighten-1");
 $contrast-bg-color: color("grey", "lighten-3");
+$yellow-alert-color: color("amber", "darken-3");
+$red-alert-color: color("red", "darken-3");
 $neutral-color: $body-bg-color;
 
 /* c. Text colors */
@@ -21,6 +23,7 @@ $neutral-text-color: $text-color;
 $font-family: "Roboto", "Arial", sans-serif;
 $window-border-color: color("grey", "lighten-4");
 $font-size: 1.1rem;
+$material-icon-default-size: 24px;
 
 /* 3. Sidenav                                                    */
 $sidenav-text-color: $text-color;
@@ -55,6 +58,13 @@ $range-thumb-color: $accent-color;
 $range-track-height: 3px;
 $range-thumb-height: 20px;
 $range-thumb-width: $range-thumb-height;
+
+/* d. Pickers */
+$modal-main-bg-color: $body-bg-color;
+$modal-clock-bg-color: $contrast-bg-color;
+$modal-display-bg-color: $accent-color;
+// $modal-btn-text-color: $accent-color;
+$modal-warn-btn-text-color: $red-alert-color;
 
 /* 6. Data                                                       */
 $card-bg: $contrast-bg-color;

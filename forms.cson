@@ -11,13 +11,25 @@ main:
 				label: "Category"
 				type: "text"
 				value: ""
-			start:
-				label: "Start"
-				type: "datetime-local"
+			startDate:
+				label: "Start date"
+				type: "text"
+				class: "datepicker"
 				value: ""
-			end:
-				label: "End"
-				type: "datetime-local"
+			startTime:
+				label: "Start time"
+				type: "text"
+				class: "timepicker"
+				value: ""
+			endDate:
+				label: "End date"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			endTime:
+				label: "End time"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			loc:
 				label: "Location"
@@ -47,13 +59,25 @@ main:
 				label: "Category"
 				type: "text"
 				value: ""
-			start:
-				label: "Start"
-				type: "datetime-local"
+			startDate:
+				label: "Start date"
+				type: "text"
+				class: "datepicker"
 				value: ""
-			end:
-				label: "End"
-				type: "datetime-local"
+			startTime:
+				label: "Start time"
+				type: "text"
+				class: "timepicker"
+				value: ""
+			endDate:
+				label: "End date"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			endTime:
+				label: "End time"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			loc:
 				label: "Location"
@@ -107,9 +131,15 @@ main:
 				label: "EXP Gained"
 				type: "number"
 				value: 0
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 	simple:
 		formTitle: "Log a Simple Entry"
@@ -122,9 +152,15 @@ main:
 				label: "Category"
 				type: "text"
 				value: ""
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			loc:
 				label: "Location"
@@ -148,9 +184,15 @@ adventureLogs:
 				label: "Location"
 				type: "text"
 				value: "my backyard"
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			difficulty:
 				label: "Difficulty"
@@ -173,9 +215,15 @@ status:
 				min: 0
 				max: 100
 				value: 0
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 	mood:
 		formTitle: "Log Your Mood"
@@ -222,9 +270,15 @@ status:
 				min: 0
 				max: 100
 				value: 0
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 	health:
 		formTitle: "Log Health/Symptoms"
@@ -237,13 +291,25 @@ status:
 				label: "Category"
 				type: "text"
 				value: ""
-			start:
-				label: "Start time"
-				type: "datetime-local"
+			startDate:
+				label: "Start date"
+				type: "text"
+				class: "datepicker"
 				value: ""
-			end:
-				label: "End (if applicable)"
-				type: "datetime-local"
+			startTime:
+				label: "Start time"
+				type: "text"
+				class: "timepicker"
+				value: ""
+			endDate:
+				label: "End date (if applicable)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			endTime:
+				label: "End time (if applicable)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			trigger:
 				label: "Trigger (if known)"
@@ -268,9 +334,15 @@ status:
 				min: 0
 				max: 100
 				value: 0
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			loc:
 				label: "Your location"
@@ -287,9 +359,15 @@ status:
 				label: "Trigger (if known)"
 				type: "text"
 				value: ""
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			intensity:
 				label: "Intensity"
@@ -328,9 +406,15 @@ status:
 				min: 0
 				max: 100
 				value: 0
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			loc:
 				label: "Your location"
@@ -383,6 +467,12 @@ status:
 				value: 0
 			leftWristPain:
 				label: "Left wrist pain"
+				type: "range"
+				min: 0
+				max: 100
+				value: 0
+			leftHandPain:
+				label: "Left hand pain"
 				type: "range"
 				min: 0
 				max: 100
@@ -441,6 +531,12 @@ status:
 				min: 0
 				max: 100
 				value: 0
+			rightHandPain:
+				label: "Right hand pain"
+				type: "range"
+				min: 0
+				max: 100
+				value: 0
 			rightKneePain:
 				label: "Right knee pain"
 				type: "range"
@@ -465,9 +561,15 @@ status:
 				min: 0
 				max: 100
 				value: 0
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			loc:
 				label: "Your location"
@@ -486,9 +588,15 @@ influences:
 				label: "Category"
 				type: "text"
 				value: ""
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			intensity:
 				label: "Intensity"
@@ -508,13 +616,25 @@ influences:
 				label: "Category"
 				type: "text"
 				value: "Sleep"
-			start:
-				label: "Went to bed"
-				type: "datetime-local"
+			startDate:
+				label: "Start date"
+				type: "text"
+				class: "datepicker"
 				value: ""
-			end:
-				label: "Woke up"
-				type: "datetime-local"
+			startTime:
+				label: "Start time"
+				type: "text"
+				class: "timepicker"
+				value: ""
+			endDate:
+				label: "End date"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			endTime:
+				label: "End time"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			loc:
 				label: "Location"
@@ -542,9 +662,15 @@ influences:
 				label: "Reason (optional)"
 				type: "text"
 				value: ""
-			when:
-				label: "When"
-				type: "datetime-local"
+			whenDate:
+				label: "When (date)"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			whenTime:
+				label: "When (time)"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			loc:
 				label: "Location"
@@ -592,13 +718,25 @@ influences:
 				label: "Reason for taking (optional)"
 				type: "text"
 				value: ""
-			start:
-				label: "Start time"
-				type: "datetime-local"
+			startDate:
+				label: "Start date"
+				type: "text"
+				class: "datepicker"
 				value: ""
-			end:
-				label: "End (if known)"
-				type: "datetime-local"
+			startTime:
+				label: "Start time"
+				type: "text"
+				class: "timepicker"
+				value: ""
+			endDate:
+				label: "End date"
+				type: "text"
+				class: "datepicker"
+				value: ""
+			endTime:
+				label: "End time"
+				type: "text"
+				class: "timepicker"
 				value: ""
 			benefit:
 				label: "Benefit/Improvement (if known)"

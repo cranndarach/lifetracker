@@ -2,24 +2,28 @@
   background-color: $body-bg-color;
 }
 
-.sidenav li > a, .sidenav .collapsible-header {
+.sidenav li > a, .sidenav .collapsible-header, .sidenav li a.subheader {
   color: $sidenav-text-color;
   padding: 0 16px 0 20px;
   font-size: $font-size;
+  
+  &:hover {
+    background-color: lighten($body-bg-color, 10%);
+  }
 }
 
 .sidenav .nav-btn a {
-  padding-left: 20px;
+  padding-left: 24px;
 }
 
-#home-menu {
-  background-color: $contrast-bg-color;
-  color: $sidenav-text-color;
-
-  &.current a {
-    color: $sidenav-text-color;
-  }
-}
+// #home-menu {
+//   background-color: $contrast-bg-color;
+//   color: $sidenav-text-color;
+//
+//   &.current a {
+//     color: $sidenav-text-color;
+//   }
+// }
 
 #sidebar {
   // width: 20%;
@@ -34,10 +38,18 @@
   background-color: $body-bg-color;
 }
 
-.sidenav li.current {
+.sidenav li.current a {
   background-color: $current-sidenav-bg-color;
-  
-  a {
-    color: $current-sidenav-text-color;
+  color: $current-sidenav-text-color;
+
+  &:hover {
+    background-color: lighten($current-sidenav-bg-color, 10%);
   }
+
+  // a {
+  // }
+}
+
+li.nav-parent > a, li.nav-solo > a, .sidenav li a.subheader {
+  font-weight: bold;
 }

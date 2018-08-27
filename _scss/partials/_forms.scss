@@ -7,15 +7,19 @@
   line-height: 1;
 
   &:hover, &:focus {
-    // background-color: $button-hover-color;
     background-color: lighten($button-color, 10%);
   }
 }
 
 .search-btn, .export-btn, .submit-btn, .page-btn, .browse-btn, .btn-no-accent,
-  .export-results-btn {
+  .export-results-btn, .save-preset-btn {
   @extend .btn;
 }
+
+.btn-flat {
+  color: $accent-color;
+}
+
 
 .btn-no-accent {
   background-color: $btn-no-accent-bg-color;
@@ -35,22 +39,25 @@
 }
 
 .submit-btn {
-  // @extend .btn, .right;
   @extend .right;
 }
 
+.save-preset-btn {
+  background-color: $yellow-alert-color;
+  color: $body-bg-color;
+
+  &:hover {
+    background-color: lighten($yellow-alert-color, 10%);
+  }
+}
+
 .page-btn, .browse-btn {
-  // @extend .btn;
   text-transform: none;
 }
 
 .export-btn {
   margin-top: 0.5rem;
 }
-
-// .page-btn {
-//   max-width: 300px;
-// }
 
 .browse-btn {
   font-size: 1.1rem;
@@ -59,6 +66,15 @@
 .form-group > label, label.active, .input-field > label {
   color: $text-color;
   font-size: 1.2rem;
+}
+
+input[type=checkbox] + span {
+  color: $text-color;
+  font-size: 1.2rem !important;
+}
+
+input[type=checkbox]:checked + span::after {
+  background-color: $accent-color !important;
 }
 
 // .input-field .form-control:focus {
@@ -108,7 +124,7 @@ input[type=range] {
   }
 }
 
-#submit-message {
+#message {
   color: $submit-message-color;
   font-weight: bold;
 }
@@ -118,7 +134,7 @@ input[type=range] {
 //   -webkit-animation: fadeout 0.4s;
 // }
 
-#submit-message .hidden {
+#message .hidden {
   visibility: hidden;
 }
 
@@ -127,14 +143,59 @@ input[type=range] {
 //   -webkit-animation: fadein 0.8s;
 // }
 
-#submit-message .shown {
+#message .shown {
   visibility: visible;
 }
-
 
 .form-group p {
   margin-top: 1em;
   margin-left: 0;
+}
+
+.modal {
+  background-color: $modal-main-bg-color;
+  color: $text-color;
+
+  .modal-cancel {
+    color: $red-alert-color;
+  }
+
+  .modal-footer {
+    background-color: $modal-main-bg-color;
+    color: $text-color;
+  }
+
+  .datepicker-date-display, .timepicker-digital-display {
+    background-color: $modal-display-bg-color;
+  }
+
+  .timepicker-plate {
+    background-color: $modal-clock-bg-color;
+  }
+
+  .timepicker-canvas line {
+    stroke: $accent-color;
+  }
+
+  .timepicker-canvas circle {
+    fill: $accent-color;
+  }
+
+  .timepicker-dial .timepicker-tick {
+    color: $text-color;
+  }
+
+  .month-next svg, .month-prev svg {
+    fill: $text-color;
+  }
+
+  .datepicker-clear, .timepicker-clear {
+    color: $modal-warn-btn-text-color;
+  }
+
+  .is-today .datepicker-day-button {
+    color: $accent-color;
+  }
 }
 
 fieldset {
