@@ -124,7 +124,7 @@ input[type=range] {
   }
 }
 
-#submit-message {
+#message {
   color: $submit-message-color;
   font-weight: bold;
 }
@@ -134,7 +134,7 @@ input[type=range] {
 //   -webkit-animation: fadeout 0.4s;
 // }
 
-#submit-message .hidden {
+#message .hidden {
   visibility: hidden;
 }
 
@@ -143,7 +143,7 @@ input[type=range] {
 //   -webkit-animation: fadein 0.8s;
 // }
 
-#submit-message .shown {
+#message .shown {
   visibility: visible;
 }
 

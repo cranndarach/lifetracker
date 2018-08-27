@@ -22,3 +22,5 @@ config.cson
 \.sass-cache/8deea6aaae2d6e346fc15bac6cb32220a501765d/
 
 *.scssc
+
+presets\.cson
