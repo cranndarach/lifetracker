@@ -8139,10 +8139,12 @@ input[type=range]::-ms-thumb {
 .sidenav {
   background-color: #fff; }
 
-.sidenav li > a, .sidenav .collapsible-header {
+.sidenav li > a, .sidenav .collapsible-header, .sidenav li a.subheader {
   color: #000;
   padding: 0 16px 0 20px;
   font-size: 1.1rem; }
+  .sidenav li > a:hover, .sidenav .collapsible-header:hover, .sidenav li a.subheader:hover {
+    background-color: white; }
 
 .sidenav .nav-btn a {
   padding-left: 24px; }
@@ -8156,12 +8158,13 @@ input[type=range]::-ms-thumb {
 .sidenav .collapsible-body {
   background-color: #fff; }
 
-.sidenav li.current {
-  background-color: #26a69a; }
-  .sidenav li.current a {
-    color: #000; }
+.sidenav li.current a {
+  background-color: #26a69a;
+  color: #000; }
+  .sidenav li.current a:hover {
+    background-color: #30d0c1; }
 
-li.nav-parent > a, li.nav-solo > a {
+li.nav-parent > a, li.nav-solo > a, .sidenav li a.subheader {
   font-weight: bold; }
 
 .data-display-table td, .data-display-table th {
