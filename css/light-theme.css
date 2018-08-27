@@ -8161,6 +8161,9 @@ input[type=range]::-ms-thumb {
   .sidenav li.current a {
     color: #000; }
 
+li.nav-parent > a, li.nav-solo > a {
+  font-weight: bold; }
+
 .data-display-table td, .data-display-table th {
   white-space: nowrap;
   border: solid 1px white; }
@@ -8326,7 +8329,12 @@ fieldset {
  ****************/
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"); }
+  src: url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold") format("woff2"), url("../fonts/roboto/Roboto-Bold") format("woff");
+  font-weight: bold; }
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;

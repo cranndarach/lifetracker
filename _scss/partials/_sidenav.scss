@@ -41,3 +41,7 @@
     color: $current-sidenav-text-color;
   }
 }
+
+li.nav-parent > a, li.nav-solo > a {
+  font-weight: bold;
+}
