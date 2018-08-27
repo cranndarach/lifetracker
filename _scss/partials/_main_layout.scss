@@ -7,6 +7,45 @@
        url("../fonts/roboto/Roboto-Regular.woff") format("woff");
 }
 
+// From Material Design specs.
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/material-icons/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../fonts/material-icons/MaterialIcons-Regular.woff) format('woff'),
+    url(../fonts/material-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+// From Material Design specs.
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: $material-icon-default-size;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  // These two probably not needed, but keeping in case it's ever useful.
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -59,6 +98,10 @@ p {
 
 .main p {
   width: 80%;
+}
+
+.material-tooltip {
+  max-width: 400px;
 }
 
 // .message {
