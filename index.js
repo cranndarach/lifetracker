@@ -3,9 +3,10 @@
 // var electron, path, pkg, jsonfile;
 const path = require('path');
 const pkg = require('./package.json');
-const electron = require('electron');
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
+const {app, BrowserWindow} = require('electron');
+// const electron = require('electron');
+// const app = electron.app;
+// const BrowserWindow = electron.BrowserWindow;
 const windowStateKeeper = require('electron-window-state');
 
 try {
