@@ -21,7 +21,7 @@
   "repository": "https://github.com/cranndarach/lifetracker.git",
   "main": "main.js",
   "scripts": {
-    "start": "./node_modules/.bin/electron index.js",
+    "start": "electron .",
     "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --ignore='^config.cson$' --overwrite",
     "build-win": "electron-packager . LifeTracker --platform=win32 --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --ignore='^config.cson$' --overwrite=true",
     "build-mac": "electron-packager . LifeTracker --platform=darwin --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --ignore='^config.cson$' --overwrite"
@@ -36,7 +36,6 @@
     "bluebird": "^3.5.0",
     "cson": "^4.1.0",
     "csv": "^1.1.0",
-    "electron": "^1.8.8",
     "electron-window-state": "^4.1.1",
     "glob": "^7.1.1",
     "jquery": "^3.3.1",
@@ -49,6 +48,7 @@
   },
   "devDependencies": {
     "devtron": "^1.4.0",
+    "electron": "^2.0.8",
     "electron-packager": "^12.1.1",
     "electron-reload": "^1.1.0",
     "electron-reloader": "^0.2.0"
