@@ -19,7 +19,7 @@
   },
   "license": "MIT",
   "repository": "https://github.com/cranndarach/lifetracker.git",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "./node_modules/.bin/electron index.js",
     "build-linux": "electron-packager . LifeTracker --platform=linux --arch=x64 --out=dist --ignore='^/dist$' --ignore='^/data$' --ignore='^config.cson$' --overwrite",
@@ -36,7 +36,7 @@
     "bluebird": "^3.5.0",
     "cson": "^4.1.0",
     "csv": "^1.1.0",
-    "electron": "1.8.x",
+    "electron": "^1.8.8",
     "electron-window-state": "^4.1.1",
     "glob": "^7.1.1",
     "jquery": "^3.3.1",
