@@ -1,18 +1,21 @@
 const _ = require("lodash");
-const path = require('path');
-const jsonfile = require('jsonfile');
-const CSON = require('cson');
-const fs = require('fs');
-const glob = require('glob');
-const UUID = require('uuid-js');
-const jsonexport = require('jsonexport');
-const {dialog} = require('electron').remote;
-const moment = require('moment');
-var Promise = require('bluebird');
+const os = require("os");
+const path = require("path");
+const jsonfile = require("jsonfile");
+const CSON = require("cson");
+const fs = require("fs");
+const glob = require("glob");
+const mkdirp = require("mkdirp");
+const UUID = require("uuid-js");
+const jsonexport = require("jsonexport");
+const {dialog} = require("electron").remote;
+const moment = require("moment");
+var Promise = require("bluebird");
 
 Promise.promisifyAll(fs);
 Promise.promisifyAll(jsonfile);
 Promise.promisifyAll(CSON);
+Promise.promisifyAll(mkdirp);
 // fs.copyFile doesn't seem to promisify nicely.
 // var copyFile = Promise.promisify(fs.copyFile);
 // var CSON = Promise.promisifyAll(require('cson'));
@@ -27,28 +30,27 @@ function requirePromise(mod) {
   });
 }
 
-var config, populate, gen, prefsBackend, prefs, submit, dataProc, forms,
-  usrConf, themes, presets;
+var config, populate, gen, prefs, submit, dataProc, themes, presets;
 // These ones are all either independent or probably won't cause problems
 // and can be loaded asynchronously.
 themes = require(__dirname + '/lib/themes.js');
-submit = require(__dirname + '/lib/submit.js');
-forms = CSON.requireFile(__dirname + "/forms.cson");
 // The preset entries are loaded in the presets module.
-presets = require(__dirname + "/lib/presets.js");
-populate = require(__dirname + '/lib/populate.js');
+submit = require(__dirname + '/lib/submit.js');
 gen = require(__dirname + '/lib/makeForm.js');
 
 require('electron').ipcRenderer.on('loaded', function(event, incoming) {
-  populate.fillSidebar();
   requirePromise("config").then((mod) => {
     config = mod;
-    // Promise:
-    return config.loadUserConfig();
+    config.makeDefaultConfig();
+    // return config.loadUserConfig();
+    return Promise.join(config.loadUserConfig, config.loadSystemConfig, () => { return new Promise.resolve(); });
   })
     .then(() => {
-      config.applyTheme();
+      populate = require(__dirname + '/lib/populate.js');
+      presets = require(__dirname + "/lib/presets.js");
       prefs = require(__dirname + '/lib/preferences.js');
+      config.applyTheme();
+      populate.fillSidebar();
       return requirePromise("data");
     })
     .then((mod) => {

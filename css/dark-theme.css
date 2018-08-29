@@ -8308,10 +8308,6 @@ input[type=range] {
 fieldset {
   border-radius: 5px; }
 
-#savedir {
-  display: inline-block;
-  width: 85%; }
-
 #data-display {
   margin: 1em; }
 
