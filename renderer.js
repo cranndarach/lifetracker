@@ -30,16 +30,12 @@ function requirePromise(mod) {
   });
 }
 
-var config, populate, gen, prefsBackend, prefs, submit, dataProc, forms,
-  usrConf, themes, presets;
+var config, populate, gen, prefs, submit, dataProc, themes, presets;
 // These ones are all either independent or probably won't cause problems
 // and can be loaded asynchronously.
 themes = require(__dirname + '/lib/themes.js');
-submit = require(__dirname + '/lib/submit.js');
-forms = CSON.requireFile(__dirname + "/forms.cson");
 // The preset entries are loaded in the presets module.
-presets = require(__dirname + "/lib/presets.js");
-populate = require(__dirname + '/lib/populate.js');
+submit = require(__dirname + '/lib/submit.js');
 gen = require(__dirname + '/lib/makeForm.js');
 
 require('electron').ipcRenderer.on('loaded', function(event, incoming) {
@@ -51,8 +47,10 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
     return Promise.join(config.loadUserConfig, config.loadSystemConfig, () => { return new Promise.resolve(); });
   })
     .then(() => {
-      config.applyTheme();
+      populate = require(__dirname + '/lib/populate.js');
+      presets = require(__dirname + "/lib/presets.js");
       prefs = require(__dirname + '/lib/preferences.js');
+      config.applyTheme();
       return requirePromise("data");
     })
     .then((mod) => {
