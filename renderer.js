@@ -39,7 +39,6 @@ submit = require(__dirname + '/lib/submit.js');
 gen = require(__dirname + '/lib/makeForm.js');
 
 require('electron').ipcRenderer.on('loaded', function(event, incoming) {
-  populate.fillSidebar();
   requirePromise("config").then((mod) => {
     config = mod;
     config.makeDefaultConfig();
@@ -51,6 +50,7 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
       presets = require(__dirname + "/lib/presets.js");
       prefs = require(__dirname + '/lib/preferences.js');
       config.applyTheme();
+      populate.fillSidebar();
       return requirePromise("data");
     })
     .then((mod) => {
