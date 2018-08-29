@@ -1,18 +1,21 @@
 const _ = require("lodash");
-const path = require('path');
-const jsonfile = require('jsonfile');
-const CSON = require('cson');
-const fs = require('fs');
-const glob = require('glob');
-const UUID = require('uuid-js');
-const jsonexport = require('jsonexport');
-const {dialog} = require('electron').remote;
-const moment = require('moment');
-var Promise = require('bluebird');
+const os = require("os");
+const path = require("path");
+const jsonfile = require("jsonfile");
+const CSON = require("cson");
+const fs = require("fs");
+const glob = require("glob");
+const mkdirp = require("mkdirp");
+const UUID = require("uuid-js");
+const jsonexport = require("jsonexport");
+const {dialog} = require("electron").remote;
+const moment = require("moment");
+var Promise = require("bluebird");
 
 Promise.promisifyAll(fs);
 Promise.promisifyAll(jsonfile);
 Promise.promisifyAll(CSON);
+Promise.promisifyAll(mkdirp);
 // fs.copyFile doesn't seem to promisify nicely.
 // var copyFile = Promise.promisify(fs.copyFile);
 // var CSON = Promise.promisifyAll(require('cson'));
@@ -43,8 +46,9 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
   populate.fillSidebar();
   requirePromise("config").then((mod) => {
     config = mod;
-    // Promise:
-    return config.loadUserConfig();
+    config.makeDefaultConfig();
+    // return config.loadUserConfig();
+    return Promise.join(config.loadUserConfig, config.loadSystemConfig, () => { return new Promise.resolve(); });
   })
     .then(() => {
       config.applyTheme();
