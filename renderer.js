@@ -42,9 +42,15 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
   requirePromise("config").then((mod) => {
     config = mod;
     config.makeDefaultConfig();
-    // return config.loadUserConfig();
-    return Promise.join(config.loadUserConfig, config.loadSystemConfig, () => { return new Promise.resolve(); });
+    return config.loadSystemConfig();
+    // return Promise.join(config.loadUserConfig(), config.loadSystemConfig(), () => { return new Promise.resolve(); });
   })
+    .then(() => {
+      // return config.loadUserConfig();
+      return Promise.join(config.loadUserConfig(), config.loadForms(), config.loadPresets(), () => {
+        return new Promise.resolve();
+      });
+    })
     .then(() => {
       populate = require(__dirname + '/lib/populate.js');
       presets = require(__dirname + "/lib/presets.js");
