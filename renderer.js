@@ -46,7 +46,10 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
     // return Promise.join(config.loadUserConfig(), config.loadSystemConfig(), () => { return new Promise.resolve(); });
   })
     .then(() => {
-      return config.loadUserConfig();
+      // return config.loadUserConfig();
+      return Promise.join(config.loadUserConfig(), config.loadForms(), config.loadPresets(), () => {
+        return new Promise.resolve();
+      });
     })
     .then(() => {
       populate = require(__dirname + '/lib/populate.js');
