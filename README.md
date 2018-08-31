@@ -129,7 +129,7 @@ to start the program!
 If you'd prefer to build an executable yourself, run the following:
 
 ```sh
-npm run-script build-[platform]
+npm run build-[platform]
 ```
 
 where `[platform]` is one of `win`, `mac`, or `linux`. Then you'll find the
@@ -146,7 +146,6 @@ executable in the `dist/` folder. (The executable will be called something like
 * The UI theme is evolving bit by bit. More themes are definitely needed.
 * Easier manipulation/creation of entry forms.
 * A way to edit past entries in-app.
-* ~~A way to see all prevously-entered categories when writing an entry.~~
 
 ## Contributing
 
