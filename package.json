@@ -1,7 +1,7 @@
 {
   "name": "lifetracker",
   "appname": "LifeTracker",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Keep track of events and trends in your life.",
   "keywords": [
     "accessibility",
