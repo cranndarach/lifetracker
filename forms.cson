@@ -167,43 +167,6 @@ main:
 				type: "text"
 				placeholder: "e.g., home, work"
 				value: ""
-adventureLogs:
-	pageTitle: "Adventure Logs"
-	dragonFights:
-		formTitle: "Dragon Fights"
-		fields:
-			title:
-				label: "Title"
-				type: "text"
-				value: "Fought a dragon"
-			itWas:
-				label: "It was"
-				type: "text"
-				value: "awesome!"
-			loc:
-				label: "Location"
-				type: "text"
-				value: "my backyard"
-			whenDate:
-				label: "When (date)"
-				type: "text"
-				class: "datepicker"
-				value: ""
-			whenTime:
-				label: "When (time)"
-				type: "text"
-				class: "timepicker"
-				value: ""
-			difficulty:
-				label: "Difficulty"
-				type: "range"
-				min: 0
-				max: 100
-				value: 0
-			experience:
-				label: "EXP gained"
-				type: "number"
-				value: 0
 status:
 	pageTitle: "Status"
 	spoons:
