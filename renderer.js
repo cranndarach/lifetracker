@@ -7,7 +7,6 @@ const fs = require("fs");
 const glob = require("glob");
 const mkdirp = require("mkdirp");
 const UUID = require("uuid-js");
-const jsonexport = require("jsonexport");
 const {dialog} = require("electron").remote;
 const moment = require("moment");
 var Promise = require("bluebird");
