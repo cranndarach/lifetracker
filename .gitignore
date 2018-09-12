@@ -15,3 +15,5 @@ dist
 
 config\.cson
 presets\.cson
+
+system_config\.cson
