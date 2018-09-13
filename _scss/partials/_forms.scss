@@ -20,7 +20,6 @@
   color: $accent-color;
 }
 
-
 .btn-no-accent {
   background-color: $btn-no-accent-bg-color;
   color: $btn-no-accent-text-color;
@@ -61,6 +60,12 @@
 
 .browse-btn {
   font-size: 1.1rem;
+}
+
+div.example {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .form-group > label, label.active, .input-field > label {
