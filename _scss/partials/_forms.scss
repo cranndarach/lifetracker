@@ -68,6 +68,20 @@ div.example {
   margin-bottom: 1rem;
 }
 
+#more-info {
+  font-size: 0.8rem;
+  padding-left: 10px;
+
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .material-icons {
+    font-size: 0.8rem;
+  }
+}
+
 .form-group > label, label.active, .input-field > label {
   color: $text-color;
   font-size: 1.2rem;
