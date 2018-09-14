@@ -1,4 +1,0 @@
-# System configuration file for LifeTracker.
-# The only reason to edit this file is to change the value of configDir.
-# Any other changes will be overwritten the next time you run LifeTracker.
-configDir: "/home/rachael/.config/lifetracker"

@@ -8229,6 +8229,20 @@ li.nav-parent > a, li.nav-solo > a, .sidenav li a.subheader {
 .browse-btn {
   font-size: 1.1rem; }
 
+div.example {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem; }
+
+#more-info {
+  font-size: 0.8rem;
+  padding-left: 10px; }
+  #more-info a {
+    text-decoration: underline;
+    cursor: pointer; }
+  #more-info .material-icons {
+    font-size: 0.8rem; }
+
 .form-group > label, label.active, .input-field > label {
   color: #e0e0e0;
   font-size: 1.2rem; }
