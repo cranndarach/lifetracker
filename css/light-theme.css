@@ -8192,7 +8192,9 @@ li.nav-parent > a, li.nav-solo > a, .sidenav li a.subheader {
   color: #000;
   font-size: 1.3rem;
   padding: 0.3rem 1.5rem;
-  line-height: 1; }
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis; }
   .btn:hover, .btn-large:hover, .btn-small:hover, .search-btn:hover, .export-btn:hover, .submit-btn:hover, .page-btn:hover, .browse-btn:hover, .btn-no-accent:hover,
   .export-results-btn:hover, .save-preset-btn:hover, .btn:focus, .btn-large:focus, .btn-small:focus, .search-btn:focus, .export-btn:focus, .submit-btn:focus, .page-btn:focus, .browse-btn:focus, .btn-no-accent:focus,
   .export-results-btn:focus, .save-preset-btn:focus {
