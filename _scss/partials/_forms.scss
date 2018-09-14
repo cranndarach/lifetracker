@@ -5,6 +5,8 @@
   font-size: $button-font-size;
   padding: $button-top-bottom-padding $button-side-padding;
   line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &:hover, &:focus {
     background-color: lighten($button-color, 10%);
