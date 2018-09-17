@@ -16,6 +16,7 @@ Promise.promisifyAll(fs);
 Promise.promisifyAll(jsonfile);
 Promise.promisifyAll(CSON);
 Promise.promisifyAll(mkdirp);
+Promise.promisifyAll(glob);
 // fs.copyFile doesn't seem to promisify nicely.
 // var copyFile = Promise.promisify(fs.copyFile);
 // var CSON = Promise.promisifyAll(require('cson'));
