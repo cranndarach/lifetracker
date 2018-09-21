@@ -2,6 +2,7 @@ const _ = require("lodash");
 const os = require("os");
 const path = require("path");
 const jsonfile = require("jsonfile");
+const jsonexport = require("jsonexport");
 const CSON = require("cson");
 const fs = require("fs");
 const glob = require("glob");
@@ -14,6 +15,7 @@ var Promise = require("bluebird");
 
 Promise.promisifyAll(fs);
 Promise.promisifyAll(jsonfile);
+Promise.promisifyAll(jsonexport);
 Promise.promisifyAll(CSON);
 Promise.promisifyAll(mkdirp);
 Promise.promisifyAll(glob);
