@@ -15,19 +15,12 @@ var Promise = require("bluebird");
 
 Promise.promisifyAll(fs);
 Promise.promisifyAll(jsonfile);
-Promise.promisifyAll(jsonexport);
+// Promise.promisifyAll(jsonexport);
 Promise.promisifyAll(CSON);
 Promise.promisifyAll(mkdirp);
 Promise.promisifyAll(glob);
-Promise.promisifyAll(dialog);
-// fs.copyFile doesn't seem to promisify nicely.
-// var copyFile = Promise.promisify(fs.copyFile);
-// var CSON = Promise.promisifyAll(require('cson'));
-// var readjson = Promise.promisify(jsonfile.readFile);
-// var writejson = Promise.promisify(jsonfile.writeFile);
-// var loadCSON = Promise.promisify(CSON.load);
-// var createCSON = Promise.promisify(CSON.createCSONString);
-// var writeFile = Promise.promisify(fs.writeFile);
+// Promise.promisifyAll(dialog);
+
 function requirePromise(mod) {
   return new Promise((resolve, reject) => {
     resolve(require(`${__dirname}/lib/${mod}.js`));
