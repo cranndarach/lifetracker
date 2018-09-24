@@ -111,6 +111,11 @@ input[type=checkbox]:checked + span::after {
   color: $text-color;
 }
 
+.dynatable-search input:focus {
+  background-color: $body-bg-color !important;
+  color: $text-color !important;
+}
+
 .form-group {
   margin-top: 2em;
 }

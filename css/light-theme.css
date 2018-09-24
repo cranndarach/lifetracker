@@ -8261,6 +8261,10 @@ input[type=checkbox]:checked + span::after {
   background-color: #fff;
   color: #000; }
 
+.dynatable-search input:focus {
+  background-color: #fff !important;
+  color: #000 !important; }
+
 .form-group {
   margin-top: 2em; }
 
@@ -8338,6 +8342,15 @@ fieldset {
 #data-table a.tag {
   color: #000;
   text-decoration: underline; }
+
+.dynatable-per-page div.select-wrapper {
+  display: inline-block;
+  margin-left: 5px;
+  width: 55px; }
+
+#csv-btn-wrapper {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem; }
 
 /****************
  * Layout style *
