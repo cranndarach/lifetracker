@@ -8261,6 +8261,10 @@ input[type=checkbox]:checked + span::after {
   background-color: #212121;
   color: #e0e0e0; }
 
+.dynatable-search input:focus {
+  background-color: #212121 !important;
+  color: #e0e0e0 !important; }
+
 .form-group {
   margin-top: 2em; }
 
