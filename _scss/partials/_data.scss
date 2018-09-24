@@ -17,3 +17,9 @@
   color: $text-color;
   text-decoration: underline;
 }
+
+.dynatable-per-page div.select-wrapper {
+  display: inline-block;
+  margin-left: 5px;
+  width: 55px;
+}

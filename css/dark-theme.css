@@ -8339,6 +8339,11 @@ fieldset {
   color: #e0e0e0;
   text-decoration: underline; }
 
+.dynatable-per-page div.select-wrapper {
+  display: inline-block;
+  margin-left: 5px;
+  width: 55px; }
+
 /****************
  * Layout style *
  ****************/
