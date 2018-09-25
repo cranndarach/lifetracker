@@ -8328,6 +8328,16 @@ input[type=range] {
 fieldset {
   border-radius: 5px; }
 
+input.edit {
+  width: 48% !important;
+  display: inline-block !important; }
+
+input.edit-val {
+  float: right; }
+
+.edit-separator {
+  font-weight: bold; }
+
 #data-display {
   margin: 1em; }
 

@@ -228,11 +228,15 @@ fieldset {
   border-radius: 5px;
 }
 
-// #savedir {
-//   display: inline-block;
-//   width: 85%;
-// }
+input.edit {
+  width: 48% !important;
+  display: inline-block !important;
+}
 
-// #save-prefs {
-//   margin-top: 4rem;
-// }
+input.edit-val {
+  float: right;
+}
+
+.edit-separator {
+  font-weight: bold;
+}
