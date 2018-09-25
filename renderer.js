@@ -31,6 +31,7 @@ var config, populate, gen, prefs, submit, dataProc, themes, presets;
 // These ones are all either independent or probably won't cause problems
 // and can be loaded asynchronously.
 themes = require(__dirname + '/lib/themes.js');
+edit = require(__dirname + "/lib/editEntry.js");
 // The preset entries are loaded in the presets module.
 submit = require(__dirname + '/lib/submit.js');
 gen = require(__dirname + '/lib/makeForm.js');
