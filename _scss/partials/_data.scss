@@ -17,3 +17,14 @@
   color: $text-color;
   text-decoration: underline;
 }
+
+.dynatable-per-page div.select-wrapper {
+  display: inline-block;
+  margin-left: 5px;
+  width: 55px;
+}
+
+#csv-btn-wrapper {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
