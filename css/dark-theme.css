@@ -8338,6 +8338,9 @@ input.edit-val {
 .edit-separator {
   font-weight: bold; }
 
+#edit-btns-wrapper {
+  height: 36px; }
+
 #data-display {
   margin: 1em; }
 
