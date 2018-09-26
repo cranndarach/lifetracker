@@ -59,6 +59,7 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
       return dataProc.loadData();
     })
     .then(() => {
+      console.log(dataProc.entries[10]);
       dataProc.makeKeys();
       return dataProc.getCategories();
     })
