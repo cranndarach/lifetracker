@@ -8287,6 +8287,7 @@ input[type=range] {
     margin-top: -8px; }
 
 #message {
+  margin-top: 1rem;
   color: #C62828;
   font-weight: bold; }
 
