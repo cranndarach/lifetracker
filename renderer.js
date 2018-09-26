@@ -32,7 +32,6 @@ var config, populate, gen, prefs, submit, dataProc, themes, presets;
 // and can be loaded asynchronously.
 themes = require(__dirname + '/lib/themes.js');
 edit = require(__dirname + "/lib/editEntry.js");
-// The preset entries are loaded in the presets module.
 submit = require(__dirname + '/lib/submit.js');
 gen = require(__dirname + '/lib/makeForm.js');
 
@@ -41,10 +40,8 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
     config = mod;
     config.makeDefaultConfig();
     return config.loadSystemConfig();
-    // return Promise.join(config.loadUserConfig(), config.loadSystemConfig(), () => { return new Promise.resolve(); });
   })
     .then(() => {
-      // return config.loadUserConfig();
       return Promise.join(config.loadUserConfig(), config.loadForms(), config.loadPresets(), () => {
         return new Promise.resolve();
       });
@@ -62,7 +59,6 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
       return dataProc.loadData();
     })
     .then(() => {
-      // return Promise.join(dataProc.getFields(), dataProc.getCategories(), () => {
       dataProc.makeKeys();
       return dataProc.getCategories();
     })
