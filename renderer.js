@@ -27,31 +27,31 @@ function requirePromise(mod) {
   });
 }
 
-var config, populate, gen, prefs, submit, dataProc, themes, presets;
+var config, dataProc, explore, gen, populate, prefs, presets, submit, themes;
 // These ones are all either independent or probably won't cause problems
 // and can be loaded asynchronously.
-themes = require(__dirname + '/lib/themes.js');
-// The preset entries are loaded in the presets module.
-submit = require(__dirname + '/lib/submit.js');
-gen = require(__dirname + '/lib/makeForm.js');
+themes = require(__dirname + "/lib/themes.js");
+edit = require(__dirname + "/lib/editEntry.js");
+submit = require(__dirname + "/lib/submit.js");
+gen = require(__dirname + "/lib/makeForm.js");
+explore = require(__dirname + "/lib/explore.js");
 
-require('electron').ipcRenderer.on('loaded', function(event, incoming) {
+require("electron").ipcRenderer.on("loaded", function(event, incoming) {
   requirePromise("config").then((mod) => {
     config = mod;
     config.makeDefaultConfig();
     return config.loadSystemConfig();
-    // return Promise.join(config.loadUserConfig(), config.loadSystemConfig(), () => { return new Promise.resolve(); });
   })
     .then(() => {
-      // return config.loadUserConfig();
       return Promise.join(config.loadUserConfig(), config.loadForms(), config.loadPresets(), () => {
         return new Promise.resolve();
       });
     })
     .then(() => {
-      populate = require(__dirname + '/lib/populate.js');
+      // These need access to the config before they can be loaded.
+      populate = require(__dirname + "/lib/populate.js");
       presets = require(__dirname + "/lib/presets.js");
-      prefs = require(__dirname + '/lib/preferences.js');
+      prefs = require(__dirname + "/lib/preferences.js");
       config.applyTheme();
       populate.fillSidebar();
       return requirePromise("data");
@@ -61,7 +61,7 @@ require('electron').ipcRenderer.on('loaded', function(event, incoming) {
       return dataProc.loadData();
     })
     .then(() => {
-      // return Promise.join(dataProc.getFields(), dataProc.getCategories(), () => {
+      console.log(dataProc.entries[10]);
       dataProc.makeKeys();
       return dataProc.getCategories();
     })

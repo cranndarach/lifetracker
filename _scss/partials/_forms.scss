@@ -151,6 +151,7 @@ input[type=range] {
 }
 
 #message {
+  margin-top: 1rem;
   color: $submit-message-color;
   font-weight: bold;
 }
@@ -228,11 +229,19 @@ fieldset {
   border-radius: 5px;
 }
 
-// #savedir {
-//   display: inline-block;
-//   width: 85%;
-// }
+input.edit {
+  width: 48% !important;
+  display: inline-block !important;
+}
 
-// #save-prefs {
-//   margin-top: 4rem;
-// }
+input.edit-val {
+  float: right;
+}
+
+.edit-separator {
+  font-weight: bold;
+}
+
+#edit-btns-wrapper {
+  height: 36px;
+}

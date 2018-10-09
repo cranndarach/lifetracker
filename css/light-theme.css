@@ -8287,6 +8287,7 @@ input[type=range] {
     margin-top: -8px; }
 
 #message {
+  margin-top: 1rem;
   color: #E53935;
   font-weight: bold; }
 
@@ -8327,6 +8328,19 @@ input[type=range] {
 
 fieldset {
   border-radius: 5px; }
+
+input.edit {
+  width: 48% !important;
+  display: inline-block !important; }
+
+input.edit-val {
+  float: right; }
+
+.edit-separator {
+  font-weight: bold; }
+
+#edit-btns-wrapper {
+  height: 36px; }
 
 #data-display {
   margin: 1em; }
