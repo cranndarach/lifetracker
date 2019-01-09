@@ -80,38 +80,4 @@ require("electron").ipcRenderer.on("loaded", function(event, incoming) {
       populate.populate("home");
     });
   }
-  // requirePromise("config").then((mod) => {
-  //   config = mod;
-  //   config.makeDefaultConfig();
-  //   return config.loadSystemConfig();
-  // })
-  //   .then(() => {
-  //     return Promise.join(config.loadUserConfig(), config.loadForms(), config.loadPresets(), () => {
-  //       return new Promise.resolve();
-  //     });
-  //   })
-    // .then(() => {
-    //   // These need access to the config before they can be loaded.
-    //   populate = require(__dirname + "/lib/populate.js");
-    //   presets = require(__dirname + "/lib/presets.js");
-    //   prefs = require(__dirname + "/lib/preferences.js");
-    //   config.applyTheme();
-    //   populate.fillSidebar();
-    //   return requirePromise("data");
-    // })
-    // .then((mod) => {
-    //   dataProc = mod;
-    //   return dataProc.loadData();
-    // })
-    // .then(() => {
-    //   console.log(dataProc.entries[10]);
-    //   dataProc.makeKeys();
-    //   return dataProc.getCategories();
-    // })
-    // .then(() => {
-    //   populate.populate("home");
-    // })
-    // .catch((err) => {
-    //   console.log(err.stack);
-    // });
 });
