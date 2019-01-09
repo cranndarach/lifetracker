@@ -28,47 +28,90 @@ function requirePromise(mod) {
 }
 
 var config, dataProc, explore, gen, populate, prefs, presets, submit, themes;
-// These ones are all either independent or probably won't cause problems
-// and can be loaded asynchronously.
+config = require(__dirname + "/lib/config.js");
 themes = require(__dirname + "/lib/themes.js");
+prefs = require(__dirname + "/lib/preferences.js");
+populate = require(__dirname + "/lib/populate.js");
+presets = require(__dirname + "/lib/presets.js");
+dataProc = require(__dirname + "/lib/data.js");
 edit = require(__dirname + "/lib/editEntry.js");
 submit = require(__dirname + "/lib/submit.js");
 gen = require(__dirname + "/lib/makeForm.js");
 explore = require(__dirname + "/lib/explore.js");
 
+config.makeDefaultConfig();
+config.loadSystemConfig().then(() => {
+  config.loadUserConfig();
+  config.loadForms();
+  config.loadPresets();
+}).catch((err) => {
+  console.log(err);
+});
+
+dataProc.loadData().then(() => {
+  dataProc.makeKeys();
+  dataProc.getCategories();
+  window.categoriesLoaded = true;
+}).catch((err) => {
+  console.log(err);
+});
+
+$(document).on("userConfigLoaded", (e) => {
+  config.applyTheme();
+});
+
+$(document).on("formsLoaded", (e) => {
+  window.formsLoaded = true;
+});
+
 require("electron").ipcRenderer.on("loaded", function(event, incoming) {
-  requirePromise("config").then((mod) => {
-    config = mod;
-    config.makeDefaultConfig();
-    return config.loadSystemConfig();
-  })
-    .then(() => {
-      return Promise.join(config.loadUserConfig(), config.loadForms(), config.loadPresets(), () => {
-        return new Promise.resolve();
-      });
-    })
-    .then(() => {
-      // These need access to the config before they can be loaded.
-      populate = require(__dirname + "/lib/populate.js");
-      presets = require(__dirname + "/lib/presets.js");
-      prefs = require(__dirname + "/lib/preferences.js");
-      config.applyTheme();
+  if (window.formsLoaded) {
+    populate.fillSidebar();
+  } else {
+    $(document).on("formsLoaded", (e) => {
       populate.fillSidebar();
-      return requirePromise("data");
-    })
-    .then((mod) => {
-      dataProc = mod;
-      return dataProc.loadData();
-    })
-    .then(() => {
-      console.log(dataProc.entries[10]);
-      dataProc.makeKeys();
-      return dataProc.getCategories();
-    })
-    .then(() => {
-      populate.populate("home");
-    })
-    .catch((err) => {
-      console.log(err.stack);
     });
+  }
+
+  if (window.categoriesLoaded) {
+    populate.populate("home");
+  } else {
+    $(document).on("categoriesLoaded", (e) => {
+      populate.populate("home");
+    });
+  }
+  // requirePromise("config").then((mod) => {
+  //   config = mod;
+  //   config.makeDefaultConfig();
+  //   return config.loadSystemConfig();
+  // })
+  //   .then(() => {
+  //     return Promise.join(config.loadUserConfig(), config.loadForms(), config.loadPresets(), () => {
+  //       return new Promise.resolve();
+  //     });
+  //   })
+    // .then(() => {
+    //   // These need access to the config before they can be loaded.
+    //   populate = require(__dirname + "/lib/populate.js");
+    //   presets = require(__dirname + "/lib/presets.js");
+    //   prefs = require(__dirname + "/lib/preferences.js");
+    //   config.applyTheme();
+    //   populate.fillSidebar();
+    //   return requirePromise("data");
+    // })
+    // .then((mod) => {
+    //   dataProc = mod;
+    //   return dataProc.loadData();
+    // })
+    // .then(() => {
+    //   console.log(dataProc.entries[10]);
+    //   dataProc.makeKeys();
+    //   return dataProc.getCategories();
+    // })
+    // .then(() => {
+    //   populate.populate("home");
+    // })
+    // .catch((err) => {
+    //   console.log(err.stack);
+    // });
 });
