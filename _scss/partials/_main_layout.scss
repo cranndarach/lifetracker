@@ -69,8 +69,8 @@ body {
 
 h1 {
   // padding-left: 2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -86,6 +86,8 @@ main {
 }
 
 nav.top-nav {
+  // display: inline-block;
+  height: 100%;
   background: transparent;
 }
 
