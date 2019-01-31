@@ -8221,8 +8221,10 @@ li.nav-parent > a, li.nav-solo > a, .sidenav li a.subheader {
     background-color: #ffd033; }
 
 .page-btn {
-  margin: 2px;
-  height: 3.33rem; }
+  margin-bottom: 5px;
+  padding: 0;
+  width: 100%;
+  height: 3.85rem; }
 
 .export-btn {
   margin-top: 0.5rem; }
