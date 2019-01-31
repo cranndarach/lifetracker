@@ -8220,8 +8220,9 @@ li.nav-parent > a, li.nav-solo > a, .sidenav li a.subheader {
   .save-preset-btn:hover {
     background-color: #ffa533; }
 
-.page-btn, .browse-btn {
-  text-transform: none; }
+.page-btn {
+  margin: 2px;
+  height: 3.33rem; }
 
 .export-btn {
   margin-top: 0.5rem; }

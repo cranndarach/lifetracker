@@ -52,9 +52,14 @@
   }
 }
 
-.page-btn, .browse-btn {
-  text-transform: none;
+.page-btn {
+  margin: 2px;
+  height: 2.1*$button-font-size + 2*$button-top-bottom-padding;
 }
+
+// .page-btn, .browse-btn {
+//   text-transform: none;
+// }
 
 .export-btn {
   margin-top: 0.5rem;
