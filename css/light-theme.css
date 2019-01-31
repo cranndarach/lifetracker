@@ -8381,7 +8381,7 @@ input.edit-val {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/material-icons/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/material-icons/MaterialIcons-Regular.woff) format("woff"), url(../fonts/material-icons/MaterialIcons-Regular.ttf) format("truetype"); }
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/material-icons/MaterialIcons-Regular.woff2") format("woff2"), url("../fonts/material-icons/MaterialIcons-Regular.woff") format("woff"), url("../fonts/material-icons/MaterialIcons-Regular.ttf") format("truetype"); }
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -8430,18 +8430,9 @@ p {
 .window-content {
   border-top: 1px solid #f5f5f5; }
 
-#main {
+main {
   margin-left: 300px;
   padding-bottom: 10%; }
-
-.content {
-  width: 80%; }
-
-.form {
-  margin: auto; }
-
-.main p {
-  width: 80%; }
 
 .material-tooltip {
   max-width: 400px; }
