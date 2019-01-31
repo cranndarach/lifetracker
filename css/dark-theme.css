@@ -8410,29 +8410,29 @@ html, body {
   height: 100%; }
 
 body {
+  background-color: #212121;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  color: #e0e0e0; }
 
 h1 {
-  padding-left: 2rem;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem; }
 
 p {
   margin-left: 4rem; }
 
-.window {
-  height: 100%;
-  overflow-y: scroll;
-  color: #e0e0e0;
-  background-color: #212121; }
-
-.window-content {
-  border-top: 1px solid #0a0a0a; }
+header, main {
+  margin-left: 300px; }
 
 main {
-  margin-left: 300px;
   padding-bottom: 10%; }
+
+nav.top-nav {
+  background: transparent; }
+
+.top-nav > .container {
+  width: 100%; }
 
 .material-tooltip {
   max-width: 400px; }

@@ -61,12 +61,14 @@ html, body {
 }
 
 body {
+  background-color: $body-bg-color;
   font-family: $font-family;
   font-size: $font-size;
+  color: $text-color;
 }
 
 h1 {
-  padding-left: 2rem;
+  // padding-left: 2rem;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -75,24 +77,31 @@ p {
   margin-left: 4rem;
 }
 
-.window {
-  height: 100%;
-  overflow-y: scroll;
-  color: $text-color;
-  background-color: $body-bg-color;
-}
+// .window {
+//   height: 100%;
+//   overflow-y: scroll;
+//   color: $text-color;
+//   background-color: $body-bg-color;
+// }
+//
+// .window-content {
+//   border-top: 1px solid $window-border-color;
+// }
 
-.window-content {
-  border-top: 1px solid $window-border-color;
+header, main {
+  margin-left: 300px;
 }
 
 main {
-  // width: 80%;
-  // margin-left: 20%;
-  margin-left: 300px;
-  // overflow-y: scroll;
-  // padding-left: 10%;
   padding-bottom: 10%;
+}
+
+nav.top-nav {
+  background: transparent;
+}
+
+.top-nav > .container {
+  width: 100%;
 }
 
 // .content {
